@@ -1,0 +1,688 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "on-surface-variant": "#3c4a42", "tertiary-fixed": "#d8e2ff", "outline-variant": "#bbcabf", "primary-container": "#10b981", "surface-container-high": "#dee9fc", "outline": "#6c7a71", "tertiary-fixed-dim": "#adc6ff", "inverse-surface": "#27313f", "on-primary-container": "#00422b", "on-secondary-fixed": "#00201d", "surface-container-low": "#eff4ff", "surface-variant": "#d9e3f6", "on-primary-fixed-variant": "#005236", "on-tertiary-fixed": "#001a42", "error": "#ba1a1a", "on-secondary-fixed-variant": "#005049", "background": "#f8f9ff", "primary-fixed": "#6ffbbe", "secondary": "#006a61", "on-tertiary-fixed-variant": "#004395", "surface-dim": "#d0dbed", "tertiary": "#005ac2", "surface-container-highest": "#d9e3f6", "error-container": "#ffdad6", "on-secondary-container": "#006f66", "on-error": "#ffffff", "secondary-container": "#86f2e4", "surface": "#f8f9ff", "tertiary-container": "#71a1ff", "secondary-fixed-dim": "#6bd8cb", "surface-bright": "#f8f9ff", "surface-container": "#e6eeff", "on-primary": "#ffffff", "on-primary-fixed": "#002113", "on-tertiary-container": "#00367a", "on-background": "#121c2a", "inverse-primary": "#4edea3", "primary": "#006c49", "inverse-on-surface": "#eaf1ff", "primary-fixed-dim": "#4edea3", "on-secondary": "#ffffff", "on-tertiary": "#ffffff", "on-surface": "#121c2a", "surface-tint": "#006c49", "on-error-container": "#93000a", "secondary-fixed": "#89f5e7" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-md": "1rem", "margin": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "label-sm": ["Inter"], "headline-sm": ["Inter"], "body-lg": ["Inter"], "body-default": ["Inter"], "caption": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Inter"], "display-lg": ["Inter"], "headline-md": ["Inter"] }, "fontSize": { "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "500" }], "body-default": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "caption": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-default text-on-surface flex flex-col antialiased min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #10b981
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WuDBYBKRgBKiRSgtqiuFPXe1vInuH1K-NRtYpJNTW3FYnFXrrLsbEP_gneGVrs9LwAIasVUH2BIg2MU7LUH5p0bSKYk1EtPIRNvKuUpI25TMCSdXOVtv7ev5cHvlWtYlvNrQ4ypEopwjBFuDkWK1iso0TIpkV5P0NR1DLmSHbnPnMTI7bPPAq11Gtie-4FDI8F9sO74EFMjOS7mWdwldoEMP61m-Cb5ja6pTiBFb66hcrmeeYhuCKkwaY"><span class="font-headline-sm text-headline-sm text-on-surface">WashFlow</span><span class="px-space-xs py-0.5 rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm uppercase">Admin</span></div><div class="flex items-center gap-space-xs"><div class="hidden sm:flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm">Elena R. (Shift On)</span></div><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-lg text-on-surface hover:bg-surface-container-low active:bg-surface-container transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-error"></span></span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ml-1" src="https://lh3.googleusercontent.com/aida/AEtjO1XhxQ3PH8eZEPu-xJo4n9NSox0TgZz7RTYG3PN3M4X-3K8M5hyp2ti28LgoN8Z2xweT7CqaMONcVne5mTFP--kHrG5QmgZm0noSfCQfj_4vXsh-W6tJVUK2qwwg7frFAAjcHEnYN-cfvCU-WEwyHBxX-mnOn6vpiH01oM3mh000D0wYQhWrvfJobUadVOMANc6CbXw9z0g-0e1mxDLiAoX0qS5cUJYSPf-Az5N61BIXzbn18yI8fkujOw"></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification container -->
+<div class="fixed top-18 left-1/2 -translate-x-1/2 z-50 flex items-center gap-space-sm px-space-md py-2.5 rounded-full bg-inverse-surface text-inverse-on-surface shadow-xl opacity-0 pointer-events-none transition-all duration-300 transform -translate-y-2" id="toastNotification">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">check_circle</span>
+<span class="font-label-sm text-label-sm" id="toastMessage">Customer directory updated</span>
+</div>
+<!-- Header Section with Countertop Metrics -->
+<div class="px-margin pt-space-md pb-space-sm">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Customer Directory</h1>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-caption text-caption text-on-surface-variant font-medium">1,420 Total • 48 Active Batches</span>
+</div>
+</div>
+<!-- Primary Action: + Add Customer -->
+<button class="h-11 px-space-md rounded-lg bg-primary-container text-on-primary-container hover:bg-opacity-90 active:scale-95 transition-all flex items-center justify-center gap-1 shadow-sm font-label-lg text-label-lg font-semibold" id="openNewCustomerModal">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Add</span>
+</button>
+</div>
+<!-- Search Bar with instant tactile states -->
+<div class="mt-space-md relative">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-12 pl-10 pr-10 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-default font-body-default shadow-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="customerSearchInput" placeholder="Search name, phone, or address..." type="text">
+<button class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-outline hover:text-on-surface hidden" id="clearSearchBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Horizontal Category Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto py-2.5 mt-1 -mx-margin px-margin scrollbar-none">
+<button class="filter-chip active flex-shrink-0 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm transition-all" data-filter="all">
+        All (1,420)
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all shadow-sm" data-filter="vip">
+        VIP (142)
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all shadow-sm" data-filter="commercial">
+        Commercial (38)
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all shadow-sm" data-filter="unpaid">
+        Unpaid Balance (14)
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm transition-all shadow-sm" data-filter="active">
+        Active Orders (48)
+      </button>
+</div>
+</div>
+<!-- Operational Customer Cards List -->
+<div class="px-margin flex flex-col gap-3 pb-space-lg" id="customerCardsContainer">
+<!-- Card 1: Sarah Jenkins (VIP) -->
+<div class="customer-card bg-surface-container-lowest rounded-xl p-4 shadow-sm transition-all relative overflow-hidden" data-address="742 Evergreen Terr, Apt 4B" data-has-active="true" data-name="Sarah Jenkins" data-phone="(555) 234-8901" data-tier="vip" data-zone="Zone A">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-primary-fixed-dim/30 flex items-center justify-center text-primary font-headline-sm text-[16px]">
+            SJ
+          </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Sarah Jenkins</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-[11px] font-bold tracking-wide uppercase">VIP</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-primary">sms</span>
+<span class="font-caption text-caption">(555) 234-8901</span>
+<span class="font-caption text-caption text-outline">• Opted-in SMS</span>
+</div>
+</div>
+</div>
+<!-- 3-Dots Quick Actions Trigger -->
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="toggleCardMenu('menu-1')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Address Row -->
+<div class="flex items-center gap-1.5 mt-2.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="font-caption text-caption truncate">742 Evergreen Terr, Apt 4B <span class="text-on-surface font-semibold">(Zone A)</span></span>
+</div>
+<!-- Metrics Block & Active Batch Highlight -->
+<div class="mt-3 p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-caption font-caption">
+<span class="text-on-surface-variant">18 Lifetime Orders</span>
+<span class="font-semibold text-on-surface">$489.10 LTV</span>
+</div>
+<div class="flex items-center justify-between pt-1 text-caption font-caption">
+<div class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[15px]">local_laundry_service</span>
+<span>1 Active Order (#WF-1052)</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed-dim/40 text-on-primary-fixed-variant text-[11px] font-semibold">Washing</span>
+</div>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-2 mt-3 pt-1">
+<a class="flex-1 h-10 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface flex items-center justify-center gap-1 font-label-sm text-label-sm transition-colors" href="tel:5552348901">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<a class="flex-1 h-10 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface flex items-center justify-center gap-1 font-label-sm text-label-sm transition-colors" href="sms:5552348901">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>SMS</span>
+</a>
+<button class="edit-btn px-4 h-10 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold transition-colors" data-target="Sarah Jenkins">
+          Edit
+        </button>
+</div>
+<!-- Popover Menu Dropdown -->
+<div class="absolute right-3 top-12 w-40 rounded-xl bg-surface-container-lowest shadow-xl py-1.5 z-20 hidden" id="menu-1">
+<button class="w-full px-3.5 py-2 text-left text-on-surface font-label-sm text-label-sm hover:bg-surface-container-low flex items-center gap-2" onclick="editCustomer('Sarah Jenkins', '(555) 234-8901', '742 Evergreen Terr, Apt 4B', 'Zone A', 'vip')">
+<span class="material-symbols-outlined text-[16px]">edit</span> Edit Details
+        </button>
+<button class="w-full px-3.5 py-2 text-left text-on-surface font-label-sm text-label-sm hover:bg-surface-container-low flex items-center gap-2" onclick="showToast('Receipt re-sent via SMS')">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span> Send Ledger
+        </button>
+<button class="w-full px-3.5 py-2 text-left text-error font-label-sm text-label-sm hover:bg-error-container/40 flex items-center gap-2" onclick="removeCustomer(this)">
+<span class="material-symbols-outlined text-[16px]">delete</span> Delete Record
+        </button>
+</div>
+</div>
+<!-- Card 2: Metro Gym Linens (Commercial B2B) -->
+<div class="customer-card bg-surface-container-lowest rounded-xl p-4 shadow-sm transition-all relative overflow-hidden" data-address="450 Industrial Pkwy, Bldg C" data-has-unpaid="true" data-name="Metro Gym Linens" data-phone="(555) 782-9900" data-tier="commercial" data-zone="Zone D">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-headline-sm text-[16px]">
+            MG
+          </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Metro Gym Linens</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/15 text-tertiary font-label-sm text-[11px] font-bold tracking-wide uppercase">Commercial B2B</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-tertiary">business</span>
+<span class="font-caption text-caption">(555) 782-9900</span>
+<span class="font-caption text-caption text-outline">• Procurement Desk</span>
+</div>
+</div>
+</div>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="toggleCardMenu('menu-2')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Address Row -->
+<div class="flex items-center gap-1.5 mt-2.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="font-caption text-caption truncate">450 Industrial Pkwy, Bldg C <span class="text-on-surface font-semibold">(Zone D)</span></span>
+</div>
+<!-- Metrics Block with High Balance Warning -->
+<div class="mt-3 p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-caption font-caption">
+<span class="text-on-surface-variant">64 Regular Batches</span>
+<span class="font-semibold text-on-surface">$4,280.00 LTV</span>
+</div>
+<div class="flex items-center justify-between pt-1 text-caption font-caption">
+<div class="flex items-center gap-1 text-error font-semibold">
+<span class="material-symbols-outlined text-[15px]">priority_high</span>
+<span>Unpaid Balance: $185.00</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container text-[11px] font-semibold">Net 15</span>
+</div>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-2 mt-3 pt-1">
+<a class="flex-1 h-10 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface flex items-center justify-center gap-1 font-label-sm text-label-sm transition-colors" href="tel:5557829900">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call Desk</span>
+</a>
+<button class="flex-1 h-10 rounded-lg bg-secondary-container hover:bg-opacity-80 text-on-secondary-container flex items-center justify-center gap-1 font-label-sm text-label-sm font-semibold transition-colors" onclick="showToast('Monthly invoice PDF generated')">
+<span class="material-symbols-outlined text-[16px]">receipt</span>
+<span>Invoice</span>
+</button>
+<button class="edit-btn px-4 h-10 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold transition-colors" data-target="Metro Gym Linens">
+          Edit
+        </button>
+</div>
+<!-- Popover Menu Dropdown -->
+<div class="absolute right-3 top-12 w-40 rounded-xl bg-surface-container-lowest shadow-xl py-1.5 z-20 hidden" id="menu-2">
+<button class="w-full px-3.5 py-2 text-left text-on-surface font-label-sm text-label-sm hover:bg-surface-container-low flex items-center gap-2" onclick="editCustomer('Metro Gym Linens', '(555) 782-9900', '450 Industrial Pkwy, Bldg C', 'Zone D', 'commercial')">
+<span class="material-symbols-outlined text-[16px]">edit</span> Edit Details
+        </button>
+<button class="w-full px-3.5 py-2 text-left text-on-surface font-label-sm text-label-sm hover:bg-surface-container-low flex items-center gap-2" onclick="showToast('Corporate payment link copied')">
+<span class="material-symbols-outlined text-[16px]">link</span> Payment Link
+        </button>
+<button class="w-full px-3.5 py-2 text-left text-error font-label-sm text-label-sm hover:bg-error-container/40 flex items-center gap-2" onclick="removeCustomer(this)">
+<span class="material-symbols-outlined text-[16px]">delete</span> Delete Record
+        </button>
+</div>
+</div>
+<!-- Card 3: Robert Hayes (Regular) -->
+<div class="customer-card bg-surface-container-lowest rounded-xl p-4 shadow-sm transition-all relative overflow-hidden" data-address="104 Maple Ave" data-has-overdue="true" data-name="Robert Hayes" data-phone="(555) 011-8833" data-tier="regular" data-zone="Zone B">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant font-headline-sm text-[16px]">
+            RH
+          </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Robert Hayes</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-bold tracking-wide uppercase">Regular</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-outline">call</span>
+<span class="font-caption text-caption">(555) 011-8833</span>
+</div>
+</div>
+</div>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="toggleCardMenu('menu-3')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Address Row -->
+<div class="flex items-center gap-1.5 mt-2.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="font-caption text-caption truncate">104 Maple Ave <span class="text-on-surface font-semibold">(Zone B)</span></span>
+</div>
+<!-- Metrics Block with Overdue Alert -->
+<div class="mt-3 p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-caption font-caption">
+<span class="text-on-surface-variant">9 Orders Completed</span>
+<span class="font-semibold text-on-surface">$212.50 LTV</span>
+</div>
+<div class="flex items-center justify-between pt-1 text-caption font-caption">
+<div class="flex items-center gap-1 text-on-error-container font-semibold">
+<span class="material-symbols-outlined text-[15px]">inventory</span>
+<span>Overdue Pickup (4d, Bay B-02)</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container text-[11px] font-semibold">Storage Fee Active</span>
+</div>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-2 mt-3 pt-1">
+<a class="flex-1 h-10 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface flex items-center justify-center gap-1 font-label-sm text-label-sm transition-colors" href="tel:5550118833">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<a class="flex-1 h-10 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface flex items-center justify-center gap-1 font-label-sm text-label-sm transition-colors" href="sms:5550118833">
+<span class="material-symbols-outlined text-[16px]">sms</span>
+<span>Remind SMS</span>
+</a>
+<button class="edit-btn px-4 h-10 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold transition-colors" data-target="Robert Hayes">
+          Edit
+        </button>
+</div>
+<!-- Popover Menu Dropdown -->
+<div class="absolute right-3 top-12 w-40 rounded-xl bg-surface-container-lowest shadow-xl py-1.5 z-20 hidden" id="menu-3">
+<button class="w-full px-3.5 py-2 text-left text-on-surface font-label-sm text-label-sm hover:bg-surface-container-low flex items-center gap-2" onclick="editCustomer('Robert Hayes', '(555) 011-8833', '104 Maple Ave', 'Zone B', 'regular')">
+<span class="material-symbols-outlined text-[16px]">edit</span> Edit Details
+        </button>
+<button class="w-full px-3.5 py-2 text-left text-error font-label-sm text-label-sm hover:bg-error-container/40 flex items-center gap-2" onclick="removeCustomer(this)">
+<span class="material-symbols-outlined text-[16px]">delete</span> Delete Record
+        </button>
+</div>
+</div>
+<!-- Card 4: Linda Kowalski (VIP) -->
+<div class="customer-card bg-surface-container-lowest rounded-xl p-4 shadow-sm transition-all relative overflow-hidden" data-address="892 Ocean Blvd, Ste 7" data-has-unpaid="true" data-name="Linda Kowalski" data-phone="(555) 349-1120" data-tier="vip" data-zone="Zone C">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-primary-fixed-dim/30 flex items-center justify-center text-primary font-headline-sm text-[16px]">
+            LK
+          </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Linda Kowalski</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-[11px] font-bold tracking-wide uppercase">VIP</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-primary">sms</span>
+<span class="font-caption text-caption">(555) 349-1120</span>
+</div>
+</div>
+</div>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="toggleCardMenu('menu-4')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Address Row -->
+<div class="flex items-center gap-1.5 mt-2.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="font-caption text-caption truncate">892 Ocean Blvd, Ste 7 <span class="text-on-surface font-semibold">(Zone C)</span></span>
+</div>
+<!-- Metrics Block with Unpaid Balance -->
+<div class="mt-3 p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-caption font-caption">
+<span class="text-on-surface-variant">14 Lifetime Orders</span>
+<span class="font-semibold text-on-surface">$630.00 LTV</span>
+</div>
+<div class="flex items-center justify-between pt-1 text-caption font-caption">
+<div class="flex items-center gap-1 text-error font-semibold">
+<span class="material-symbols-outlined text-[15px]">credit_card_off</span>
+<span>Unpaid Balance: $64.00</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container text-[11px] font-semibold">Dry Clean</span>
+</div>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-2 mt-3 pt-1">
+<a class="flex-1 h-10 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface flex items-center justify-center gap-1 font-label-sm text-label-sm transition-colors" href="tel:5553491120">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<button class="flex-1 h-10 rounded-lg bg-primary-container text-on-primary-container hover:bg-opacity-90 flex items-center justify-center gap-1 font-label-sm text-label-sm font-semibold transition-colors" onclick="showToast('POS Terminal awakened for Linda K.')">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span>Collect $64</span>
+</button>
+<button class="edit-btn px-4 h-10 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold transition-colors" data-target="Linda Kowalski">
+          Edit
+        </button>
+</div>
+<!-- Popover Menu Dropdown -->
+<div class="absolute right-3 top-12 w-40 rounded-xl bg-surface-container-lowest shadow-xl py-1.5 z-20 hidden" id="menu-4">
+<button class="w-full px-3.5 py-2 text-left text-on-surface font-label-sm text-label-sm hover:bg-surface-container-low flex items-center gap-2" onclick="editCustomer('Linda Kowalski', '(555) 349-1120', '892 Ocean Blvd, Ste 7', 'Zone C', 'vip')">
+<span class="material-symbols-outlined text-[16px]">edit</span> Edit Details
+        </button>
+<button class="w-full px-3.5 py-2 text-left text-error font-label-sm text-label-sm hover:bg-error-container/40 flex items-center gap-2" onclick="removeCustomer(this)">
+<span class="material-symbols-outlined text-[16px]">delete</span> Delete Record
+        </button>
+</div>
+</div>
+<!-- Card 5: David Harris (1st Time) -->
+<div class="customer-card bg-surface-container-lowest rounded-xl p-4 shadow-sm transition-all relative overflow-hidden" data-address="12 Elm Court" data-has-ready="true" data-name="David Harris" data-phone="(555) 766-0043" data-tier="first-time" data-zone="Zone A">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-headline-sm text-[16px]">
+            DH
+          </div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">David Harris</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-bold tracking-wide uppercase">First-Time</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">sms</span>
+<span class="font-caption text-caption">(555) 766-0043</span>
+</div>
+</div>
+</div>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="toggleCardMenu('menu-5')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Address Row -->
+<div class="flex items-center gap-1.5 mt-2.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span class="font-caption text-caption truncate">12 Elm Court <span class="text-on-surface font-semibold">(Zone A)</span></span>
+</div>
+<!-- Metrics Block with Ready status -->
+<div class="mt-3 p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-caption font-caption">
+<span class="text-on-surface-variant">1 Order Recorded</span>
+<span class="font-semibold text-on-surface">$24.00 First Order</span>
+</div>
+<div class="flex items-center justify-between pt-1 text-caption font-caption">
+<div class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span>Ready for Pickup • Rack 04</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant text-[11px] font-semibold">Completed</span>
+</div>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-2 mt-3 pt-1">
+<a class="flex-1 h-10 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface flex items-center justify-center gap-1 font-label-sm text-label-sm transition-colors" href="tel:5557660043">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Call</span>
+</a>
+<a class="flex-1 h-10 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface flex items-center justify-center gap-1 font-label-sm text-label-sm transition-colors" href="sms:5557660043">
+<span class="material-symbols-outlined text-[16px]">sms</span>
+<span>Send SMS</span>
+</a>
+<button class="edit-btn px-4 h-10 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold transition-colors" data-target="David Harris">
+          Edit
+        </button>
+</div>
+<!-- Popover Menu Dropdown -->
+<div class="absolute right-3 top-12 w-40 rounded-xl bg-surface-container-lowest shadow-xl py-1.5 z-20 hidden" id="menu-5">
+<button class="w-full px-3.5 py-2 text-left text-on-surface font-label-sm text-label-sm hover:bg-surface-container-low flex items-center gap-2" onclick="editCustomer('David Harris', '(555) 766-0043', '12 Elm Court', 'Zone A', 'first-time')">
+<span class="material-symbols-outlined text-[16px]">edit</span> Edit Details
+        </button>
+<button class="w-full px-3.5 py-2 text-left text-error font-label-sm text-label-sm hover:bg-error-container/40 flex items-center gap-2" onclick="removeCustomer(this)">
+<span class="material-symbols-outlined text-[16px]">delete</span> Delete Record
+        </button>
+</div>
+</div>
+</div>
+<!-- Operational Flow Bottom Sheet / Expandable Customer Form -->
+<div class="fixed inset-0 z-50 flex flex-col justify-end bg-inverse-surface/40 backdrop-blur-sm opacity-0 pointer-events-none transition-all duration-300" id="customerModalSheet">
+<div class="w-full bg-surface-container-lowest rounded-t-3xl max-h-[92vh] overflow-y-auto p-margin pb-10 shadow-2xl transform translate-y-full transition-transform duration-300 ease-out flex flex-col gap-4">
+<!-- Drawer Handle Indicator -->
+<div class="w-12 h-1.5 rounded-full bg-surface-variant mx-auto -mt-1 mb-1"></div>
+<!-- Header with Modal Intent -->
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface" id="modalTitle">Add Customer</h2>
+<p class="font-caption text-caption text-on-surface-variant">Rapid counter intake &amp; laundry profile</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-variant" id="closeModalBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Form Inputs Group -->
+<form class="flex flex-col gap-3.5" id="customerForm" onsubmit="event.preventDefault(); saveCustomer();">
+<!-- Field 1: Full Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between">
+<span>Customer Name</span>
+<span class="text-caption font-normal text-outline">Required</span>
+</label>
+<input class="w-full h-12 px-3.5 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-default text-body-default focus:outline-none focus:ring-2 focus:ring-primary" id="custNameInput" placeholder="e.g. Sarah Jenkins" required="" type="text">
+</div>
+<!-- Field 2: Mobile Phone -->
+<div class="flex flex-col gap-1">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between">
+<span>Mobile Phone</span>
+<span class="text-caption font-normal text-outline">SMS Notifications</span>
+</label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[18px]">phone</span>
+</span>
+<input class="w-full h-12 pl-10 pr-3.5 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-default text-body-default focus:outline-none focus:ring-2 focus:ring-primary" id="custPhoneInput" placeholder="(555) 000-0000" required="" type="tel">
+</div>
+</div>
+<!-- Field 3: Street Address & Delivery Zone -->
+<div class="grid grid-cols-3 gap-2">
+<div class="col-span-2 flex flex-col gap-1">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Street Address</label>
+<input class="w-full h-12 px-3 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-default text-body-default focus:outline-none focus:ring-2 focus:ring-primary" id="custAddressInput" placeholder="742 Evergreen Terr, Apt 4B" type="text">
+</div>
+<div class="col-span-1 flex flex-col gap-1">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Route Zone</label>
+<select class="w-full h-12 px-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-default text-body-default focus:outline-none focus:ring-2 focus:ring-primary" id="custZoneInput">
+<option value="Zone A">Zone A</option>
+<option value="Zone B">Zone B</option>
+<option value="Zone C">Zone C</option>
+<option value="Zone D">Zone D</option>
+</select>
+</div>
+</div>
+<!-- Tier Selection Radio Pills -->
+<div class="flex flex-col gap-1.5 mt-1">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Customer Segment Tier</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="flex flex-col items-center justify-center p-2.5 rounded-xl bg-surface-container-low cursor-pointer has-[:checked]:bg-primary-container/20 has-[:checked]:text-on-primary-container transition-all text-on-surface-variant font-label-sm text-label-sm">
+<input checked="" class="sr-only" name="custTier" type="radio" value="regular">
+<span class="material-symbols-outlined text-[20px] mb-0.5">person</span>
+<span>Regular</span>
+</label>
+<label class="flex flex-col items-center justify-center p-2.5 rounded-xl bg-surface-container-low cursor-pointer has-[:checked]:bg-primary-container/20 has-[:checked]:text-on-primary-container transition-all text-on-surface-variant font-label-sm text-label-sm">
+<input class="sr-only" name="custTier" type="radio" value="vip">
+<span class="material-symbols-outlined text-[20px] mb-0.5 text-primary">star</span>
+<span class="font-semibold">VIP Club</span>
+</label>
+<label class="flex flex-col items-center justify-center p-2.5 rounded-xl bg-surface-container-low cursor-pointer has-[:checked]:bg-primary-container/20 has-[:checked]:text-on-primary-container transition-all text-on-surface-variant font-label-sm text-label-sm">
+<input class="sr-only" name="custTier" type="radio" value="commercial">
+<span class="material-symbols-outlined text-[20px] mb-0.5 text-tertiary">store</span>
+<span>Commercial</span>
+</label>
+</div>
+</div>
+<!-- Buttons Stack -->
+<div class="flex flex-col gap-2.5 mt-4">
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary hover:bg-opacity-95 active:scale-[0.99] font-label-lg text-label-lg font-bold shadow-md transition-all flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span id="saveBtnText">Save Customer Record</span>
+</button>
+<button class="w-full h-11 rounded-xl bg-surface-container-low hover:bg-surface-variant text-on-surface-variant font-label-lg text-label-lg font-semibold transition-colors" id="cancelModalBtn" type="button">
+            Cancel
+          </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  // Ensure Customers tab is active in the App Shell
+  document.addEventListener('DOMContentLoaded', () => {
+    const bottomNavLinks = document.querySelectorAll('nav a');
+    bottomNavLinks.forEach(link => {
+      if (link.getAttribute('data-path') === 'customers') {
+        link.classList.remove('text-on-surface-variant');
+        link.classList.add('text-primary');
+        const icon = link.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.style.fontVariationSettings = "'FILL' 1";
+        }
+      } else {
+        link.classList.remove('text-primary');
+        link.classList.add('text-on-surface-variant');
+      }
+    });
+
+    // Wire Edit Button triggers from cards
+    document.querySelectorAll('.edit-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const card = e.target.closest('.customer-card');
+        const name = card.dataset.name;
+        const phone = card.dataset.phone;
+        const address = card.dataset.address;
+        const zone = card.dataset.zone;
+        const tier = card.dataset.tier;
+        editCustomer(name, phone, address, zone, tier);
+      });
+    });
+  });
+
+  // Modal Handlers
+  const modalSheet = document.getElementById('customerModalSheet');
+  const openNewBtn = document.getElementById('openNewCustomerModal');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const cancelModalBtn = document.getElementById('cancelModalBtn');
+  const modalTitle = document.getElementById('modalTitle');
+  const saveBtnText = document.getElementById('saveBtnText');
+  const custNameInput = document.getElementById('custNameInput');
+  const custPhoneInput = document.getElementById('custPhoneInput');
+  const custAddressInput = document.getElementById('custAddressInput');
+  const custZoneInput = document.getElementById('custZoneInput');
+
+  function openModal(isEdit = false) {
+    modalSheet.classList.remove('opacity-0', 'pointer-events-none');
+    modalSheet.querySelector('div').classList.remove('translate-y-full');
+    if (!isEdit) {
+      modalTitle.innerText = "Add New Customer";
+      saveBtnText.innerText = "Save Customer Record";
+      document.getElementById('customerForm').reset();
+    }
+  }
+
+  function closeModal() {
+    modalSheet.classList.add('opacity-0', 'pointer-events-none');
+    modalSheet.querySelector('div').classList.add('translate-y-full');
+    closeAllCardMenus();
+  }
+
+  openNewBtn.addEventListener('click', () => openModal(false));
+  closeModalBtn.addEventListener('click', closeModal);
+  cancelModalBtn.addEventListener('click', closeModal);
+
+  // Edit Customer Intent helper
+  window.editCustomer = function(name, phone, address, zone, tier) {
+    openModal(true);
+    modalTitle.innerText = `Edit: ${name}`;
+    saveBtnText.innerText = "Update Customer Details";
+    custNameInput.value = name || '';
+    custPhoneInput.value = phone || '';
+    custAddressInput.value = address || '';
+    custZoneInput.value = zone || 'Zone A';
+
+    const radios = document.querySelectorAll('input[name="custTier"]');
+    radios.forEach(r => {
+      if (r.value === tier) r.checked = true;
+    });
+  };
+
+  window.saveCustomer = function() {
+    const name = custNameInput.value;
+    closeModal();
+    showToast(`Saved customer record for ${name}`);
+  };
+
+  // Toast System
+  const toastNotification = document.getElementById('toastNotification');
+  const toastMessage = document.getElementById('toastMessage');
+  let toastTimeout;
+
+  window.showToast = function(msg) {
+    closeAllCardMenus();
+    toastMessage.innerText = msg;
+    toastNotification.classList.remove('opacity-0', 'pointer-events-none', '-translate-y-2');
+    clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(() => {
+      toastNotification.classList.add('opacity-0', 'pointer-events-none', '-translate-y-2');
+    }, 2800);
+  };
+
+  // Delete Card handler
+  window.removeCustomer = function(btn) {
+    const card = btn.closest('.customer-card');
+    if (card) {
+      card.style.opacity = '0';
+      card.style.transform = 'scale(0.95)';
+      card.style.transition = 'all 0.25s ease';
+      setTimeout(() => {
+        card.remove();
+        showToast("Customer archived successfully");
+      }, 250);
+    }
+  };
+
+  // 3-Dots Dropdown menu toggle
+  window.toggleCardMenu = function(menuId) {
+    const target = document.getElementById(menuId);
+    const isHidden = target.classList.contains('hidden');
+    closeAllCardMenus();
+    if (isHidden) {
+      target.classList.remove('hidden');
+    }
+  };
+
+  function closeAllCardMenus() {
+    document.querySelectorAll('[id^="menu-"]').forEach(menu => {
+      menu.classList.add('hidden');
+    });
+  }
+
+  // Close menus on outside tap
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('[id^="menu-"]') && !e.target.closest('button[onclick*="toggleCardMenu"]')) {
+      closeAllCardMenus();
+    }
+  });
+
+  // Search Filter Micro-Interaction
+  const searchInput = document.getElementById('customerSearchInput');
+  const clearSearchBtn = document.getElementById('clearSearchBtn');
+  const customerCards = document.querySelectorAll('.customer-card');
+
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase().trim();
+    if (query.length > 0) {
+      clearSearchBtn.classList.remove('hidden');
+    } else {
+      clearSearchBtn.classList.add('hidden');
+    }
+
+    customerCards.forEach(card => {
+      const name = card.dataset.name.toLowerCase();
+      const phone = card.dataset.phone.toLowerCase();
+      const address = card.dataset.address.toLowerCase();
+      if (name.includes(query) || phone.includes(query) || address.includes(query)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+
+  clearSearchBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    clearSearchBtn.classList.add('hidden');
+    customerCards.forEach(card => card.style.display = 'block');
+  });
+
+  // Horizontal Filter Chips logic
+  const filterChips = document.querySelectorAll('.filter-chip');
+  filterChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      filterChips.forEach(c => {
+        c.classList.remove('bg-primary', 'text-on-primary');
+        c.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+      chip.classList.add('bg-primary', 'text-on-primary');
+      chip.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+
+      const filterVal = chip.dataset.filter;
+      customerCards.forEach(card => {
+        if (filterVal === 'all') {
+          card.style.display = 'block';
+        } else if (filterVal === 'vip' && card.dataset.tier === 'vip') {
+          card.style.display = 'block';
+        } else if (filterVal === 'commercial' && card.dataset.tier === 'commercial') {
+          card.style.display = 'block';
+        } else if (filterVal === 'unpaid' && card.dataset.hasUnpaid === 'true') {
+          card.style.display = 'block';
+        } else if (filterVal === 'active' && card.dataset.hasActive === 'true') {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(15,23,42,0.06)]" data-active-classes="text-primary"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-[11px] leading-tight">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[22px]">local_laundry_service</span><span class="font-label-sm text-[11px] leading-tight">Orders</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-sm text-[11px] leading-tight">Services</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="customers" href="#"><span class="material-symbols-outlined text-[22px]">group</span><span class="font-label-sm text-[11px] leading-tight">Customers</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[22px]">settings</span><span class="font-label-sm text-[11px] leading-tight">Settings</span></a></div></nav></body></html>

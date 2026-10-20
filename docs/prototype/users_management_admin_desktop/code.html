@@ -1,0 +1,870 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"tertiary-fixed-dim":"#adc6ff","on-tertiary-fixed-variant":"#004395","tertiary-container":"#71a1ff","primary-fixed":"#6ffbbe","on-primary-container":"#00422b","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#6bd8cb","surface-container-high":"#dee9fc","primary":"#006c49","on-surface":"#121c2a","tertiary":"#005ac2","on-surface-variant":"#3c4a42","secondary-fixed":"#89f5e7","inverse-primary":"#4edea3","on-tertiary-container":"#00367a","primary-fixed-dim":"#4edea3","on-error":"#ffffff","on-tertiary-fixed":"#001a42","on-primary-fixed":"#002113","error":"#ba1a1a","surface-bright":"#f8f9ff","on-secondary-fixed":"#00201d","background":"#f8f9ff","on-primary-fixed-variant":"#005236","on-secondary":"#ffffff","surface-container-highest":"#d9e3f6","on-tertiary":"#ffffff","surface":"#f8f9ff","inverse-surface":"#27313f","on-error-container":"#93000a","surface-dim":"#d0dbed","surface-tint":"#006c49","outline":"#6c7a71","surface-container-low":"#eff4ff","surface-variant":"#d9e3f6","outline-variant":"#bbcabf","error-container":"#ffdad6","tertiary-fixed":"#d8e2ff","on-primary":"#ffffff","on-background":"#121c2a","secondary-container":"#86f2e4","surface-container":"#e6eeff","inverse-on-surface":"#eaf1ff","on-secondary-fixed-variant":"#005049","secondary":"#006a61","primary-container":"#10b981","on-secondary-container":"#006f66"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1rem","space-xl":"2rem","space-lg":"1.5rem","margin":"1rem","space-md":"1rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"headline-sm":["Inter"],"label-lg":["Inter"],"body-default":["Inter"],"caption":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"headline-md":["Inter"],"display-lg":["Inter"],"label-sm":["Inter"]},"fontSize":{"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-default":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"caption":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"500"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-default text-body-default text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between p-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><img alt="Brand logo. - Primary color: #10b981
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WguZ6HSie_QbJP3lxKgQIxxK2jpnTO3-diolSmpJAm5Urnku6JWMqN3_PkM9csN5MQ-uY2hvWEU0wiqvUAfE8jvqs5fPE_zSrgkNk4vGQefZyjBNwxxT8X1ZlJvs44u1ZQKcA_OEQ28NCI4ZJi4unrY-eJTVNBNNVFH8aBpZB2IOclp0kIyrjrcZMl0cIUYhSTnMafTaxEt35V2Av8j-arteDZ5Z6ClPBwFthhljqnNoDob9HvViUrgQU"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface">WashFlow</span><span class="font-label-sm text-label-sm text-on-surface-variant">Counter Ops v2.4</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-[20px]">local_laundry_service</span><span class="font-label-lg text-label-lg">Orders</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="customers" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Customers</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="services-and-pricing" href="#"><span class="material-symbols-outlined text-[20px]">sell</span><span class="font-label-lg text-label-lg">Services &amp; Pricing</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span class="font-label-lg text-label-lg">Reports</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div><div class="bg-surface-container-lowest rounded-xl p-space-sm flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UW6-UEpsSc8YIV6WuiXMhJTNtIeEPaaZT1jVH2DvBOBsAkE9cOVQ2IG0HTqKSgPa07U-qo07O2nXwP3YE9bj5DB4DoIAlOkw8sFRarIIWl4dSRaqwa6c2YnJGURztRYn3uvAeJ2O2t1REIuntnRfIHxHsNmnvgc4gj1PFegS2bLhkSEcV9eLr29t4DE0AHl_8OCx2T_L0lmttoujk4fpMEG962mkLfDf47pIxExEK3ijAK3nuGl8SOZw"><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-on-surface truncate">Elena Rostova</span><span class="font-caption text-caption text-on-surface-variant truncate">Counter Lead</span></div></div><button aria-label="Account Actions" class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high p-space-xs rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">unfold_more</span></button></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-lowest rounded-lg font-body-default text-body-default text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Search order #, customer name, tag, phone..." type="search"></div><button class="flex items-center gap-space-xs px-space-sm h-10 bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg font-label-lg text-label-lg transition-colors whitespace-nowrap shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">barcode_scanner</span><span>Scan</span></button></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high rounded-full"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="font-label-sm text-label-sm text-on-surface">Station 02 • Active</span></div><button aria-label="Notifications" class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></button><button class="flex items-center gap-space-xs h-10 px-space-md bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary rounded-lg font-label-lg text-label-lg transition-colors whitespace-nowrap" type="button"><span class="material-symbols-outlined text-[20px]">add</span><span>New Order Intake</span></button></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-[1440px] mx-auto w-full space-y-space-lg">
+<!-- Breadcrumb & Top Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs font-caption text-caption text-on-surface-variant">
+<span class="hover:text-on-surface cursor-pointer transition-colors">Settings</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-on-surface cursor-pointer transition-colors">Admin &amp; Access</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-body-lg">Users Management</span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Staff &amp; User Management</h1>
+<span class="px-space-xs py-0.5 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm rounded-full">HQ Shop #104</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Manage terminal operator accounts, role permissions, active session tokens, and security credentials.</p>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs h-10 px-space-md bg-surface-container-lowest text-on-surface hover:bg-surface-container-high rounded-lg font-label-lg text-label-lg transition-colors shadow-sm" id="btnOpenExport">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Roster</span>
+</button>
+<button class="flex items-center gap-space-xs h-10 px-space-md bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary rounded-lg font-label-lg text-label-lg transition-colors shadow-sm" id="btnOpenAddModal">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Add New Staff User</span>
+</button>
+</div>
+</div>
+<!-- Metric / Stat Bento Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Total Staff -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Total Staff</span>
+<span class="font-display-lg text-display-lg text-on-surface mt-1">12</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container mr-1.5"></span>9 Active
+          </span>
+<span class="text-on-surface-variant">• 3 Inactive</span>
+</div>
+</div>
+<!-- Counter Leads -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Counter Leads</span>
+<span class="font-display-lg text-display-lg text-on-surface mt-1">3</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">point_of_sale</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-primary font-body-lg">Full register authority</span>
+<span>• Level 2 tier</span>
+</div>
+</div>
+<!-- Active Terminal Sessions -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Active Terminals</span>
+<span class="font-display-lg text-display-lg text-on-surface mt-1">4 <span class="font-headline-sm text-headline-sm text-on-surface-variant font-normal">Online</span></span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">devices</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="text-on-surface">Stations 01, 02, Bay B &amp; Mgr-Desk</span>
+</div>
+</div>
+<!-- Security / Alerts -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Password Resets</span>
+<span class="font-display-lg text-display-lg text-error mt-1">1 <span class="font-headline-sm text-headline-sm text-error font-normal">Pending</span></span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">key</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Tyler Brooks (Machine Bay)</span>
+<button class="text-error font-body-lg hover:underline" onclick="openResetModal('Tyler Brooks', 'Wash &amp; Dry Tech', 'Station 02')">Process</button>
+</div>
+</div>
+</div>
+<!-- Filter & Control Deck -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search bar -->
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-11 pl-10 pr-space-md bg-surface-container-low rounded-lg font-body-default text-body-default text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="staffSearchInput" placeholder="Search by staff name, username, employee ID..." type="text">
+</div>
+<!-- Filter Chips & Status Switch -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg">
+<button class="filter-role-btn px-space-sm py-1.5 rounded-md font-label-sm text-label-sm bg-surface-container-lowest text-on-surface shadow-sm transition-all" data-role="all">All Roles</button>
+<button class="filter-role-btn px-space-sm py-1.5 rounded-md font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" data-role="Counter Lead">Counter Lead</button>
+<button class="filter-role-btn px-space-sm py-1.5 rounded-md font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" data-role="Store Manager">Store Manager</button>
+<button class="filter-role-btn px-space-sm py-1.5 rounded-md font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" data-role="Wash &amp; Dry Tech">Wash Tech</button>
+<button class="filter-role-btn px-space-sm py-1.5 rounded-md font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" data-role="Intake Associate">Intake</button>
+</div>
+<!-- Status Dropdown -->
+<div class="relative">
+<button class="flex items-center gap-space-xs h-11 px-space-sm bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded-lg transition-colors" id="statusFilterBtn">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">filter_alt</span>
+<span>Status: <strong class="font-body-lg">All (12)</strong></span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+<div class="h-6 w-[1px] bg-surface-container-high mx-1 hidden sm:block"></div>
+<button class="flex items-center gap-space-xs h-11 px-space-sm bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm rounded-lg transition-colors" id="quickTerminalAuditBtn" title="Audit terminal connections">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Security Audit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Staff Accounts Directory Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Registered Terminal Operators</span>
+<span class="px-space-xs py-0.5 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded-md">6 Shown</span>
+</div>
+<div class="flex items-center gap-space-xs font-caption text-caption text-on-surface-variant">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Sync Real-Time Active</span>
+</div>
+</div>
+<!-- Responsive Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-default text-body-default text-on-surface" id="staffDirectoryTable">
+<thead class="bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<tr>
+<th class="py-space-sm px-space-md" scope="col">Staff Member</th>
+<th class="py-space-sm px-space-md" scope="col">ID &amp; Terminal Handle</th>
+<th class="py-space-sm px-space-md" scope="col">Assigned Role</th>
+<th class="py-space-sm px-space-md" scope="col">Station Access</th>
+<th class="py-space-sm px-space-md" scope="col">Status</th>
+<th class="py-space-sm px-space-md" scope="col">Last Activity</th>
+<th class="py-space-sm px-space-md text-right" scope="col">Quick Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low" id="staffTableBody">
+<!-- 1. Elena Rostova -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Portrait photo of Elena Rostova, counter operations lead at WashFlow laundry service, clean lit modern POS background, wearing teal polo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkKmQS3aKcjuws67fraBCaiIlbb74VdFfiCtXnNQk1lfTUsvj3Sa9Fg2hVGQNDuzpaHTqVCMmypbs-RDToRj9pOQsEVvrPkGbBKtlPHHa1L9FzacfXWeiqajjGynuycBS5QXtXy66tOYShSCUWMFbyaFUwt65zycxVjHFuEeBQoAl3RnIETMzhL_DMdPAH86GT3M7cUIUy3LgDvZ8k_4cqETljwXtsU2-1jDkLnlTBRjAIUA3ZPMdx">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Elena Rostova</span>
+<span class="font-caption text-caption text-on-surface-variant">elena.rostova@washflow.com</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col font-caption">
+<span class="font-body-lg text-on-surface">@elena.r</span>
+<span class="text-on-surface-variant font-label-sm">#STF-014</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">storefront</span>
+                  Counter Lead
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-sm text-label-sm text-on-surface px-2 py-1 bg-surface-container-high rounded">Station 01 • Front Counter</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                  Active
+                </span>
+</td>
+<td class="py-space-md px-space-md font-caption text-caption text-on-surface-variant">
+<span class="text-on-surface font-body-lg">Today, 14:28</span>
+<span class="block text-primary">Station 01 POS (Current)</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-md transition-colors" onclick="openEditModal('Elena Rostova', 'elena.r', 'Counter Lead', 'Station 01', 'elena.rostova@washflow.com', '+1 (555) 234-8901')" title="Edit User">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high rounded-md transition-colors" onclick="openResetModal('Elena Rostova', 'Counter Lead', 'Station 01')" title="Reset Terminal Key">
+<span class="material-symbols-outlined text-[18px]">vpn_key</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-error hover:bg-surface-container-high rounded-md transition-colors" onclick="openDeactivateModal('Elena Rostova', '@elena.r', '#STF-014')" title="Deactivate">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- 2. Marcus Vance -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Close up professional headshot of Marcus Vance, shop general manager in crisp white collared shirt with smart watch, subtle clean bokeh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4Zciu0u1BVGFGkcGBRccGKQG5vGyXVB6avPAIF1gzWnIN-C6_wgIfsZp0zGHKZEIP-UcHgPOhv94ZL6zRUEv5YWS6I0ODuvZEgWUeotZflYiGkAJw2G0nV87zB3s6CQff-D3LsQ0XjOBJ21N4PjGqql--yTljPL6pGu3Vqi4r7KMcaqJov3eCDtFj5LeOJrD3bGml17tcZP9qnwB4LDFMQYwGSRYM7scF3AbiVyVlRbRRxw_4r_Lv">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Marcus Vance</span>
+<span class="font-caption text-caption text-on-surface-variant">m.vance@washflow.com</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col font-caption">
+<span class="font-body-lg text-on-surface">@marcus.v</span>
+<span class="text-on-surface-variant font-label-sm">#STF-001</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+                  Store Manager
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-sm text-label-sm text-on-surface px-2 py-1 bg-surface-container-high rounded">All Terminals • Admin Root</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                  Active
+                </span>
+</td>
+<td class="py-space-md px-space-md font-caption text-caption text-on-surface-variant">
+<span class="text-on-surface font-body-lg">Today, 08:00</span>
+<span class="block">Terminal Mgr-Desk</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-md transition-colors" onclick="openEditModal('Marcus Vance', 'marcus.v', 'Store Manager', 'All Terminals', 'm.vance@washflow.com', '+1 (555) 431-7788')" title="Edit User">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high rounded-md transition-colors" onclick="openResetModal('Marcus Vance', 'Store Manager', 'Manager Terminal')" title="Reset Terminal Key">
+<span class="material-symbols-outlined text-[18px]">vpn_key</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-error hover:bg-surface-container-high rounded-md transition-colors" onclick="openDeactivateModal('Marcus Vance', '@marcus.v', '#STF-001')" title="Deactivate">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- 3. Tyler Brooks -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+                    TB
+                  </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface">Tyler Brooks</span>
+<span class="px-1 py-0.2 bg-error-container text-error text-[10px] font-bold rounded">Reset Req</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">t.brooks@washflow.com</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col font-caption">
+<span class="font-body-lg text-on-surface">@tyler.b</span>
+<span class="text-on-surface-variant font-label-sm">#STF-022</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-md bg-surface-container-high text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">local_laundry_service</span>
+                  Wash &amp; Dry Tech
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-sm text-label-sm text-on-surface px-2 py-1 bg-surface-container-high rounded">Machine Bay B • Dryer Bank</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Active
+                </span>
+</td>
+<td class="py-space-md px-space-md font-caption text-caption text-on-surface-variant">
+<span class="text-on-surface font-body-lg">2h ago</span>
+<span class="block">Machine Bay Tablet</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-md transition-colors" onclick="openEditModal('Tyler Brooks', 'tyler.b', 'Wash &amp; Dry Tech', 'Machine Bay B', 't.brooks@washflow.com', '+1 (555) 902-1200')" title="Edit User">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 text-error bg-error-container hover:bg-error hover:text-on-error rounded-md transition-colors" onclick="openResetModal('Tyler Brooks', 'Wash &amp; Dry Tech', 'Station 02')" title="Emergency Reset Pending">
+<span class="material-symbols-outlined text-[18px]">vpn_key</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-error hover:bg-surface-container-high rounded-md transition-colors" onclick="openDeactivateModal('Tyler Brooks', '@tyler.b', '#STF-022')" title="Deactivate">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- 4. Chloe Bennett -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Portrait of Chloe Bennett, intake associate at WashFlow laundromat counter smiling with tidy store shelf in background, natural bright daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlBcGI7H1YvgJ9SdXcbtNIgn8UT-UeJkqCQVq66WYFVOPZ7EG6tvRSxlEmvuZKIdJF4Hv0PURbd0IBVMwsmiKHdmcYeM3xF9mR1MFlQNCFDjPko8bTTLgwSQFq4Fa07fVP9n3dUYm1cbFSnVAmSbcfZTWW2RYflNW49HHNezuRTjAOz5zoRAHLLpAU42YhYfC8MmQ7VEAdQo-kxtOVQJM-Vkb1WajQs--_kPfO7cPvCuzJRQWWwrek">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Chloe Bennett</span>
+<span class="font-caption text-caption text-on-surface-variant">c.bennett@washflow.com</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col font-caption">
+<span class="font-body-lg text-on-surface">@chloe.b</span>
+<span class="text-on-surface-variant font-label-sm">#STF-035</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">assignment_turned_in</span>
+                  Intake Associate
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-sm text-label-sm text-on-surface px-2 py-1 bg-surface-container-high rounded">Station 02 • Express Scales</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Active
+                </span>
+</td>
+<td class="py-space-md px-space-md font-caption text-caption text-on-surface-variant">
+<span class="text-on-surface font-body-lg">Yesterday, 17:45</span>
+<span class="block">Station 02</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-md transition-colors" onclick="openEditModal('Chloe Bennett', 'chloe.b', 'Intake Associate', 'Station 02', 'c.bennett@washflow.com', '+1 (555) 774-4422')" title="Edit User">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high rounded-md transition-colors" onclick="openResetModal('Chloe Bennett', 'Intake Associate', 'Station 02')" title="Reset Terminal Key">
+<span class="material-symbols-outlined text-[18px]">vpn_key</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-error hover:bg-surface-container-high rounded-md transition-colors" onclick="openDeactivateModal('Chloe Bennett', '@chloe.b', '#STF-035')" title="Deactivate">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- 5. Darren Hayes (Inactive / Suspended) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group bg-surface-container-low/20">
+<td class="py-space-md px-space-md opacity-80">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+                    DH
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Darren Hayes</span>
+<span class="font-caption text-caption text-on-surface-variant">d.hayes@washflow.com</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md opacity-80">
+<div class="flex flex-col font-caption">
+<span class="font-body-lg text-on-surface">@darren.h</span>
+<span class="text-on-surface-variant font-label-sm">#STF-019</span>
+</div>
+</td>
+<td class="py-space-md px-space-md opacity-80">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+                  Delivery Driver
+                </span>
+</td>
+<td class="py-space-md px-space-md opacity-80">
+<span class="font-label-sm text-label-sm text-on-surface-variant px-2 py-1 bg-surface-container-high rounded">Handheld Scanner #4</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-error-container text-error font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  Suspended
+                </span>
+</td>
+<td class="py-space-md px-space-md font-caption text-caption text-on-surface-variant opacity-80">
+<span class="text-on-surface font-body-lg">14 days ago</span>
+<span class="block">Route Van 02</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-space-xs py-1 bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded hover:bg-primary-container hover:text-on-primary-container transition-colors" title="Re-enable Access">Re-activate</button>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-md transition-colors" onclick="openDeactivateModal('Darren Hayes', '@darren.h', '#STF-019')" title="Review Audit">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- 6. Sophie Patel -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+                    SP
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Sophie Patel</span>
+<span class="font-caption text-caption text-on-surface-variant">s.patel@washflow.com</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col font-caption">
+<span class="font-body-lg text-on-surface">@sophie.p</span>
+<span class="text-on-surface-variant font-label-sm">#STF-041</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-md bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">school</span>
+                  Trainee / Intake
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-sm text-label-sm text-on-surface px-2 py-1 bg-surface-container-high rounded">Station 01 (Supervised)</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                  Active
+                </span>
+</td>
+<td class="py-space-md px-space-md font-caption text-caption text-on-surface-variant">
+<span class="text-on-surface font-body-lg">Today, 11:15</span>
+<span class="block">Station 01 Intake</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-md transition-colors" onclick="openEditModal('Sophie Patel', 'sophie.p', 'Intake Associate', 'Station 01', 's.patel@washflow.com', '+1 (555) 332-9011')" title="Edit User">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-tertiary hover:bg-surface-container-high rounded-md transition-colors" onclick="openResetModal('Sophie Patel', 'Trainee', 'Station 01')" title="Reset Terminal Key">
+<span class="material-symbols-outlined text-[18px]">vpn_key</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-error hover:bg-surface-container-high rounded-md transition-colors" onclick="openDeactivateModal('Sophie Patel', '@sophie.p', '#STF-041')" title="Deactivate">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Table Footer -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<span class="font-caption text-caption text-on-surface-variant">
+          Showing <strong class="font-body-lg text-on-surface">1–6</strong> of <strong class="font-body-lg text-on-surface">12</strong> operators registered across 3 physical intake stations
+        </span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm h-9 bg-surface-container-low text-on-surface-variant/50 rounded font-label-sm text-label-sm cursor-not-allowed" disabled="">Previous</button>
+<span class="px-space-sm h-9 flex items-center justify-center bg-primary-container text-on-primary-container rounded font-label-sm text-label-sm font-bold">1</span>
+<button class="px-space-sm h-9 bg-surface-container-low hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">2</button>
+<button class="px-space-sm h-9 bg-surface-container-low hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Next</button>
+</div>
+</div>
+</div>
+<!-- Security Posture & Terminal Node Overview Card -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Left 2 Cols: Terminal Authentication Map -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Station Security &amp; Terminal Binding</h2>
+<p class="font-caption text-caption text-on-surface-variant">Active hardware locks and physical drawer authentication policy.</p>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">lock_reset</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">Station 01 • Front POS</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="mt-2 text-on-surface-variant font-caption text-caption">
+<div>Bound to: <span class="font-body-lg text-on-surface">Elena Rostova</span></div>
+<div>Drawer auto-lock: <span class="text-on-surface">90s idle</span></div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">Station 02 • Scales</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="mt-2 text-on-surface-variant font-caption text-caption">
+<div>Bound to: <span class="font-body-lg text-on-surface">Tyler Brooks</span></div>
+<div>Drawer auto-lock: <span class="text-on-surface">120s idle</span></div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">Manager Office POS</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="mt-2 text-on-surface-variant font-caption text-caption">
+<div>Bound to: <span class="font-body-lg text-on-surface">Marcus Vance</span></div>
+<div>Override Auth: <span class="text-primary font-bold">Enabled</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 1 Col: Role Privileges Quick Reference -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Role Matrix Quick Ref</h2>
+<ul class="font-caption text-caption space-y-2 text-on-surface-variant">
+<li class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-label-sm text-on-surface">Store Manager</span>
+<span class="text-primary font-bold">All + Void/Refunds</span>
+</li>
+<li class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-label-sm text-on-surface">Counter Lead</span>
+<span>Intake, Checkout, Till Settle</span>
+</li>
+<li class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-label-sm text-on-surface">Wash &amp; Dry Tech</span>
+<span>Batch Moves, Weight Update</span>
+</li>
+<li class="flex items-center justify-between py-1 bg-surface-container-low/50 px-2 rounded">
+<span class="font-label-sm text-on-surface">Intake Associate</span>
+<span>Order Intake, Tag Scanning</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- MODAL: ADD / EDIT STAFF USER -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden items-center justify-center p-4" id="userFormModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="modalTitle">Add New Staff Account</h3>
+<p class="font-caption text-caption text-on-surface-variant">Assign POS roles and security tokens</p>
+</div>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded-md" onclick="closeModal('userFormModal')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Form Body -->
+<form class="p-space-lg space-y-space-md" id="staffAccountForm" onsubmit="event.preventDefault(); saveUserAccount();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Full Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-lg text-label-lg text-on-surface">Full Legal Name</label>
+<input class="h-11 px-space-sm bg-surface-container-low rounded-lg font-body-default text-body-default text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="inputFullName" placeholder="e.g. Liam Sterling" required="" type="text">
+</div>
+<!-- Username -->
+<div class="flex flex-col gap-1">
+<label class="font-label-lg text-label-lg text-on-surface">Terminal Handle / Username</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 font-label-sm text-on-surface-variant">@</span>
+<input class="w-full h-11 pl-7 pr- space-sm bg-surface-container-low rounded-lg font-body-default text-body-default text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="inputUsername" placeholder="liam.s" required="" type="text">
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Role Selection -->
+<div class="flex flex-col gap-1">
+<label class="font-label-lg text-label-lg text-on-surface">Assigned Role</label>
+<select class="h-11 px-space-sm bg-surface-container-low rounded-lg font-body-default text-body-default text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="selectRole">
+<option value="Counter Lead">Counter Lead (Standard Till)</option>
+<option value="Store Manager">Store Manager (Admin Full)</option>
+<option value="Wash &amp; Dry Tech">Wash &amp; Dry Technician</option>
+<option value="Intake Associate">Intake Associate</option>
+<option value="Delivery Driver">Delivery Driver</option>
+</select>
+</div>
+<!-- Station Assignment -->
+<div class="flex flex-col gap-1">
+<label class="font-label-lg text-label-lg text-on-surface">Assigned Terminal Station</label>
+<select class="h-11 px-space-sm bg-surface-container-low rounded-lg font-body-default text-body-default text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="selectStation">
+<option value="Station 01">Station 01 (Front Register)</option>
+<option value="Station 02">Station 02 (Drop-off Express)</option>
+<option value="Machine Bay B">Machine Bay B (Tech Bay)</option>
+<option value="All Terminals">All Terminals (Roaming)</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Email -->
+<div class="flex flex-col gap-1">
+<label class="font-label-lg text-label-lg text-on-surface">Staff Email</label>
+<input class="h-11 px-space-sm bg-surface-container-low rounded-lg font-body-default text-body-default text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="inputEmail" placeholder="liam.s@washflow.com" required="" type="email">
+</div>
+<!-- Phone -->
+<div class="flex flex-col gap-1">
+<label class="font-label-lg text-label-lg text-on-surface">Mobile Phone (Emergency OTP)</label>
+<input class="h-11 px-space-sm bg-surface-container-low rounded-lg font-body-default text-body-default text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="inputPhone" placeholder="+1 (555) 019-2831" type="tel">
+</div>
+</div>
+<!-- Temporary PIN / Password Generator -->
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface">Station Security PIN / Passcode</label>
+<button class="text-primary hover:text-on-surface font-label-sm text-label-sm inline-flex items-center gap-1" onclick="generateTemporaryPIN()" type="button">
+<span class="material-symbols-outlined text-[14px]">autorenew</span>
+<span>Generate Random 6-Digit PIN</span>
+</button>
+</div>
+<div class="flex gap-2">
+<input class="w-full h-11 px-space-sm bg-surface-container-lowest font-body-lg text-on-surface tracking-widest text-center rounded-lg shadow-inner focus:outline-none" id="inputPIN" type="text" value="849201">
+<button class="px-3 bg-surface-container-lowest hover:bg-surface-container-high rounded-lg text-on-surface-variant hover:text-on-surface" onclick="copyPINToClipboard()" title="Copy PIN" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<input checked="" class="w-4 h-4 rounded text-primary-container accent-primary cursor-pointer" id="checkRequireReset" type="checkbox">
+<label class="font-caption text-caption text-on-surface-variant cursor-pointer" for="checkRequireReset">Require password reset upon first station login</label>
+</div>
+</div>
+<!-- Modal Footer Actions -->
+<div class="pt-space-sm flex items-center justify-end gap-space-sm">
+<button class="h-11 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded-lg transition-colors" onclick="closeModal('userFormModal')" type="button">
+            Cancel
+          </button>
+<button class="h-11 px-space-md bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary font-label-lg text-label-lg rounded-lg transition-colors shadow-sm" type="submit">
+            Save &amp; Create Account
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL: RESET PASSWORD CONFIRMATION -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden items-center justify-center p-4" id="resetPasswordModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+<div class="p-space-lg text-center space-y-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-tertiary mx-auto flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">key</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Reset Station PIN &amp; Password?</h3>
+<p class="font-caption text-caption text-on-surface-variant">
+          Reset password for <strong class="text-on-surface" id="resetTargetName">Tyler Brooks</strong> (<span id="resetTargetRole">Wash &amp; Dry Tech</span>)?
+          An emergency temporary 6-digit PIN will be dispatched and printed on the receipt printer for <strong class="text-on-surface" id="resetTargetStation">Station 02</strong>.
+        </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg text-left mt-2">
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Hardware Receipt Slip Trigger</span>
+</div>
+<p class="font-caption text-[11px] text-on-surface-variant mt-0.5">Operator must acknowledge reset on screen before next customer ticket can open.</p>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="h-10 px-space-md bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded-lg transition-colors" onclick="closeModal('resetPasswordModal')">
+          Cancel
+        </button>
+<button class="h-10 px-space-md bg-tertiary text-on-tertiary hover:opacity-95 font-label-lg text-label-lg rounded-lg transition-all shadow-sm" onclick="executeResetAction()">
+          Confirm Reset &amp; Print PIN
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL: DEACTIVATE / SUSPEND ACCOUNT CONFIRMATION -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden items-center justify-center p-4" id="deactivateModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+<div class="p-space-lg text-center space-y-space-sm">
+<div class="w-12 h-12 rounded-full bg-error-container text-error mx-auto flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">gavel</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Deactivate Staff Access?</h3>
+<p class="font-caption text-caption text-on-surface-variant">
+          Deactivate account for <strong class="text-on-surface" id="deactTargetName">Darren Hayes</strong> (<span id="deactTargetHandle">@darren.h</span>)? 
+          Immediate session revocation will instantly disconnect all handheld scanners and counter terminal access.
+        </p>
+<div class="p-space-sm bg-error-container/50 rounded-lg text-error font-caption text-caption text-left flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] flex-shrink-0">warning</span>
+<span>Open orders currently tagged to this operator will revert to Shop General Queue.</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="h-10 px-space-md bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded-lg transition-colors" onclick="closeModal('deactivateModal')">
+          Cancel
+        </button>
+<button class="h-10 px-space-md bg-error text-on-error hover:opacity-90 font-label-lg text-label-lg rounded-lg transition-all shadow-sm" onclick="executeDeactivateAction()">
+          Deactivate User
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Template -->
+<div class="fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-lg shadow-xl font-label-sm text-label-sm flex items-center gap-space-xs transition-opacity duration-300 opacity-0 pointer-events-none" id="toastNotification">
+<span class="material-symbols-outlined text-primary-container text-[18px]" id="toastIcon">check_circle</span>
+<span id="toastMessage">Action completed successfully.</span>
+</div>
+</div>
+<script>
+  // Simple state & modal controllers for micro-interactions
+  function showToast(message, isError = false) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    const toastIcon = document.getElementById('toastIcon');
+    if (!toast) return;
+
+    toastMsg.textContent = message;
+    toastIcon.textContent = isError ? 'error' : 'check_circle';
+    toastIcon.className = isError ? 'material-symbols-outlined text-error text-[18px]' : 'material-symbols-outlined text-primary-container text-[18px]';
+
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0', 'pointer-events-none');
+    }, 3200);
+  }
+
+  function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+  }
+
+  // Open Add User
+  document.getElementById('btnOpenAddModal').addEventListener('click', () => {
+    document.getElementById('modalTitle').textContent = 'Add New Staff Account';
+    document.getElementById('staffAccountForm').reset();
+    generateTemporaryPIN();
+    openModal('userFormModal');
+  });
+
+  // Open Edit User
+  function openEditModal(name, handle, role, station, email, phone) {
+    document.getElementById('modalTitle').textContent = `Edit User: ${name}`;
+    document.getElementById('inputFullName').value = name;
+    document.getElementById('inputUsername').value = handle.replace('@', '');
+    document.getElementById('selectRole').value = role;
+    document.getElementById('selectStation').value = station.includes('Station 01') ? 'Station 01' : station.includes('Station 02') ? 'Station 02' : 'All Terminals';
+    document.getElementById('inputEmail').value = email;
+    document.getElementById('inputPhone').value = phone || '+1 (555) 000-0000';
+    openModal('userFormModal');
+  }
+
+  // Reset PIN Confirmation Flow
+  function openResetModal(name, role, station) {
+    document.getElementById('resetTargetName').textContent = name;
+    document.getElementById('resetTargetRole').textContent = role;
+    document.getElementById('resetTargetStation').textContent = station;
+    openModal('resetPasswordModal');
+  }
+
+  function executeResetAction() {
+    closeModal('resetPasswordModal');
+    showToast('PIN reset ticket sent to Station thermal receipt printer.');
+  }
+
+  // Deactivate Flow
+  function openDeactivateModal(name, handle, id) {
+    document.getElementById('deactTargetName').textContent = name;
+    document.getElementById('deactTargetHandle').textContent = `${handle} (${id})`;
+    openModal('deactivateModal');
+  }
+
+  function executeDeactivateAction() {
+    closeModal('deactivateModal');
+    showToast('Operator sessions revoked and terminal locked.', true);
+  }
+
+  // Save Account
+  function saveUserAccount() {
+    const name = document.getElementById('inputFullName').value;
+    closeModal('userFormModal');
+    showToast(`Staff member "${name}" credentials successfully saved.`);
+  }
+
+  // PIN Utilities
+  function generateTemporaryPIN() {
+    const randomPin = Math.floor(100000 + Math.random() * 900000);
+    const pinField = document.getElementById('inputPIN');
+    if (pinField) pinField.value = randomPin.toString();
+  }
+
+  function copyPINToClipboard() {
+    const pinField = document.getElementById('inputPIN');
+    if (pinField) {
+      navigator.clipboard.writeText(pinField.value);
+      showToast('PIN copied to clipboard: ' + pinField.value);
+    }
+  }
+
+  // Quick Filter simulation
+  const filterBtns = document.querySelectorAll('.filter-role-btn');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => {
+        b.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+      btn.classList.remove('text-on-surface-variant');
+
+      const role = btn.getAttribute('data-role');
+      const rows = document.querySelectorAll('#staffTableBody tr');
+      rows.forEach(row => {
+        if (role === 'all') {
+          row.style.display = '';
+        } else {
+          const text = row.innerText;
+          row.style.display = text.toLowerCase().includes(role.toLowerCase()) ? '' : 'none';
+        }
+      });
+    });
+  });
+
+  // Search filter
+  const searchInput = document.getElementById('staffSearchInput');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase();
+      const rows = document.querySelectorAll('#staffTableBody tr');
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(q) ? '' : 'none';
+      });
+    });
+  }
+
+  // Export roster
+  document.getElementById('btnOpenExport').addEventListener('click', () => {
+    showToast('Exporting roster CSV (WashFlow_Staff_HQ104.csv)...');
+  });
+
+  document.getElementById('quickTerminalAuditBtn').addEventListener('click', () => {
+    showToast('All 4 terminal heartbeats verified: 0 token anomalies found.');
+  });
+</script></main></div></body></html>

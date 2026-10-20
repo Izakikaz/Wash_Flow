@@ -1,0 +1,762 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#00367a", "primary": "#006c49", "surface-container-high": "#dee9fc", "on-primary-fixed": "#002113", "surface-tint": "#006c49", "on-primary-container": "#00422b", "primary-fixed": "#6ffbbe", "secondary": "#006a61", "surface-dim": "#d0dbed", "primary-container": "#10b981", "surface-container-low": "#eff4ff", "on-error": "#ffffff", "surface-container": "#e6eeff", "inverse-surface": "#27313f", "outline-variant": "#bbcabf", "on-error-container": "#93000a", "surface-container-highest": "#d9e3f6", "background": "#f8f9ff", "on-surface-variant": "#3c4a42", "secondary-container": "#86f2e4", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#005236", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed-variant": "#004395", "on-secondary-fixed-variant": "#005049", "tertiary-fixed-dim": "#adc6ff", "tertiary": "#005ac2", "error": "#ba1a1a", "surface": "#f8f9ff", "surface-variant": "#d9e3f6", "on-surface": "#121c2a", "inverse-primary": "#4edea3", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "secondary-fixed": "#89f5e7", "surface-bright": "#f8f9ff", "secondary-fixed-dim": "#6bd8cb", "on-tertiary-fixed": "#001a42", "on-primary": "#ffffff", "on-secondary-fixed": "#00201d", "on-secondary": "#ffffff", "on-secondary-container": "#006f66", "on-background": "#121c2a", "tertiary-fixed": "#d8e2ff", "tertiary-container": "#71a1ff", "outline": "#6c7a71", "primary-fixed-dim": "#4edea3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "gutter": "1rem", "margin": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "headline-sm": ["Inter"], "body-lg": ["Inter"], "display-lg": ["Inter"], "caption": ["Inter"], "headline-md": ["Inter"], "label-lg": ["Inter"], "label-sm": ["Inter"], "body-default": ["Inter"], "headline-lg": ["Inter"] }, "fontSize": { "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "500" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "caption": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-default": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-default text-body-default text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Brand logo. - Primary color: #10b981
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WuDBYBKRgBKiRSgtqiuFPXe1vInuH1K-NRtYpJNTW3FYnFXrrLsbEP_gneGVrs9LwAIasVUH2BIg2MU7LUH5p0bSKYk1EtPIRNvKuUpI25TMCSdXOVtv7ev5cHvlWtYlvNrQ4ypEopwjBFuDkWK1iso0TIpkV5P0NR1DLmSHbnPnMTI7bPPAq11Gtie-4FDI8F9sO74EFMjOS7mWdwldoEMP61m-Cb5ja6pTiBFb66hcrmeeYhuCKkwaY"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none tracking-tight">WashFlow</span><span class="font-caption text-caption text-on-surface-variant leading-none mt-1">Laundry OS</span></div></div><div class="p-space-md mx-space-md my-space-xs rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XhxQ3PH8eZEPu-xJo4n9NSox0TgZz7RTYG3PN3M4X-3K8M5hyp2ti28LgoN8Z2xweT7CqaMONcVne5mTFP--kHrG5QmgZm0noSfCQfj_4vXsh-W6tJVUK2qwwg7frFAAjcHEnYN-cfvCU-WEwyHBxX-mnOn6vpiH01oM3mh000D0wYQhWrvfJobUadVOMANc6CbXw9z0g-0e1mxDLiAoX0qS5cUJYSPf-Az5N61BIXzbn18yI8fkujOw"><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col overflow-hidden"><span class="font-label-lg text-label-lg text-on-surface truncate">Elena Rostova</span><span class="font-caption text-caption text-primary flex items-center gap-1 font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Shift Active</span></div></div></div><nav class="flex flex-col gap-1 px-space-md mt-space-sm" data-active-classes="bg-primary text-on-primary font-semibold shadow-sm"><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-lg text-label-lg">Dashboard</span></div></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="orders" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">local_laundry_service</span><span class="font-label-lg text-label-lg">Orders</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">28</span></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="customers" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Customers</span></div></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="services" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">dry_cleaning</span><span class="font-label-lg text-label-lg">Services</span></div></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">bar_chart_4_bars</span><span class="font-label-lg text-label-lg">Reports</span></div></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="users" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Users</span></div><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-wide">Admin</span></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></div></a></nav></div><div class="p-space-md"><a class="flex items-center gap-space-sm px-space-md h-12 rounded-lg text-error hover:bg-error-container hover:text-on-error-container transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-label-lg text-label-lg font-medium">Logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex-1 max-w-xl pr-space-md"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-default text-body-default focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Search order #, customer name, phone, ticket..." type="text"></div></div><div class="flex items-center gap-space-sm"><button class="h-10 px-space-sm flex items-center gap-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-on-surface-variant font-label-lg text-label-lg transition-colors" title="Scan Garment or Receipt Barcode" type="button"><span class="material-symbols-outlined text-[20px]">barcode_scanner</span><span class="hidden xl:inline">Scan</span></button><button class="relative h-10 w-10 flex items-center justify-center rounded-lg bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-on-surface-variant transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-[1px] bg-surface-container-highest mx-space-xs"></div><button class="h-10 px-space-md flex items-center gap-space-xs rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">add</span><span>New Order Intake</span></button></div></header><main class="flex-1 w-full pt-16 bg-background px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Admin Header & Actions Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm mb-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Admin Overview &amp; Operations</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-tertiary-container font-label-sm text-label-sm tracking-wide">
+          MANAGER ACCESS
+        </span>
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary-container/15 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+          Terminal Hub #01
+        </span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">
+        Live business performance, exception queue, and counter intake metrics for <span class="font-semibold text-on-surface">Today (Oct 24, 2024)</span>
+</p>
+</div>
+<!-- Quick Action Button Group -->
+<div class="flex items-center flex-wrap gap-space-xs sm:gap-space-sm">
+<button class="h-10 px-space-md flex items-center gap-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-lg text-label-lg shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">print</span>
+<span class="hidden sm:inline">Shift Report</span>
+</button>
+<button class="h-10 px-space-md flex items-center gap-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-lg text-label-lg shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">sell</span>
+<span>Add Service</span>
+</button>
+<button class="h-10 px-space-md flex items-center gap-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-lg text-label-lg shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">point_of_sale</span>
+<span>Record Payment</span>
+</button>
+<button class="h-10 px-space-md flex items-center gap-1.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>New Order</span>
+</button>
+</div>
+</div>
+<!-- Top KPI Row (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Today's Sales -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant font-medium uppercase tracking-wider">Today's Sales</span>
+<span class="font-display-lg text-display-lg text-on-surface mt-1 leading-none tracking-tight">$1,428.50</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex flex-col gap-1">
+<div class="flex items-center justify-between font-caption text-caption">
+<span class="text-primary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +14.2% vs y'day
+          </span>
+<span class="text-on-surface-variant font-medium">Split Breakdown</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>Card: <strong class="text-on-surface font-medium">$1,048.50</strong></span>
+<span class="text-outline-variant">•</span>
+<span>Cash: <strong class="text-on-surface font-medium">$380.00</strong></span>
+</div>
+</div>
+</div>
+<!-- Card 2: Orders Today -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant font-medium uppercase tracking-wider">Orders Today</span>
+<span class="font-display-lg text-display-lg text-on-surface mt-1 leading-none tracking-tight">34 Orders</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">local_laundry_service</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex flex-col gap-1">
+<div class="flex items-center justify-between font-caption text-caption">
+<span class="text-on-surface font-medium">28 active in pipeline</span>
+<span class="text-on-surface-variant">6 handed over</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden flex">
+<div class="bg-primary-container h-full" style="width: 82%;"></div>
+<div class="bg-surface-container-high h-full" style="width: 18%;"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant text-right">Peak Volume: 10:00 - 11:30 AM</span>
+</div>
+</div>
+<!-- Card 3: Ready for Pickup -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant font-medium uppercase tracking-wider">Ready for Pickup</span>
+<span class="font-display-lg text-display-lg text-on-surface mt-1 leading-none tracking-tight">14 Orders</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">inventory_2</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex flex-col gap-1">
+<div class="flex items-center justify-between font-caption text-caption">
+<span class="text-on-surface-variant">Avg shelf wait: <strong class="text-on-surface font-semibold">3.2 hrs</strong></span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+            4 Past Promise
+          </span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Bays A-01 through D-04 stocked</span>
+</div>
+</div>
+<!-- Card 4: Outstanding Balance -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant font-medium uppercase tracking-wider">Outstanding Balance</span>
+<span class="font-display-lg text-display-lg text-on-surface mt-1 leading-none tracking-tight">$482.00</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error-container/40 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Across <strong class="text-on-surface font-semibold">9 unpaid orders</strong></span>
+<button class="font-label-sm text-label-sm text-primary hover:text-on-primary-container font-semibold inline-flex items-center gap-0.5" type="button">
+          Review Aging <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Urgent "Needs Attention" Panel -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Needs Attention (Exceptions &amp; Aging)</h2>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-semibold">4 Critical</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Orders ready &gt;3 days or unpaid balances &gt;7 days requiring customer contact or shelf clearance.</p>
+</div>
+</div>
+<button class="self-start md:self-auto h-8 px-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>Batch Action (Notify All)</span>
+</button>
+</div>
+<!-- Alert List Stack -->
+<div class="space-y-2">
+<!-- Row 1 -->
+<div class="group p-space-sm sm:p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-start sm:items-center gap-3 min-w-0">
+<span class="px-2 py-1 rounded bg-error text-on-error font-label-sm text-label-sm font-bold flex-shrink-0">
+            Overdue 4d
+          </span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Order #WF-1012</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-default text-body-default text-on-surface font-medium truncate">Robert Hayes</span>
+<span class="font-caption text-caption text-on-surface-variant">(555) 011-8833</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption mt-0.5">
+<span class="inline-flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[15px] text-outline">shelves</span> Shelf Bay B-02
+              </span>
+<span>•</span>
+<span>Balance: <span class="text-primary font-semibold">$32.50 (Paid)</span></span>
+<span>•</span>
+<span class="text-error font-medium">No pickup response since Monday</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-auto flex-shrink-0">
+<button class="h-8 px-3 rounded-lg bg-surface-container-lowest hover:bg-surface-bright text-on-surface font-label-sm text-label-sm shadow-sm flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">sms</span>
+<span>Resend SMS</span>
+</button>
+<button class="h-8 px-3 rounded-lg bg-surface-container-lowest hover:bg-surface-bright text-on-surface font-label-sm text-label-sm shadow-sm flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">phone</span>
+<span>Call</span>
+</button>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-on-surface transition-colors cursor-pointer">chevron_right</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="group p-space-sm sm:p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-start sm:items-center gap-3 min-w-0">
+<span class="px-2 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex-shrink-0">
+            Unpaid &gt;9d
+          </span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Order #WF-0994</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-default text-body-default text-on-surface font-medium truncate">Linda Kowalski</span>
+<span class="font-caption text-caption text-on-surface-variant">(555) 349-1120</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption mt-0.5">
+<span class="inline-flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[15px] text-outline">inventory_2</span> Completed / In Cold Storage
+              </span>
+<span>•</span>
+<span class="text-error font-semibold">Unpaid Balance: $64.00</span>
+<span>•</span>
+<span>Special Dry Clean &amp; Press</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-auto flex-shrink-0">
+<button class="h-8 px-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-sm text-label-sm shadow-sm flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">credit_card</span>
+<span>Collect Payment</span>
+</button>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-on-surface transition-colors cursor-pointer">chevron_right</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="group p-space-sm sm:p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-start sm:items-center gap-3 min-w-0">
+<span class="px-2 py-1 rounded bg-error text-on-error font-label-sm text-label-sm font-bold flex-shrink-0">
+            Overdue 5d
+          </span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Order #WF-0988</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-default text-body-default text-on-surface font-medium truncate">Carlos Mendez</span>
+<span class="font-caption text-caption text-on-surface-variant">(555) 902-4411</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption mt-0.5">
+<span class="inline-flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[15px] text-outline">shelves</span> Shelf Bay C-01
+              </span>
+<span>•</span>
+<span class="text-error font-semibold">Balance: $18.00 (Unpaid)</span>
+<span>•</span>
+<span>Wash &amp; Fold 4.2 kg</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-auto flex-shrink-0">
+<button class="h-8 px-3 rounded-lg bg-surface-container-lowest hover:bg-surface-bright text-on-surface font-label-sm text-label-sm shadow-sm flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">phone</span>
+<span>Call Customer</span>
+</button>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-on-surface transition-colors cursor-pointer">chevron_right</span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="group p-space-sm sm:p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-start sm:items-center gap-3 min-w-0">
+<span class="px-2 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex-shrink-0">
+            Net 7 Overdue
+          </span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Order #WF-0975</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-default text-body-default text-on-surface font-medium truncate">Metro Gym Linens</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Commercial</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption mt-0.5">
+<span class="text-error font-semibold">Unpaid Invoice: $185.00 (12 Days Past Term)</span>
+<span>•</span>
+<span>B2B Contract Account #COM-402</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-auto flex-shrink-0">
+<button class="h-8 px-3 rounded-lg bg-surface-container-lowest hover:bg-surface-bright text-on-surface font-label-sm text-label-sm shadow-sm flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">mail</span>
+<span>Send Statement</span>
+</button>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-on-surface transition-colors cursor-pointer">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Mid-Section Operations & Financials Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-space-md mb-space-lg">
+<!-- Pipeline Capacity & Active Stations (2 Cols) -->
+<div class="xl:col-span-2 rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm mb-space-sm gap-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Order Pipeline &amp; Floor Utilization</h3>
+<p class="font-caption text-caption text-on-surface-variant">Live flow across laundry processing segments</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Wash Floor Load:</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">84% Capacity</span>
+</div>
+</div>
+<!-- Segmented Stage Cards -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 mb-space-md">
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant truncate">1. Received</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">4</span>
+<span class="font-label-sm text-label-sm text-outline">Queue</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1 text-[11px]">Intake sorting</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant truncate">2. Washing</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md text-tertiary font-bold">8</span>
+<span class="font-label-sm text-label-sm text-tertiary">W-1 to 6</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1 text-[11px]">6 drums spinning</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant truncate">3. Drying</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md text-secondary font-bold">6</span>
+<span class="font-label-sm text-label-sm text-secondary">D-1 to 4</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1 text-[11px]">High-temp cycles</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant truncate">4. Folding &amp; QC</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">5</span>
+<span class="font-label-sm text-label-sm text-outline">Table 2</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1 text-[11px]">Pressing &amp; wrap</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-caption text-caption text-primary font-semibold truncate">5. Ready Pickup</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md text-primary font-bold">14</span>
+<span class="font-label-sm text-label-sm text-primary">Shelved</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1 text-[11px]">Bays A-D</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant truncate">6. Done Today</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">6</span>
+<span class="font-label-sm text-label-sm text-outline">Claimed</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1 text-[11px]">Handed over</span>
+</div>
+</div>
+</div>
+<!-- Live Floor Equipment Graphic Status -->
+<div class="pt-space-sm bg-surface-container-low p-3 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold">Equipment Fleet Status</div>
+<div class="font-caption text-caption text-on-surface-variant">6 Industrial Washers, 4 Commercial Tumblers active • 0 fault alarms</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> All Online
+          </div>
+<button class="h-8 px-3 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm hover:bg-surface-bright" type="button">
+            Machine View
+          </button>
+</div>
+</div>
+</div>
+<!-- Payment Split & Cashier Reconciliation (1 Col) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Daily Reconciliation</h3>
+<p class="font-caption text-caption text-on-surface-variant">Register &amp; tender distributions</p>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">account_balance_wallet</span>
+</div>
+<!-- Tender Distribution Bar Chart Component -->
+<div class="mb-space-md">
+<div class="flex items-center justify-between font-caption text-caption mb-1">
+<span class="text-on-surface font-medium">Tender Split: $1,428.50 Total</span>
+<span class="text-on-surface-variant">34 Transactions</span>
+</div>
+<div class="w-full h-3 rounded-full overflow-hidden flex bg-surface-container-high mb-2">
+<div class="bg-primary-container h-full" style="width: 72%;" title="Card 72%"></div>
+<div class="bg-secondary-container h-full" style="width: 24%;" title="Cash 24%"></div>
+<div class="bg-tertiary-container h-full" style="width: 4%;" title="Store Credit 4%"></div>
+</div>
+<div class="flex items-center justify-between font-caption text-caption text-[12px]">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span> Card (72%)</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span> Cash (24%)</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span> Credit (4%)</span>
+</div>
+</div>
+<!-- Station Reconciliations -->
+<div class="space-y-2">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">
+                S1
+              </span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-medium block leading-tight">Front Counter 01</span>
+<span class="font-caption text-caption text-on-surface-variant text-[11px]">Clerk: Elena R. (Active)</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg text-on-surface font-bold block leading-tight">$620.00</span>
+<span class="font-caption text-caption text-primary text-[11px]">Drawer Balanced</span>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded bg-surface-container-high flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">
+                S2
+              </span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-medium block leading-tight">Drop-off Counter 02</span>
+<span class="font-caption text-caption text-on-surface-variant text-[11px]">Clerk: Marcus T.</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg text-on-surface font-bold block leading-tight">$808.50</span>
+<span class="font-caption text-caption text-primary text-[11px]">Drawer Balanced</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm">
+<button class="w-full h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>Cash Drawer Reconciliation</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 5 Most Recent Orders Operational Table -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm mb-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm mb-space-sm gap-2">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Recent Counter Intake Orders</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">5 of 28</span>
+</div>
+<a class="font-label-lg text-label-lg text-primary hover:text-on-primary-container font-semibold inline-flex items-center gap-1" href="#">
+<span>View All 28 Orders</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Structured Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-caption text-caption uppercase tracking-wider">
+<th class="py-2.5 px-space-md rounded-l-lg">Ticket # &amp; Time</th>
+<th class="py-2.5 px-space-md">Customer</th>
+<th class="py-2.5 px-space-md">Service Manifest</th>
+<th class="py-2.5 px-space-md">Total &amp; Payment</th>
+<th class="py-2.5 px-space-md">Current Stage</th>
+<th class="py-2.5 px-space-md rounded-r-lg text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold tracking-tight">#WF-1052</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 10:14 AM
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">
+                  SK
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Sarah Jenkins</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm text-[10px]">VIP</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">(555) 234-8901</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-body-default text-body-default text-on-surface font-medium">Wash &amp; Fold (6.5 kg)</span>
+<span class="font-caption text-caption text-on-surface-variant">Hypoallergenic detergent + Softener</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">$28.50</span>
+<span class="inline-flex items-center gap-1 font-caption text-caption text-primary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Paid (Card)
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">local_laundry_service</span>
+                Washing (W-02)
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Print Laundry Tag" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Inspect Order Details" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold tracking-tight">#WF-1051</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 09:50 AM
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">
+                  AL
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Anthony Li</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm text-[10px]">Regular</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">(555) 882-1922</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-body-default text-body-default text-on-surface font-medium">Dry Cleaning (3 pcs)</span>
+<span class="font-caption text-caption text-on-surface-variant">2-pc Suit + Silk Blouse (Stain treat)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">$42.00</span>
+<span class="inline-flex items-center gap-1 font-caption text-caption text-error font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Unpaid on Pickup
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">dry_cleaning</span>
+                Pending Sort
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Print Laundry Tag" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Inspect Order Details" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold tracking-tight">#WF-1050</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 09:34 AM
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">
+                  EM
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Emma Miller</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm text-[10px]">VIP</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">(555) 431-7788</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-body-default text-body-default text-on-surface font-medium">Bulky Down Comforter (King)</span>
+<span class="font-caption text-caption text-on-surface-variant">Sanitize cycle + Ozone freshener</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">$34.00</span>
+<span class="inline-flex items-center gap-1 font-caption text-caption text-primary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Paid (Cash)
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">mode_fan</span>
+                Drying (D-01)
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Print Laundry Tag" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Inspect Order Details" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold tracking-tight">#WF-1049</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 09:10 AM
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">
+                  DH
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">David Harris</span>
+<span class="px-1.5 py-0.2 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm text-[10px]">First-Time</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">(555) 766-0043</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-body-default text-body-default text-on-surface font-medium">Wash &amp; Fold (8.2 kg)</span>
+<span class="font-caption text-caption text-on-surface-variant">Includes 4 dress shirts pressed</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">$39.80</span>
+<span class="inline-flex items-center gap-1 font-caption text-caption text-primary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Paid (Card)
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Ready for Pickup
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Print Laundry Tag" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Inspect Order Details" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold tracking-tight">#WF-1048</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 08:30 AM
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">
+                  MG
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-medium">Metro Gym (Batch #4)</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm text-[10px]">Commercial</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">B2B Account</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-body-default text-body-default text-on-surface font-medium">Commercial Towels (24 kg)</span>
+<span class="font-caption text-caption text-on-surface-variant">Thermal fold &amp; shrink wrap bundle</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">$78.00</span>
+<span class="inline-flex items-center gap-1 font-caption text-caption text-on-surface-variant font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Net 15 Term
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Ready for Pickup
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Print Laundry Tag" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Inspect Order Details" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Quick Footer Bar inside table container -->
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-caption text-caption gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Auto-sync active • Last counter ping: <strong class="text-on-surface font-medium">10 seconds ago</strong></span>
+</div>
+<div class="flex items-center gap-3">
+<button class="hover:text-on-surface font-medium transition-colors" type="button">Download Daily CSV</button>
+<span>•</span>
+<button class="hover:text-on-surface font-medium transition-colors" type="button">Reprint All Tags</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

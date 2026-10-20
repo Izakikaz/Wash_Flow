@@ -1,0 +1,411 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#71a1ff", "on-tertiary-container": "#00367a", "on-primary-container": "#00422b", "inverse-surface": "#27313f", "on-error-container": "#93000a", "on-tertiary-fixed": "#001a42", "secondary": "#006a61", "surface-container-high": "#dee9fc", "primary-container": "#10b981", "inverse-primary": "#4edea3", "on-tertiary-fixed-variant": "#004395", "on-primary-fixed-variant": "#005236", "on-error": "#ffffff", "on-secondary-fixed-variant": "#005049", "surface-dim": "#d0dbed", "outline-variant": "#bbcabf", "on-secondary-container": "#006f66", "inverse-on-surface": "#eaf1ff", "primary-fixed": "#6ffbbe", "secondary-fixed": "#89f5e7", "on-primary": "#ffffff", "tertiary-fixed": "#d8e2ff", "background": "#f8f9ff", "primary-fixed-dim": "#4edea3", "on-primary-fixed": "#002113", "outline": "#6c7a71", "tertiary": "#005ac2", "secondary-fixed-dim": "#6bd8cb", "surface-container-lowest": "#ffffff", "on-surface": "#121c2a", "on-surface-variant": "#3c4a42", "error": "#ba1a1a", "on-background": "#121c2a", "on-secondary-fixed": "#00201d", "primary": "#006c49", "surface-container": "#e6eeff", "on-tertiary": "#ffffff", "secondary-container": "#86f2e4", "tertiary-fixed-dim": "#adc6ff", "surface-container-low": "#eff4ff", "surface-container-highest": "#d9e3f6", "on-secondary": "#ffffff", "surface-variant": "#d9e3f6", "error-container": "#ffdad6", "surface-bright": "#f8f9ff", "surface": "#f8f9ff", "surface-tint": "#006c49" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1rem", "margin": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem" }, "fontFamily": { "display-lg": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "caption": ["Inter"], "body-default": ["Inter"] }, "fontSize": { "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "500"}], "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-sm": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600"}], "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "caption": ["13px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}], "body-default": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-default text-body-default text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Back to Order" class="w-12 h-12 flex items-center justify-center rounded-lg text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex flex-col"><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Receipt Print Preview</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Download PDF" class="w-12 h-12 flex items-center justify-center rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">download</span></button><button aria-label="Print Ticket" class="h-11 px-space-md flex items-center justify-center gap-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:opacity-90 active:scale-95 transition-all"><span class="material-symbols-outlined text-[20px]">print</span><span class="hidden sm:inline">Print</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Operational Controls & Status Header -->
+<section class="w-full px-margin py-space-md flex flex-col gap-space-sm max-w-lg mx-auto">
+<!-- Printer Connection Telemetry Pill -->
+<div class="flex items-center justify-between px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse shrink-0"></span>
+<span class="font-label-sm text-label-sm truncate">Connected: Star Micronics TSP143 (Station 01)</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary shrink-0 font-semibold">203 DPI</span>
+</div>
+<!-- Quick Action Bar -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<button class="h-12 px-space-md flex items-center justify-center gap-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg active:scale-95 transition-transform shadow-sm" id="reprintBtn" onclick="triggerPrintAnimation()">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span>Print Ticket</span>
+</button>
+<button class="h-12 px-space-md flex items-center justify-center gap-space-xs rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg active:scale-95 transition-transform shadow-sm" id="copyLinkBtn" onclick="copyReceiptLink()">
+<span class="material-symbols-outlined text-[20px]" id="copyIcon">share</span>
+<span id="copyText">Share Digital</span>
+</button>
+</div>
+<!-- Paper Tray / Scale Alert Bar -->
+<div class="flex items-center justify-between text-on-surface-variant px-space-xs text-[11px] font-caption">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">receipt_long</span>
+<span>80mm Thermal Roll: 84% full</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">scale</span>
+<span>Scale Calibrated: Oct 24</span>
+</div>
+</div>
+</section>
+<!-- Physical Receipt Paper Simulation Presentation Layer -->
+<section class="w-full flex flex-col items-center justify-center px-margin pt-space-xs">
+<!-- Receipt Shadow Container (Width strictly constrained to 312px for genuine 80mm thermal proportion) -->
+<article class="w-[312px] bg-white text-black font-mono shadow-xl relative transition-all duration-300" id="thermalSlip">
+<!-- Top Serrated Perforation Graphic -->
+<div class="w-full h-3 overflow-hidden flex items-end">
+<svg class="w-full h-2 fill-current text-surface" preserveAspectRatio="none" viewBox="0 0 312 8">
+<polygon points="0,8 6,0 12,8 18,0 24,8 30,0 36,8 42,0 48,8 54,0 60,8 66,0 72,8 78,0 84,8 90,0 96,8 102,0 108,8 114,0 120,8 126,0 132,8 138,0 144,8 150,0 156,8 162,0 168,8 174,0 180,8 186,0 192,8 198,0 204,8 210,0 216,8 222,0 228,8 234,0 240,8 246,0 252,8 258,0 264,8 270,0 276,8 282,0 288,8 294,0 300,8 306,0 312,8"></polygon>
+</svg>
+</div>
+<!-- Receipt Content Padding -->
+<div class="px-5 pt-3 pb-6 flex flex-col items-stretch text-[12px] leading-tight select-none">
+<!-- Shop Header & Branding -->
+<header class="flex flex-col items-center text-center">
+<!-- Monochromatic Brand Glyphs -->
+<div class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[20px]">local_laundry_service</span>
+</div>
+<h2 class="text-[17px] font-black tracking-wider uppercase">WASHFLOW LAUNDRY CO.</h2>
+<p class="text-[10px] mt-0.5 tracking-tight font-semibold text-black/90">Station 01 • Main Intake Counter</p>
+<p class="text-[10px] text-black/80 mt-0.5">104 Broadway St, Suite B</p>
+<p class="text-[10px] text-black/80">Tel: (555) 019-8234 • washflow.io</p>
+</header>
+<!-- Dashed Divider -->
+<div class="w-full text-center text-black/50 text-[9px] tracking-widest my-2.5 overflow-hidden">
+          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        </div>
+<!-- Master Claim Order Identity -->
+<div class="flex flex-col items-center text-center">
+<span class="text-[10px] font-bold uppercase tracking-wider text-black/70">Claim Ticket Identifier</span>
+<h1 class="text-[34px] font-black tracking-tighter leading-none my-1 font-mono">#WF-1052</h1>
+<!-- High Visibility Target Pickup Box -->
+<div class="w-full bg-black text-white py-1.5 px-2 rounded-sm text-center my-1.5 shadow-xs">
+<div class="text-[9px] uppercase tracking-wider font-medium text-white/90">Target Estimated Completion</div>
+<div class="text-[14px] font-black tracking-wide">TODAY @ 1:30 PM</div>
+</div>
+<div class="w-full flex justify-between text-[10px] text-black/80 mt-1">
+<span>Date: Oct 24, 2024</span>
+<span>Time: 10:14 AM</span>
+</div>
+<div class="w-full flex justify-between text-[10px] text-black/80">
+<span>Assoc: Elena R.</span>
+<span>Term: POS-01</span>
+</div>
+</div>
+<!-- Dashed Divider -->
+<div class="w-full text-center text-black/50 text-[9px] tracking-widest my-2.5 overflow-hidden">
+          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        </div>
+<!-- Customer Identity Section -->
+<div class="flex flex-col text-left">
+<div class="flex justify-between items-baseline">
+<span class="text-[13px] font-black uppercase tracking-tight">Sarah Jenkins</span>
+<span class="text-[9px] font-bold bg-black text-white px-1.5 py-0.5 rounded-xs">VIP GOLD</span>
+</div>
+<div class="text-[11px] font-medium text-black/90 mt-0.5">(555) 234-8901</div>
+<div class="text-[9px] text-black/70 mt-0.5">Account #CUST-8901 • SMS Alerts Active</div>
+</div>
+<!-- Dashed Divider -->
+<div class="w-full text-center text-black/50 text-[9px] tracking-widest my-2.5 overflow-hidden">
+          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        </div>
+<!-- Order Items Manifest Breakdown -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-[10px] font-bold uppercase text-black/70">
+<span>Item Description</span>
+<span>Amount</span>
+</div>
+<!-- Manifest Line 01 -->
+<div class="flex flex-col">
+<div class="flex justify-between text-[11px] font-bold">
+<span>1 Wash &amp; Fold (Everyday)</span>
+<span>$22.75</span>
+</div>
+<div class="text-[9px] text-black/80 pl-2.5 mt-0.5">
+              • Scale: 6.50 kg @ $3.50/kg
+            </div>
+<div class="text-[9px] text-black/80 pl-2.5">
+              • Cycle: Lavender Eco Softener
+            </div>
+</div>
+<!-- Manifest Line 02 -->
+<div class="flex flex-col">
+<div class="flex justify-between text-[11px] font-bold">
+<span>1 Delicate Silk Blouse</span>
+<span>$5.75</span>
+</div>
+<div class="text-[9px] text-black/80 pl-2.5 mt-0.5">
+              • Prep: Gentle Handwash Mesh
+            </div>
+<div class="text-[9px] text-black/80 pl-2.5">
+              • Air Dry Hang Finish
+            </div>
+</div>
+<!-- Manifest Line 03 -->
+<div class="flex flex-col">
+<div class="flex justify-between text-[11px] font-bold">
+<span>1 Protective Mesh Bag</span>
+<span>$0.00</span>
+</div>
+<div class="text-[9px] text-black/80 pl-2.5 mt-0.5">
+              • Complimentary Loaner #M-42
+            </div>
+</div>
+</div>
+<!-- Dashed Divider -->
+<div class="w-full text-center text-black/50 text-[9px] tracking-widest my-2.5 overflow-hidden">
+          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        </div>
+<!-- Totals & Tender Detail -->
+<div class="flex flex-col gap-1 text-[11px]">
+<div class="flex justify-between">
+<span class="text-black/80">Subtotal</span>
+<span>$28.50</span>
+</div>
+<div class="flex justify-between text-[10px]">
+<span class="text-black/70">Tax (Service Exempt)</span>
+<span>$0.00</span>
+</div>
+<div class="flex justify-between items-baseline pt-1 text-[17px] font-black tracking-tight">
+<span>TOTAL DUE</span>
+<span>$28.50</span>
+</div>
+<!-- Payment Stamp -->
+<div class="mt-1.5 p-1.5 bg-black/5 rounded-xs flex flex-col gap-0.5">
+<div class="flex justify-between items-center">
+<span class="text-[11px] font-black uppercase">PAID IN FULL</span>
+<span class="text-[9px] font-bold">Apple Pay • Visa *4242</span>
+</div>
+<div class="flex justify-between text-[8px] text-black/70">
+<span>Auth: 894120</span>
+<span>Ref: TXN-98421</span>
+</div>
+</div>
+<div class="flex justify-between text-[10px] font-semibold text-black/90 pt-1">
+<span>Verified Garment Count:</span>
+<span>22 Pieces</span>
+</div>
+</div>
+<!-- Dashed Divider -->
+<div class="w-full text-center text-black/50 text-[9px] tracking-widest my-2.5 overflow-hidden">
+          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        </div>
+<!-- Barcode & QR Intake Verification Grid -->
+<div class="flex flex-col items-center gap-2">
+<!-- 1D Optical Barcode Strip Graphic -->
+<div class="w-full flex flex-col items-center">
+<svg class="w-full h-11" preserveAspectRatio="none" viewBox="0 0 240 44">
+<!-- Crisp barcode lines emulation -->
+<rect fill="#000" height="44" width="3" x="0" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="5" y="0"></rect>
+<rect fill="#000" height="44" width="4" x="8" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="15" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="19" y="0"></rect>
+<rect fill="#000" height="44" width="5" x="23" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="31" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="35" y="0"></rect>
+<rect fill="#000" height="44" width="4" x="38" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="44" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="48" y="0"></rect>
+<rect fill="#000" height="44" width="3" x="51" y="0"></rect>
+<rect fill="#000" height="44" width="5" x="57" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="64" y="0"></rect>
+<rect fill="#000" height="44" width="3" x="67" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="73" y="0"></rect>
+<rect fill="#000" height="44" width="4" x="77" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="83" y="0"></rect>
+<rect fill="#000" height="44" width="3" x="86" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="91" y="0"></rect>
+<rect fill="#000" height="44" width="5" x="95" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="103" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="106" y="0"></rect>
+<rect fill="#000" height="44" width="4" x="110" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="116" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="121" y="0"></rect>
+<rect fill="#000" height="44" width="4" x="124" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="130" y="0"></rect>
+<rect fill="#000" height="44" width="3" x="134" y="0"></rect>
+<rect fill="#000" height="44" width="5" x="140" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="147" y="0"></rect>
+<rect fill="#000" height="44" width="3" x="150" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="155" y="0"></rect>
+<rect fill="#000" height="44" width="4" x="159" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="165" y="0"></rect>
+<rect fill="#000" height="44" width="3" x="168" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="173" y="0"></rect>
+<rect fill="#000" height="44" width="5" x="177" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="185" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="189" y="0"></rect>
+<rect fill="#000" height="44" width="4" x="192" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="198" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="202" y="0"></rect>
+<rect fill="#000" height="44" width="3" x="205" y="0"></rect>
+<rect fill="#000" height="44" width="5" x="210" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="217" y="0"></rect>
+<rect fill="#000" height="44" width="4" x="221" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="227" y="0"></rect>
+<rect fill="#000" height="44" width="1" x="231" y="0"></rect>
+<rect fill="#000" height="44" width="3" x="234" y="0"></rect>
+<rect fill="#000" height="44" width="2" x="238" y="0"></rect>
+</svg>
+<div class="text-[10px] font-mono tracking-widest text-center mt-1 font-bold">*WF-1052-894120*</div>
+</div>
+<!-- Dual QR Tracking Box -->
+<div class="flex items-center justify-between w-full pt-1 px-1">
+<div class="flex flex-col text-left max-w-[155px]">
+<span class="text-[10px] font-black uppercase">SCAN TO TRACK STATUS</span>
+<p class="text-[8px] leading-tight text-black/75 mt-0.5">
+                Scan with any smartphone camera for live laundry wash, dry, and folding updates.
+              </p>
+</div>
+<!-- Crisp Monochrome SVG QR Representation -->
+<div class="w-16 h-16 p-1 bg-white border border-black flex items-center justify-center shrink-0">
+<svg class="w-full h-full fill-black" viewBox="0 0 29 29">
+<!-- QR Finder Top-Left -->
+<rect height="7" width="7" x="0" y="0"></rect>
+<rect fill="#fff" height="5" width="5" x="1" y="1"></rect>
+<rect height="3" width="3" x="2" y="2"></rect>
+<!-- QR Finder Top-Right -->
+<rect height="7" width="7" x="22" y="0"></rect>
+<rect fill="#fff" height="5" width="5" x="23" y="1"></rect>
+<rect height="3" width="3" x="24" y="2"></rect>
+<!-- QR Finder Bottom-Left -->
+<rect height="7" width="7" x="0" y="22"></rect>
+<rect fill="#fff" height="5" width="5" x="1" y="23"></rect>
+<rect height="3" width="3" x="2" y="24"></rect>
+<!-- Alignment Pattern -->
+<rect height="5" width="5" x="18" y="18"></rect>
+<rect fill="#fff" height="3" width="3" x="19" y="19"></rect>
+<rect height="1" width="1" x="20" y="20"></rect>
+<!-- Synthetic Data Bits -->
+<rect height="1" width="2" x="8" y="2"></rect>
+<rect height="3" width="1" x="11" y="0"></rect>
+<rect height="2" width="2" x="14" y="2"></rect>
+<rect height="1" width="3" x="17" y="1"></rect>
+<rect height="2" width="2" x="8" y="5"></rect>
+<rect height="1" width="1" x="12" y="5"></rect>
+<rect height="1" width="3" x="14" y="6"></rect>
+<rect height="2" width="2" x="18" y="4"></rect>
+<rect height="3" width="1" x="0" y="8"></rect>
+<rect height="1" width="2" x="3" y="8"></rect>
+<rect height="2" width="3" x="6" y="8"></rect>
+<rect height="3" width="2" x="10" y="8"></rect>
+<rect height="1" width="2" x="14" y="9"></rect>
+<rect height="2" width="1" x="18" y="8"></rect>
+<rect height="2" width="3" x="21" y="8"></rect>
+<rect height="2" width="2" x="26" y="9"></rect>
+<rect height="2" width="2" x="2" y="12"></rect>
+<rect height="3" width="1" x="6" y="11"></rect>
+<rect height="1" width="3" x="9" y="13"></rect>
+<rect height="2" width="2" x="13" y="12"></rect>
+<rect height="1" width="2" x="17" y="12"></rect>
+<rect height="3" width="2" x="22" y="12"></rect>
+<rect height="2" width="1" x="26" y="13"></rect>
+<rect height="1" width="3" x="1" y="16"></rect>
+<rect height="2" width="2" x="5" y="16"></rect>
+<rect height="2" width="2" x="9" y="15"></rect>
+<rect height="1" width="2" x="12" y="16"></rect>
+<rect height="3" width="1" x="16" y="15"></rect>
+<rect height="1" width="3" x="25" y="16"></rect>
+<rect height="2" width="3" x="8" y="19"></rect>
+<rect height="2" width="1" x="13" y="19"></rect>
+<rect height="1" width="2" x="15" y="20"></rect>
+<rect height="2" width="2" x="24" y="19"></rect>
+<rect height="2" width="2" x="8" y="23"></rect>
+<rect height="1" width="3" x="11" y="24"></rect>
+<rect height="2" width="1" x="15" y="23"></rect>
+<rect height="1" width="3" x="18" y="25"></rect>
+<rect height="2" width="2" x="23" y="23"></rect>
+<rect height="2" width="1" x="27" y="23"></rect>
+<rect height="1" width="2" x="9" y="27"></rect>
+<rect height="2" width="2" x="13" y="26"></rect>
+<rect height="1" width="3" x="17" y="27"></rect>
+<rect height="2" width="2" x="22" y="26"></rect>
+<rect height="1" width="2" x="26" y="27"></rect>
+</svg>
+</div>
+</div>
+</div>
+<!-- Dashed Divider -->
+<div class="w-full text-center text-black/50 text-[9px] tracking-widest my-2.5 overflow-hidden">
+          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        </div>
+<!-- Mandatory Claim Notice & Legal Footprint -->
+<footer class="flex flex-col text-center items-center">
+<div class="text-[11px] font-black uppercase tracking-tight">
+            CLAIM THIS TICKET TO PICK UP
+          </div>
+<p class="text-[8px] text-black/75 leading-tight mt-1 max-w-[250px]">
+            Please present this physical claim slip or the digital barcode on your mobile device at collection. Unclaimed orders held safely for 30 calendar days as per shop storage protocol.
+          </p>
+<div class="text-[9px] font-bold mt-2 uppercase tracking-wide">
+            Thank you for choosing WashFlow!
+          </div>
+</footer>
+</div>
+<!-- Bottom Serrated Tear Line Graphic -->
+<div class="w-full h-3 overflow-hidden flex items-start">
+<svg class="w-full h-2 fill-current text-surface" preserveAspectRatio="none" viewBox="0 0 312 8">
+<polygon points="0,0 6,8 12,0 18,8 24,0 30,8 36,0 42,8 48,0 54,8 60,0 66,8 72,0 78,8 84,0 90,8 96,0 102,8 108,0 114,8 120,0 126,8 132,0 138,8 144,0 150,8 156,0 162,8 168,0 174,8 180,0 186,8 192,0 198,8 204,0 210,8 216,0 222,8 228,0 234,8 240,0 246,8 252,0 258,8 264,0 270,8 276,0 282,8 288,0 294,8 300,0 306,8 312,0"></polygon>
+</svg>
+</div>
+</article>
+</section>
+<!-- Interactive Print Toast (Hidden by default) -->
+<aside class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-full shadow-xl flex items-center gap-space-xs text-label-sm font-label-sm opacity-0 pointer-events-none transition-all duration-300 z-50" id="printToast">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">check_circle</span>
+<span id="toastMsg">Ticket sent to Star TSP143 printer</span>
+</aside>
+</div>
+<script>
+  function triggerPrintAnimation() {
+    const slip = document.getElementById('thermalSlip');
+    const toast = document.getElementById('printToast');
+    const toastMsg = document.getElementById('toastMsg');
+    
+    // Tactile micro-bounce on ticket
+    slip.classList.add('scale-[0.98]', 'brightness-95');
+    setTimeout(() => {
+      slip.classList.remove('scale-[0.98]', 'brightness-95');
+    }, 180);
+
+    // Toast feedback display
+    toastMsg.innerText = "Ticket dispatched to Star TSP143 (Station 01)";
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'pointer-events-none');
+      toast.classList.remove('opacity-100');
+    }, 2400);
+
+    // Native browser print hook for counter staff
+    if (typeof window.print === 'function') {
+      setTimeout(() => {
+        window.print();
+      }, 350);
+    }
+  }
+
+  function copyReceiptLink() {
+    const copyIcon = document.getElementById('copyIcon');
+    const copyText = document.getElementById('copyText');
+    const toast = document.getElementById('printToast');
+    const toastMsg = document.getElementById('toastMsg');
+
+    navigator.clipboard.writeText("https://washflow.io/track/WF-1052-894120").then(() => {
+      copyIcon.innerText = "done";
+      copyText.innerText = "Link Copied";
+      
+      toastMsg.innerText = "Digital tracking URL copied to clipboard";
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+
+      setTimeout(() => {
+        copyIcon.innerText = "share";
+        copyText.innerText = "Share Digital";
+        toast.classList.add('opacity-0', 'pointer-events-none');
+        toast.classList.remove('opacity-100');
+      }, 2200);
+    }).catch(() => {
+      toastMsg.innerText = "Tracking ID: #WF-1052";
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2000);
+    });
+  }
+</script></main></body></html>

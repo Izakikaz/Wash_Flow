@@ -1,0 +1,635 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"tertiary-fixed-dim":"#adc6ff","on-tertiary-fixed-variant":"#004395","tertiary-container":"#71a1ff","primary-fixed":"#6ffbbe","on-primary-container":"#00422b","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#6bd8cb","surface-container-high":"#dee9fc","primary":"#006c49","on-surface":"#121c2a","tertiary":"#005ac2","on-surface-variant":"#3c4a42","secondary-fixed":"#89f5e7","inverse-primary":"#4edea3","on-tertiary-container":"#00367a","primary-fixed-dim":"#4edea3","on-error":"#ffffff","on-tertiary-fixed":"#001a42","on-primary-fixed":"#002113","error":"#ba1a1a","surface-bright":"#f8f9ff","on-secondary-fixed":"#00201d","background":"#f8f9ff","on-primary-fixed-variant":"#005236","on-secondary":"#ffffff","surface-container-highest":"#d9e3f6","on-tertiary":"#ffffff","surface":"#f8f9ff","inverse-surface":"#27313f","on-error-container":"#93000a","surface-dim":"#d0dbed","surface-tint":"#006c49","outline":"#6c7a71","surface-container-low":"#eff4ff","surface-variant":"#d9e3f6","outline-variant":"#bbcabf","error-container":"#ffdad6","tertiary-fixed":"#d8e2ff","on-primary":"#ffffff","on-background":"#121c2a","secondary-container":"#86f2e4","surface-container":"#e6eeff","inverse-on-surface":"#eaf1ff","on-secondary-fixed-variant":"#005049","secondary":"#006a61","primary-container":"#10b981","on-secondary-container":"#006f66"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1rem","space-xl":"2rem","space-lg":"1.5rem","margin":"1rem","space-md":"1rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"headline-sm":["Inter"],"label-lg":["Inter"],"body-default":["Inter"],"caption":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"headline-md":["Inter"],"display-lg":["Inter"],"label-sm":["Inter"]},"fontSize":{"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-default":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"caption":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"500"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-default text-body-default text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between p-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><img alt="Brand logo. - Primary color: #10b981
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WguZ6HSie_QbJP3lxKgQIxxK2jpnTO3-diolSmpJAm5Urnku6JWMqN3_PkM9csN5MQ-uY2hvWEU0wiqvUAfE8jvqs5fPE_zSrgkNk4vGQefZyjBNwxxT8X1ZlJvs44u1ZQKcA_OEQ28NCI4ZJi4unrY-eJTVNBNNVFH8aBpZB2IOclp0kIyrjrcZMl0cIUYhSTnMafTaxEt35V2Av8j-arteDZ5Z6ClPBwFthhljqnNoDob9HvViUrgQU"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface">WashFlow</span><span class="font-label-sm text-label-sm text-on-surface-variant">Counter Ops v2.4</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-headline-sm" data-path="orders" href="#"><span class="material-symbols-outlined text-[20px]">local_laundry_service</span><span class="font-label-lg text-label-lg">Orders</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="customers" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Customers</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="services-and-pricing" href="#"><span class="material-symbols-outlined text-[20px]">sell</span><span class="font-label-lg text-label-lg">Services &amp; Pricing</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span class="font-label-lg text-label-lg">Reports</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div><div class="bg-surface-container-lowest rounded-xl p-space-sm flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UW6-UEpsSc8YIV6WuiXMhJTNtIeEPaaZT1jVH2DvBOBsAkE9cOVQ2IG0HTqKSgPa07U-qo07O2nXwP3YE9bj5DB4DoIAlOkw8sFRarIIWl4dSRaqwa6c2YnJGURztRYn3uvAeJ2O2t1REIuntnRfIHxHsNmnvgc4gj1PFegS2bLhkSEcV9eLr29t4DE0AHl_8OCx2T_L0lmttoujk4fpMEG962mkLfDf47pIxExEK3ijAK3nuGl8SOZw"><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-on-surface truncate">Elena Rostova</span><span class="font-caption text-caption text-on-surface-variant truncate">Counter Lead</span></div></div><button aria-label="Account Actions" class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high p-space-xs rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">unfold_more</span></button></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-lowest rounded-lg font-body-default text-body-default text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Search order #, customer name, tag, phone..." type="search"></div><button class="flex items-center gap-space-xs px-space-sm h-10 bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg font-label-lg text-label-lg transition-colors whitespace-nowrap shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[18px]">barcode_scanner</span><span>Scan</span></button></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high rounded-full"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="font-label-sm text-label-sm text-on-surface">Station 02 • Active</span></div><button aria-label="Notifications" class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></button><button class="flex items-center gap-space-xs h-10 px-space-md bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary rounded-lg font-label-lg text-label-lg transition-colors whitespace-nowrap" type="button"><span class="material-symbols-outlined text-[20px]">add</span><span>New Order Intake</span></button></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-7xl mx-auto w-full space-y-space-lg">
+<!-- Breadcrumb & Header Section -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Orders</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Queue &amp; Stages</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Pending Pickup (Ready)</span>
+</nav>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Pending Pickup List</h1>
+<p class="font-caption text-caption text-on-surface-variant max-w-2xl">
+          Orders with status <span class="font-semibold text-primary">Ready for pickup</span>, prioritized strictly oldest first to eliminate shelf clutter, avoid garment damage, and mitigate overdue storage costs.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs h-10 px-space-md bg-surface-container-lowest text-on-surface hover:bg-surface-container-high rounded-lg font-label-lg text-label-lg transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Shelf Audit Slip</span>
+</button>
+<button class="flex items-center gap-space-xs h-10 px-space-md bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary rounded-lg font-label-lg text-label-lg transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">sms</span>
+<span>Send Batch SMS</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container-lowest text-primary text-[11px] font-bold">4 Due</span>
+</button>
+</div>
+</div>
+<!-- Metric Ribbon / Summary Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Ready on Shelves</span>
+<div class="mt-1 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface">18</span>
+<span class="font-label-sm text-label-sm text-error bg-error-container text-on-error-container px-2 py-0.5 rounded-full font-semibold">4 overdue &gt;3d</span>
+</div>
+</div>
+<div class="p-2 bg-surface-container rounded-lg text-primary">
+<span class="material-symbols-outlined text-[24px]">inventory_2</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<span>Active staging cycle</span>
+<span class="text-primary font-semibold">Stage verified</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Shelf Inventory Value</span>
+<div class="mt-1 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface">$462.80</span>
+</div>
+</div>
+<div class="p-2 bg-surface-container rounded-lg text-tertiary">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between font-caption text-caption">
+<span class="text-primary font-medium">$385.00 Pre-Paid</span>
+<span class="text-error font-medium">$77.80 Pay at Counter</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Longest Stored Order</span>
+<div class="mt-1 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-error">5 Days</span>
+<span class="font-label-sm text-label-sm text-on-surface font-mono">#WF-1019</span>
+</div>
+</div>
+<div class="p-2 bg-error-container rounded-lg text-error">
+<span class="material-symbols-outlined text-[24px]">hourglass_top</span>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between font-caption text-caption text-on-surface-variant">
+<span>Robert Martinez</span>
+<span class="text-error font-semibold">2nd Ping Sent</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Rack Bay Utilization</span>
+<div class="mt-1 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface">72%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">36/50 Bins</span>
+</div>
+</div>
+<div class="p-2 bg-surface-container rounded-lg text-secondary">
+<span class="material-symbols-outlined text-[24px]">view_timeline</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500" style="width: 72%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter & Operational Search Bar -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 lg:pb-0 scrollbar-none">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg whitespace-nowrap shadow-sm" type="button">
+          All Ready (18)
+        </button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-label-lg text-label-lg whitespace-nowrap transition-colors flex items-center gap-1" type="button">
+<span>Stored &gt;3 Days</span>
+<span class="w-5 h-5 flex items-center justify-center rounded-full bg-error-container text-error text-[11px] font-bold">4</span>
+</button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-label-lg text-label-lg whitespace-nowrap transition-colors flex items-center gap-1" type="button">
+<span>Unpaid Balance</span>
+<span class="w-5 h-5 flex items-center justify-center rounded-full bg-surface-container-high text-on-surface text-[11px] font-bold">3</span>
+</button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-label-lg text-label-lg whitespace-nowrap transition-colors flex items-center gap-1" type="button">
+<span>VIP Customers</span>
+<span class="w-5 h-5 flex items-center justify-center rounded-full bg-surface-container-high text-on-surface text-[11px] font-bold">5</span>
+</button>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-sm flex-1 max-w-xl">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-10 pl-9 pr-space-md bg-surface-container-low rounded-lg font-body-default text-body-default text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search by ticket #, customer name, phone, shelf bay..." type="search">
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="flex items-center gap-1 h-10 px-3 bg-surface-container-low text-primary rounded-lg font-label-sm text-label-sm whitespace-nowrap font-medium">
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+<span>Oldest First (Days Waiting ↓)</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Structured Pending Pickup Orders Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-default text-body-default">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-3 px-space-md" scope="col">Ticket &amp; Received</th>
+<th class="py-3 px-space-md" scope="col">Customer Details</th>
+<th class="py-3 px-space-md" scope="col">Contact &amp; Notification</th>
+<th class="py-3 px-space-md" scope="col">Storage Location</th>
+<th class="py-3 px-space-md" scope="col">Package &amp; Service</th>
+<th class="py-3 px-space-md" scope="col">Balance</th>
+<th class="py-3 px-space-md text-center" scope="col">Shelf Age</th>
+<th class="py-3 px-space-md text-right" scope="col">Quick Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Row 1: Oldest / 5 Days Waiting -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-error-container/10">
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">sell</span>
+                    #WF-1019
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">Oct 19 • 11:20 AM</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-semibold text-on-surface">Robert Martinez</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant text-[11px] font-medium">Regular</span>
+<span class="font-caption text-[11px] text-on-surface-variant font-mono">#CUST-7742</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">(555) 782-3901</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-error font-medium mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                    SMS sent 2d ago (Overdue)
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high font-mono text-[13px] font-bold text-on-surface">
+                    Bay A-02
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">Folded Stack</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium">2 bags • 7.5 kg</span>
+<span class="font-caption text-caption text-on-surface-variant">Wash &amp; Fold standard</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">$26.25</span>
+<span class="inline-block px-1.5 py-0.5 rounded text-[11px] font-bold bg-primary-fixed text-on-primary-fixed-variant self-start">PAID</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-center">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-label-sm font-semibold bg-error text-on-error shadow-sm">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                  5 Days Stored
+                </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="h-9 px-3 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Handover</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Send SMS reminder" type="button">
+<span class="material-symbols-outlined text-[18px]">sms</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Order Details" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: 4 Days Waiting (Unpaid Balance) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">sell</span>
+                    #WF-1025
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">Oct 20 • 09:45 AM</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-semibold text-on-surface">Clara Vance</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-[11px] font-bold">VIP Gold</span>
+<span class="font-caption text-[11px] text-on-surface-variant font-mono">#CUST-8104</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">(555) 349-8812</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-on-surface-variant font-medium mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                    SMS delivered Oct 20
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-mono text-[13px] font-bold">
+                    Hanger H-07
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">Delicates</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium">3 pieces</span>
+<span class="font-caption text-caption text-on-surface-variant">Silk Dress, Wool Coat</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-error">$38.00</span>
+<span class="inline-block px-1.5 py-0.5 rounded text-[11px] font-bold bg-error-container text-on-error-container self-start">DUE AT COUNTER</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-center">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-label-sm font-semibold bg-surface-container-highest text-error">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                  4 Days Stored
+                </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="h-9 px-3 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">point_of_sale</span>
+<span>Collect &amp; Handover</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Send SMS reminder" type="button">
+<span class="material-symbols-outlined text-[18px]">sms</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Order Details" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: 4 Days Waiting (Corporate Bulk) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">sell</span>
+                    #WF-1033
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">Oct 20 • 03:15 PM</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-semibold text-on-surface">David Chen</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant text-[11px] font-semibold">Corporate</span>
+<span class="font-caption text-[11px] text-on-surface-variant font-mono">#CUST-6520</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">(555) 912-4029</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-primary font-medium mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    Last SMS today 9:00 AM
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high font-mono text-[13px] font-bold text-on-surface">
+                    Bay C-05
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">2 Bins Reserved</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium">4 bags • 18.0 kg</span>
+<span class="font-caption text-caption text-on-surface-variant">Linen &amp; Guest Towels</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">$40.50</span>
+<span class="inline-block px-1.5 py-0.5 rounded text-[11px] font-bold bg-primary-fixed text-on-primary-fixed-variant self-start">PAID</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-center">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-label-sm font-semibold bg-surface-container-highest text-error">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                  4 Days Stored
+                </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="h-9 px-3 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Handover</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Call Customer" type="button">
+<span class="material-symbols-outlined text-[18px]">phone</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Order Details" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: 3 Days Waiting -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">sell</span>
+                    #WF-1041
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">Oct 21 • 01:10 PM</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-semibold text-on-surface">Amanda Ross</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface text-[11px] font-semibold">VIP Silver</span>
+<span class="font-caption text-[11px] text-on-surface-variant font-mono">#CUST-9014</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">(555) 604-1188</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-on-surface-variant font-medium mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                    SMS delivered Oct 21
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high font-mono text-[13px] font-bold text-on-surface">
+                    Bay B-08
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">Shelf 2</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium">1 bag • 4.2 kg</span>
+<span class="font-caption text-caption text-on-surface-variant">Delicates &amp; Knits</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">$19.75</span>
+<span class="inline-block px-1.5 py-0.5 rounded text-[11px] font-bold bg-primary-fixed text-on-primary-fixed-variant self-start">PAID</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-center">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-label-sm font-semibold bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                  3 Days Stored
+                </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="h-9 px-3 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Handover</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Send SMS reminder" type="button">
+<span class="material-symbols-outlined text-[18px]">sms</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Order Details" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: 2 Days Waiting -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">sell</span>
+                    #WF-1048
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">Oct 22 • 10:00 AM</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-semibold text-on-surface">Marcus Brody</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant text-[11px] font-medium">Regular</span>
+<span class="font-caption text-[11px] text-on-surface-variant font-mono">#CUST-8832</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">(555) 472-8831</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-on-surface-variant font-medium mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                    Ready alert sent
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high font-mono text-[13px] font-bold text-on-surface">
+                    Bay A-11
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">Bulky Bin</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium">2 bags</span>
+<span class="font-caption text-caption text-on-surface-variant">Bedding King Comforter</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-error">$24.00</span>
+<span class="inline-block px-1.5 py-0.5 rounded text-[11px] font-bold bg-error-container text-on-error-container self-start">DUE AT COUNTER</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-center">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-label-sm font-medium bg-surface-container-low text-on-surface">
+                  2 Days Stored
+                </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="h-9 px-3 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">point_of_sale</span>
+<span>Collect &amp; Handover</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Send SMS reminder" type="button">
+<span class="material-symbols-outlined text-[18px]">sms</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Order Details" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Fresh (Ready Today) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">sell</span>
+                    #WF-1052
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">Today • 12:45 PM</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-semibold text-on-surface">Sarah Jenkins</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant text-[11px] font-bold">VIP Gold</span>
+<span class="font-caption text-[11px] text-on-surface-variant font-mono">#CUST-8901</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">(555) 234-8901</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-primary font-medium mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    SMS sent 1:15 PM
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-mono text-[12px] font-bold text-on-surface">
+                    Bay B-12
+                  </span>
+<span class="text-on-surface-variant font-bold text-[12px]">+</span>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-mono text-[12px] font-bold">
+                    H-Rack M-42
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium">3 line items</span>
+<span class="font-caption text-caption text-on-surface-variant">Wash &amp; Fold (6.5 kg) + Blouse</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">$28.50</span>
+<span class="inline-block px-1.5 py-0.5 rounded text-[11px] font-bold bg-primary-fixed text-on-primary-fixed-variant self-start">PAID</span>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-center">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-label-sm font-semibold bg-primary-fixed text-on-primary-fixed-variant">
+                  Ready Today
+                </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="h-9 px-3 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Handover</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Order Details" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Table Footer -->
+<div class="px-space-md py-3 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-caption text-caption text-on-surface-variant">
+<div>
+          Showing <span class="font-semibold text-on-surface">1–6</span> of <span class="font-semibold text-on-surface">18</span> ready tickets • <span class="text-error font-medium">4 require shelf aging audit</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded text-on-surface-variant/40 cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-medium text-on-surface shadow-sm">1</span>
+<button class="px-2 py-0.5 rounded hover:bg-surface-container-high font-medium text-on-surface transition-colors" type="button">2</button>
+<button class="px-2 py-0.5 rounded hover:bg-surface-container-high font-medium text-on-surface transition-colors" type="button">3</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Counter Scan & Policy Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md w-full lg:w-auto">
+<div class="p-3 bg-primary-fixed rounded-xl text-on-primary-fixed-variant shrink-0">
+<span class="material-symbols-outlined text-[28px]">qr_code_scanner</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Fast Counter Handover Scanner</h2>
+<p class="font-caption text-caption text-on-surface-variant">
+            Scan claim ticket barcode or enter the customer's 4-digit code to execute rapid verification &amp; clear shelf bay.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto">
+<div class="relative flex-1 sm:w-64">
+<input class="w-full h-11 px-space-md bg-surface-container-low rounded-lg font-mono text-body-default text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="e.g. 1019 or Scan Barcode" type="text">
+</div>
+<button class="h-11 px-space-md bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary rounded-lg font-label-lg text-label-lg transition-colors shadow-sm shrink-0 flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Instant Handover</span>
+</button>
+</div>
+</div>
+<!-- Policy Footnote -->
+<div class="flex items-center justify-between px-space-xs font-caption text-[12px] text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">info</span>
+<span>Storage Policy: Unclaimed garments over 30 days are scheduled for off-site archiving according to terms. Notice dispatched at Day 7.</span>
+</div>
+<span class="font-mono text-on-surface-variant/70">Shelf Station: Alpha Main Staging</span>
+</div>
+</div>
+</div></main></div></body></html>

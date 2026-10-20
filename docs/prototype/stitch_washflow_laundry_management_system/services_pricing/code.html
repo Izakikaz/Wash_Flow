@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#00367a", "primary": "#006c49", "surface-container-high": "#dee9fc", "on-primary-fixed": "#002113", "surface-tint": "#006c49", "on-primary-container": "#00422b", "primary-fixed": "#6ffbbe", "secondary": "#006a61", "surface-dim": "#d0dbed", "primary-container": "#10b981", "surface-container-low": "#eff4ff", "on-error": "#ffffff", "surface-container": "#e6eeff", "inverse-surface": "#27313f", "outline-variant": "#bbcabf", "on-error-container": "#93000a", "surface-container-highest": "#d9e3f6", "background": "#f8f9ff", "on-surface-variant": "#3c4a42", "secondary-container": "#86f2e4", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#005236", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed-variant": "#004395", "on-secondary-fixed-variant": "#005049", "tertiary-fixed-dim": "#adc6ff", "tertiary": "#005ac2", "error": "#ba1a1a", "surface": "#f8f9ff", "surface-variant": "#d9e3f6", "on-surface": "#121c2a", "inverse-primary": "#4edea3", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "secondary-fixed": "#89f5e7", "surface-bright": "#f8f9ff", "secondary-fixed-dim": "#6bd8cb", "on-tertiary-fixed": "#001a42", "on-primary": "#ffffff", "on-secondary-fixed": "#00201d", "on-secondary": "#ffffff", "on-secondary-container": "#006f66", "on-background": "#121c2a", "tertiary-fixed": "#d8e2ff", "tertiary-container": "#71a1ff", "outline": "#6c7a71", "primary-fixed-dim": "#4edea3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "gutter": "1rem", "margin": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "headline-sm": ["Inter"], "body-lg": ["Inter"], "display-lg": ["Inter"], "caption": ["Inter"], "headline-md": ["Inter"], "label-lg": ["Inter"], "label-sm": ["Inter"], "body-default": ["Inter"], "headline-lg": ["Inter"] }, "fontSize": { "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "500" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "caption": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-default": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-default text-body-default text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Brand logo. - Primary color: #10b981
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WuDBYBKRgBKiRSgtqiuFPXe1vInuH1K-NRtYpJNTW3FYnFXrrLsbEP_gneGVrs9LwAIasVUH2BIg2MU7LUH5p0bSKYk1EtPIRNvKuUpI25TMCSdXOVtv7ev5cHvlWtYlvNrQ4ypEopwjBFuDkWK1iso0TIpkV5P0NR1DLmSHbnPnMTI7bPPAq11Gtie-4FDI8F9sO74EFMjOS7mWdwldoEMP61m-Cb5ja6pTiBFb66hcrmeeYhuCKkwaY"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none tracking-tight">WashFlow</span><span class="font-caption text-caption text-on-surface-variant leading-none mt-1">Laundry OS</span></div></div><div class="p-space-md mx-space-md my-space-xs rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XhxQ3PH8eZEPu-xJo4n9NSox0TgZz7RTYG3PN3M4X-3K8M5hyp2ti28LgoN8Z2xweT7CqaMONcVne5mTFP--kHrG5QmgZm0noSfCQfj_4vXsh-W6tJVUK2qwwg7frFAAjcHEnYN-cfvCU-WEwyHBxX-mnOn6vpiH01oM3mh000D0wYQhWrvfJobUadVOMANc6CbXw9z0g-0e1mxDLiAoX0qS5cUJYSPf-Az5N61BIXzbn18yI8fkujOw"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col overflow-hidden"><span class="font-label-lg text-label-lg text-on-surface truncate">Elena Rostova</span><span class="font-caption text-caption text-primary flex items-center gap-1 font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Shift Active</span></div></div></div><nav class="flex flex-col gap-1 px-space-md mt-space-sm" data-active-classes="bg-primary text-on-primary font-semibold shadow-sm"><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="orders" href="#"><span class="font-label-lg text-label-lg">Orders</span></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="customers" href="#"><span class="font-label-lg text-label-lg">Customers</span></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="services-pricing" href="#"><span class="font-label-lg text-label-lg">Services &amp; Pricing</span></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports" href="#"><span class="font-label-lg text-label-lg">Reports</span></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="users" href="#"><span class="font-label-lg text-label-lg">Users</span></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="font-label-lg text-label-lg">Settings</span></a></nav></div><div class="p-space-md"><a class="flex items-center gap-space-sm px-space-md h-12 rounded-lg text-error hover:bg-error-container hover:text-on-error-container transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-label-lg text-label-lg font-medium">Logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex-1 max-w-xl pr-space-md"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-default text-body-default focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Search order #, customer name, phone, ticket..." type="text"/></div></div><div class="flex items-center gap-space-sm"><div class="h-10 px-space-sm flex items-center gap-1.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[18px] text-primary">storefront</span><span class="hidden xl:inline font-medium text-on-surface">Counter Station 01</span></div><button class="h-10 px-space-sm flex items-center gap-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-on-surface-variant font-label-lg text-label-lg transition-colors" title="Scan Garment or Receipt Barcode" type="button"><span class="material-symbols-outlined text-[20px]">barcode_scanner</span><span class="hidden xl:inline">Scan</span></button><button class="relative h-10 w-10 flex items-center justify-center rounded-lg bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-on-surface-variant transition-colors" title="Notifications" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-[1px] bg-surface-container-highest mx-space-xs"></div><button class="h-10 px-space-md flex items-center gap-space-xs rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">add</span><span>New Order Intake</span></button></div></header><main class="flex-1 w-full pt-16 bg-background px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Page Header & Action Bar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm mb-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Services &amp; Pricing</h1>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-primary-container/15 text-primary">
+          Catalog v2.4 Live
+        </span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant max-w-2xl">
+        Manage laundry catalog, pricing models, unit rates, and terminal availability across all active counter stations and intake portals.
+      </p>
+</div>
+<!-- Header Actions -->
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="h-10 px-space-md flex items-center gap-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors shadow-sm font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">file_download</span>
+<span>Export CSV</span>
+</button>
+<button class="h-10 px-space-md flex items-center gap-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary transition-colors shadow-sm font-label-lg text-label-lg font-semibold" id="trigger-add-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Add New Service</span>
+</button>
+</div>
+</div>
+<!-- Summary Metric Cards Ribbon -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Stat Card 1 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Catalog</span>
+<div class="w-8 h-8 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface leading-none">12</span>
+<span class="font-caption text-caption text-on-surface-variant">/ 14 Total</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-1.5 flex items-center gap-1.5">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-outline"></span>
+          2 archived or paused
+        </p>
+</div>
+<div class="mt-3 w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 85.7%"></div>
+</div>
+</div>
+<!-- Stat Card 2 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Weight-Based</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">scale</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface leading-none">4</span>
+<span class="font-caption text-caption text-on-surface-variant">Services (Per Kg)</span>
+</div>
+<p class="font-caption text-caption text-primary font-medium mt-1.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">trending_flat</span>
+          Avg rate: $3.85 / kg
+        </p>
+</div>
+<div class="mt-3 w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 33%"></div>
+</div>
+</div>
+<!-- Stat Card 3 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Piece-Based</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">dry_cleaning</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface leading-none">8</span>
+<span class="font-caption text-caption text-on-surface-variant">Services (Per Unit)</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-1.5">
+          Tier spreads: $4.50 – $45.00
+        </p>
+</div>
+<div class="mt-3 w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 67%"></div>
+</div>
+</div>
+<!-- Stat Card 4 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Volume Leader</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-on-surface leading-tight truncate">Wash &amp; Fold</span>
+</div>
+<p class="font-caption text-caption text-secondary font-medium mt-1.5 flex items-center gap-1">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+          54% of daily counter volume
+        </p>
+</div>
+<div class="mt-3 w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 54%"></div>
+</div>
+</div>
+</div>
+<!-- Operational Two-Column Canvas: Catalog Table on Left (expands), Add/Edit Inspector Drawer on Right -->
+<div class="flex flex-col 2xl:flex-row gap-space-lg items-start w-full">
+<!-- Left Column: Filter Bar & Table of Services -->
+<div class="flex-1 w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Toolbar & Filters -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md">
+<!-- Search Field -->
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">search</span>
+<input class="w-full h-10 pl-10 pr-3.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-default text-body-default focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="Search services by name, SKU, or tag..." type="text"/>
+</div>
+<!-- Filter Segmented Tabs & Sorting -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 md:pb-0">
+<div class="inline-flex p-1 rounded-lg bg-surface-container-low">
+<button class="px-3 py-1.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm transition-all" type="button">All (14)</button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" type="button">Active (12)</button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" type="button">Per Kg (4)</button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" type="button">Per Piece (8)</button>
+</div>
+<div class="h-6 w-[1px] bg-surface-container-highest mx-1"></div>
+<div class="relative">
+<select class="h-9 pl-2.5 pr-7 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm appearance-none focus:outline-none cursor-pointer">
+<option>Sort: Most Popular</option>
+<option>Price: High to Low</option>
+<option>Price: Low to High</option>
+<option>Name: A to Z</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-[16px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Services Data Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md font-semibold" scope="col">Service &amp; Description</th>
+<th class="py-3 px-space-md font-semibold" scope="col">Model</th>
+<th class="py-3 px-space-md font-semibold" scope="col">Unit Rate</th>
+<th class="py-3 px-space-md font-semibold" scope="col">Requirement &amp; SLA</th>
+<th class="py-3 px-space-md font-semibold text-center" scope="col">Status</th>
+<th class="py-3 px-space-md font-semibold text-right" scope="col">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-default text-body-default">
+<!-- Row 1 (Active, Selected in Inspector) -->
+<tr class="bg-primary-container/5 hover:bg-primary-container/10 transition-colors cursor-pointer group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container/15 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">local_laundry_service</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Wash &amp; Fold (Standard / Everyday)</span>
+<span class="px-1.5 py-0.5 rounded text-[11px] font-mono font-medium bg-surface-container text-on-surface-variant">SVC-WF01</span>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-primary-container/20 text-on-primary-container">Top Pick</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate max-w-sm">Regular clothes, eco-detergent wash, tumble dry, hand folded &amp; bagged.</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary">scale</span>
+                  Per kg
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$3.50</span>
+<span class="font-caption text-caption text-on-surface-variant">/ kg</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Min 3.5 kg</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-outline">schedule</span> 4h avg turnaround
+                  </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<button class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/15 text-primary hover:bg-primary-container/25 transition-colors font-label-sm text-label-sm font-medium" type="button">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                  Active
+                </button>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Edit Service" type="button">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Duplicate" type="button">
+<span class="material-symbols-outlined text-[17px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[17px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed/30 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">dry_cleaning</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Delicate Silk &amp; Blouse</span>
+<span class="px-1.5 py-0.5 rounded text-[11px] font-mono font-medium bg-surface-container text-on-surface-variant">SVC-DL04</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate max-w-sm">Gentle cold handwash prep, dedicated mesh barrier wash, hang air-dry.</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-tertiary">checkroom</span>
+                  Per piece
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$5.75</span>
+<span class="font-caption text-caption text-on-surface-variant">/ piece</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">1 pc min</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-outline">schedule</span> 24h turnaround
+                  </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<button class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/15 text-primary hover:bg-primary-container/25 transition-colors font-label-sm text-label-sm font-medium" type="button">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Active
+                </button>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Edit Service" type="button">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Duplicate" type="button">
+<span class="material-symbols-outlined text-[17px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[17px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">bed</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Heavy Bedding &amp; Bulky Comforter</span>
+<span class="px-1.5 py-0.5 rounded text-[11px] font-mono font-medium bg-surface-container text-on-surface-variant">SVC-BD02</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate max-w-sm">Extra large drum washer, sanitized thermal extraction, hypoallergenic fluff.</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-tertiary">checkroom</span>
+                  Per piece
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$24.00</span>
+<span class="font-caption text-caption text-on-surface-variant">/ piece</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">King / Queen size</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-outline">schedule</span> 12h turnaround
+                  </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<button class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/15 text-primary hover:bg-primary-container/25 transition-colors font-label-sm text-label-sm font-medium" type="button">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Active
+                </button>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Edit Service" type="button">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Duplicate" type="button">
+<span class="material-symbols-outlined text-[17px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[17px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/25 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">apparel</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Standard Suit 2-Piece (Dry Clean)</span>
+<span class="px-1.5 py-0.5 rounded text-[11px] font-mono font-medium bg-surface-container text-on-surface-variant">SVC-DC08</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate max-w-sm">Organic hydrocarbon clean, form pressing, breathable dust garment wrap.</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-tertiary">checkroom</span>
+                  Per piece
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$16.50</span>
+<span class="font-caption text-caption text-on-surface-variant">/ piece</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Jacket + Trouser</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-outline">schedule</span> 48h turnaround
+                  </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<button class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/15 text-primary hover:bg-primary-container/25 transition-colors font-label-sm text-label-sm font-medium" type="button">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Active
+                </button>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Edit Service" type="button">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Duplicate" type="button">
+<span class="material-symbols-outlined text-[17px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[17px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">domain</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Commercial Linen &amp; Towels (B2B Bulk)</span>
+<span class="px-1.5 py-0.5 rounded text-[11px] font-mono font-medium bg-surface-container text-on-surface-variant">SVC-B2B01</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate max-w-sm">High-temperature thermal disinfection, commercial flatwork iron finish.</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary">scale</span>
+                  Per kg
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$2.25</span>
+<span class="font-caption text-caption text-on-surface-variant">/ kg</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Min 15.0 kg</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-outline">schedule</span> Same-day batch
+                  </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<button class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/15 text-primary hover:bg-primary-container/25 transition-colors font-label-sm text-label-sm font-medium" type="button">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Active
+                </button>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Edit Service" type="button">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Duplicate" type="button">
+<span class="material-symbols-outlined text-[17px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[17px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6 (Inactive Row) -->
+<tr class="opacity-75 bg-surface-container-low/30 hover:opacity-100 transition-opacity cursor-pointer group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-outline flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">shield_with_heart</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Leather &amp; Suede Jacket Specialty Care</span>
+<span class="px-1.5 py-0.5 rounded text-[11px] font-mono font-medium bg-surface-container text-on-surface-variant">SVC-SP03</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate max-w-sm">Hand conditioning, deep solvent extraction, temperature vault drying.</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-tertiary">checkroom</span>
+                  Per piece
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$45.00</span>
+<span class="font-caption text-caption text-on-surface-variant">/ piece</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Specialist Partner</span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-outline">schedule</span> 5–7 days
+                  </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<button class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-surface-container transition-colors font-label-sm text-label-sm font-medium" type="button">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  Paused
+                </button>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Edit Service" type="button">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Duplicate" type="button">
+<span class="material-symbols-outlined text-[17px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[17px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-error-container/40 text-error flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">bolt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Express 2-Hour Rush Wash &amp; Fold</span>
+<span class="px-1.5 py-0.5 rounded text-[11px] font-mono font-medium bg-surface-container text-on-surface-variant">SVC-EX01</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate max-w-sm">Priority queue jump, dedicated fast-drum washer &amp; immediate dry-fold pack.</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary">scale</span>
+                  Per kg
+                </span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$5.50</span>
+<span class="font-caption text-caption text-on-surface-variant">/ kg</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Min 3.0 kg</span>
+<span class="font-caption text-caption text-error font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-error">timer</span> 2h guaranteed
+                  </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<button class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/15 text-primary hover:bg-primary-container/25 transition-colors font-label-sm text-label-sm font-medium" type="button">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                  Active
+                </button>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Edit Service" type="button">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" title="Duplicate" type="button">
+<span class="material-symbols-outlined text-[17px]">content_copy</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[17px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination Metadata -->
+<div class="px-space-md py-3 bg-surface-container-low/40 flex items-center justify-between text-on-surface-variant">
+<span class="font-caption text-caption">Showing 7 of 14 services cataloged</span>
+<div class="flex items-center gap-1">
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm opacity-50 cursor-not-allowed" type="button">Previous</button>
+<button class="h-8 w-8 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold shadow-sm" type="button">1</button>
+<button class="h-8 w-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm" type="button">2</button>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm shadow-sm" type="button">Next</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Edit / Add Service Inspector Panel -->
+<div class="w-full 2xl:w-[480px] bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col flex-shrink-0 transition-all" id="service-inspector">
+<!-- Panel Header -->
+<div class="p-space-md bg-surface-container-low/60 flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Edit Service</h2>
+<span class="px-2 py-0.5 rounded text-[11px] font-mono bg-surface-container-highest text-on-surface font-medium">SVC-WF01</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate">Wash &amp; Fold (Standard / Everyday)</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-outline hover:text-on-surface transition-colors" title="Close Panel" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Panel Body: Form Controls -->
+<form class="p-space-md flex flex-col gap-space-md" onsubmit="event.preventDefault();">
+<!-- Field 1: Service Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between">
+<span>Service Name</span>
+<span class="font-caption text-caption text-outline font-normal">Customer &amp; Terminal visible</span>
+</label>
+<input class="h-12 px-3.5 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" type="text" value="Wash &amp; Fold (Standard / Everyday)"/>
+</div>
+<!-- Field 2: Category Dropdown -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Service Category</label>
+<div class="relative">
+<select class="w-full h-12 px-3.5 pr-10 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default appearance-none focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all cursor-pointer">
+<option selected="">Everyday Laundry (Wash &amp; Fold)</option>
+<option>Dry Cleaning &amp; Delicates</option>
+<option>Bedding, Bulky &amp; Household</option>
+<option>Commercial / B2B Linen</option>
+<option>Specialty &amp; Leather Vault</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-[20px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Field 3: Pricing Model Radio Segmented Cards -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Pricing Model</label>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Selected Card -->
+<label class="cursor-pointer rounded-lg p-3 bg-primary-container/15 flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-primary font-label-lg text-label-lg font-semibold">
+<span class="material-symbols-outlined text-[18px]">scale</span>
+<span>Per Kilogram</span>
+</div>
+<div class="w-4 h-4 rounded-full bg-primary flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></div>
+</div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Weight based at intake scale</span>
+</label>
+<!-- Unselected Card -->
+<label class="cursor-pointer rounded-lg p-3 bg-surface-container-low hover:bg-surface-container flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface font-label-lg text-label-lg font-medium">
+<span class="material-symbols-outlined text-[18px] text-outline">checkroom</span>
+<span>Per Piece</span>
+</div>
+<div class="w-4 h-4 rounded-full bg-surface-container-highest"></div>
+</div>
+<span class="font-caption text-caption text-outline">Item count per garment type</span>
+</label>
+</div>
+</div>
+<!-- Field 4: Base Unit Rate & Tax -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Base Rate</label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 font-headline-sm text-headline-sm text-outline select-none">$</span>
+<input class="w-full h-12 pl-8 pr-12 rounded-lg bg-surface-container-low text-on-surface font-headline-sm text-headline-sm font-semibold focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" type="text" value="3.50"/>
+<span class="absolute right-3.5 font-caption text-caption text-on-surface-variant font-medium select-none">/ kg</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Tax Treatment</label>
+<div class="h-12 px-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-body-default text-body-default text-on-surface">Standard (8.5%)</span>
+<span class="material-symbols-outlined text-primary text-[20px]">check</span>
+</div>
+</div>
+</div>
+<!-- Field 5 & 6: Minimum Threshold & Target SLA -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Min. Weight</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 px-3.5 pr-10 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" type="text" value="3.5"/>
+<span class="absolute right-3.5 font-caption text-caption text-outline select-none">kg</span>
+</div>
+<span class="font-caption text-caption text-outline">Under-min billed at $12.25</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Target Turnaround</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 px-3.5 pr-12 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" type="text" value="4"/>
+<span class="absolute right-3.5 font-caption text-caption text-outline select-none">hours</span>
+</div>
+<span class="font-caption text-caption text-outline">Standard shop operating SLA</span>
+</div>
+</div>
+<!-- Field 7: Care Notes / Terminal Instructions -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between">
+<span>Counter Care &amp; Wash Defaults</span>
+<span class="font-caption text-caption text-outline font-normal">Prints on batch wash-card</span>
+</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all resize-none" rows="3">Cold wash 30°C with citrus enzyme eco-detergent. Medium tumble dry heat. Clean-edge hand fold into biodegradable bundle pack.</textarea>
+</div>
+<!-- Field 8: Terminal Availability Toggle Switch -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Intake Availability</span>
+<span class="font-caption text-caption text-on-surface-variant">Active across counter screens &amp; customer self-intake</span>
+</div>
+<!-- Emerald Styled Switch -->
+<button class="w-12 h-6 rounded-full bg-primary-container flex items-center p-0.5 justify-end transition-colors cursor-pointer" title="Toggle Service Availability" type="button">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-sm"></div>
+</button>
+</div>
+<!-- Action Buttons -->
+<div class="pt-space-xs mt- space-xs flex items-center justify-between">
+<button class="h-11 px-3 rounded-lg text-error hover:bg-error-container hover:text-on-error-container transition-colors font-label-lg text-label-lg font-semibold flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span>Archive</span>
+</button>
+<div class="flex items-center gap-space-sm">
+<button class="h-11 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors font-label-lg text-label-lg font-medium" type="button">
+              Cancel
+            </button>
+<button class="h-11 px-space-lg rounded-lg bg-primary-container hover:bg-primary text-on-primary transition-colors font-label-lg text-label-lg font-semibold shadow-sm flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Changes</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for toggling inspector or clicking edit buttons
+  document.querySelectorAll('button[title="Edit Service"]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const inspector = document.getElementById('service-inspector');
+      if (inspector) {
+        inspector.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  });
+
+  const addBtn = document.getElementById('trigger-add-btn');
+  if (addBtn) {
+    addBtn.addEventListener('click', () => {
+      const inspector = document.getElementById('service-inspector');
+      if (inspector) {
+        const title = inspector.querySelector('h2');
+        if (title) title.innerText = 'Add New Service';
+        const skuBadge = inspector.querySelector('.font-mono');
+        if (skuBadge) skuBadge.innerText = 'AUTO-GEN SKU';
+      }
+    });
+  }
+</script></main></div></body></html>

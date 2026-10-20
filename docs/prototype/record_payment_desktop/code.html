@@ -1,0 +1,624 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary-fixed":"#6ffbbe","on-tertiary-fixed":"#001a42","surface-container-lowest":"#ffffff","inverse-surface":"#27313f","on-surface-variant":"#3c4a42","tertiary-container":"#71a1ff","surface-tint":"#006c49","error-container":"#ffdad6","on-error-container":"#93000a","on-tertiary-container":"#00367a","primary-fixed-dim":"#4edea3","secondary-fixed":"#89f5e7","surface-dim":"#d0dbed","on-error":"#ffffff","tertiary-fixed":"#d8e2ff","secondary":"#006a61","surface-container-highest":"#d9e3f6","secondary-fixed-dim":"#6bd8cb","primary":"#006c49","on-secondary-container":"#006f66","error":"#ba1a1a","surface-variant":"#d9e3f6","on-secondary-fixed":"#00201d","on-primary-container":"#00422b","secondary-container":"#86f2e4","on-secondary-fixed-variant":"#005049","outline-variant":"#bbcabf","surface-container-low":"#eff4ff","on-tertiary-fixed-variant":"#004395","outline":"#6c7a71","primary-container":"#10b981","tertiary-fixed-dim":"#adc6ff","surface-container-high":"#dee9fc","on-primary-fixed":"#002113","surface-bright":"#f8f9ff","on-primary":"#ffffff","surface-container":"#e6eeff","on-surface":"#121c2a","inverse-primary":"#4edea3","on-primary-fixed-variant":"#005236","on-tertiary":"#ffffff","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","tertiary":"#005ac2","on-secondary":"#ffffff","on-background":"#121c2a","background":"#f8f9ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"2rem","space-md":"1rem","margin":"1rem","space-lg":"1.5rem","gutter":"1rem"},"fontFamily":{"headline-sm":["Inter"],"body-lg":["Inter"],"body-default":["Inter"],"label-lg":["Inter"],"caption":["Inter"],"label-sm":["Inter"],"display-lg":["Inter"],"headline-md":["Inter"],"headline-lg":["Inter"]},"fontSize":{"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"500"}],"body-default":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"caption":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-default text-body-default text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Brand logo. - Primary color: #10b981
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WguZ6HSie_QbJP3lxKgQIxxK2jpnTO3-diolSmpJAm5Urnku6JWMqN3_PkM9csN5MQ-uY2hvWEU0wiqvUAfE8jvqs5fPE_zSrgkNk4vGQefZyjBNwxxT8X1ZlJvs44u1ZQKcA_OEQ28NCI4ZJi4unrY-eJTVNBNNVFH8aBpZB2IOclp0kIyrjrcZMl0cIUYhSTnMafTaxEt35V2Av8j-arteDZ5Z6ClPBwFthhljqnNoDob9HvViUrgQU"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">WashFlow</span><span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Ops Station</span></div></div><div class="px-space-md py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="orders" href="#"><span class="material-symbols-outlined text-[20px]">local_laundry_service</span><span>Orders</span></a><div class="pl-space-xl flex flex-col gap-space-xs"><a aria-current="page" class="flex items-center gap-space-xs px-space-sm py-1 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="settlement" href="#"><span class="material-symbols-outlined text-[16px]">payments</span><span>Record Payment</span></a></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="customers" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Customers</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="services-and-pricing" href="#"><span class="material-symbols-outlined text-[20px]">sell</span><span>Services &amp; Pricing</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span>Reports</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div></div><div class="p-space-md bg-surface-container-lowest"><div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UW6-UEpsSc8YIV6WuiXMhJTNtIeEPaaZT1jVH2DvBOBsAkE9cOVQ2IG0HTqKSgPa07U-qo07O2nXwP3YE9bj5DB4DoIAlOkw8sFRarIIWl4dSRaqwa6c2YnJGURztRYn3uvAeJ2O2t1REIuntnRfIHxHsNmnvgc4gj1PFegS2bLhkSEcV9eLr29t4DE0AHl_8OCx2T_L0lmttoujk4fpMEG962mkLfDf47pIxExEK3ijAK3nuGl8SOZw"><span class="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-lg text-label-lg text-on-surface truncate">Elena Rostova</span><span class="font-caption text-caption text-on-surface-variant truncate">Counter Lead</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">badge</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex-1 max-w-md"><div class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] text-on-surface-variant"><span class="material-symbols-outlined text-[20px]">search</span><input class="w-full bg-transparent border-none outline-none font-body-default text-body-default text-on-surface placeholder:text-on-surface-variant" placeholder="Search orders, phone, ticket #..." type="search"></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>Station 02 Active</span></div><button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><button class="h-10 px-space-md flex items-center gap-space-xs rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[20px]">add</span><span>New Order Intake</span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UW6-UEpsSc8YIV6WuiXMhJTNtIeEPaaZT1jVH2DvBOBsAkE9cOVQ2IG0HTqKSgPa07U-qo07O2nXwP3YE9bj5DB4DoIAlOkw8sFRarIIWl4dSRaqwa6c2YnJGURztRYn3uvAeJ2O2t1REIuntnRfIHxHsNmnvgc4gj1PFegS2bLhkSEcV9eLr29t4DE0AHl_8OCx2T_L0lmttoujk4fpMEG962mkLfDf47pIxExEK3ijAK3nuGl8SOZw"></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-space-lg py-space-md flex flex-col gap-space-lg">
+<!-- BREADCRUMB & CONTEXTUAL STATUS HEADER -->
+<header class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-sm">
+<div class="flex flex-col gap-space-xs">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">local_laundry_service</span>
+            Orders
+          </a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors font-body-default text-body-default" href="#">Order Detail #WF-1052</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Record Payment</span>
+</nav>
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Counter Tender Settlement</h1>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm tracking-wide">
+            Ticket #WF-1052
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-semibold">POS Live</span>
+<span class="text-on-surface-variant">• Station 01 Front Desk</span>
+</div>
+<span class="px-space-sm py-1.5 rounded-lg bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+          Ready for Pickup
+        </span>
+<span class="px-space-sm py-1.5 rounded-lg bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">person_pin_circle</span>
+          Customer Waiting at Desk
+        </span>
+</div>
+</header>
+<!-- TWO-COLUMN WORKFLOW GRID -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Tender Collection & Payment Input Form (7 cols) -->
+<section class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-lg">
+<!-- Form Header -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface">Record New Tender</h2>
+<p class="font-caption text-caption text-on-surface-variant">Capture counter settlement against outstanding ticket balance</p>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+              Transaction Step 2 of 2
+            </span>
+</div>
+<!-- Tender Amount Input with Quick Presets -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1" for="tender-amount-input">
+                Tender Amount Received
+                <span class="text-error">*</span>
+</label>
+<span class="font-caption text-caption text-on-surface-variant">Tap shortcut or key manually</span>
+</div>
+<!-- Quick Pill Selectors -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+<button class="preset-pill px-space-sm py-2 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 shadow-sm transition-all" id="btn-exact" type="button">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                $14.50 (Exact)
+              </button>
+<button class="preset-pill px-space-sm py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center transition-all" id="btn-20" type="button">
+                $20.00 (Bill)
+              </button>
+<button class="preset-pill px-space-sm py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center transition-all" id="btn-50" type="button">
+                $50.00 (Bill)
+              </button>
+<button class="preset-pill px-space-sm py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center transition-all" id="btn-custom" type="button">
+                Custom Key
+              </button>
+</div>
+<!-- Numeric Currency Display & Keypad Input -->
+<div class="relative flex items-center mt-1">
+<div class="absolute left-space-md flex items-center pointer-events-none text-on-surface font-display-lg text-display-lg font-bold">
+                $
+              </div>
+<input class="w-full h-16 pl-12 pr-28 rounded-lg bg-surface-container-low text-on-surface font-display-lg text-display-lg font-bold outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="tender-amount-input" step="0.25" type="number" value="14.50">
+<div class="absolute right-space-sm flex items-center gap-space-xs">
+<button class="h-10 px-space-sm rounded-lg bg-surface-container-highest hover:bg-surface-dim text-on-surface font-label-sm text-label-sm transition-colors" id="btn-clear" type="button">
+                  Clear
+                </button>
+<button class="h-10 px-space-sm rounded-lg bg-surface-container-highest hover:bg-surface-dim text-on-surface font-label-sm text-label-sm transition-colors flex items-center justify-center" id="btn-reset" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+</button>
+</div>
+</div>
+<!-- Live Change Calculation Box (Dynamically shown / calculated) -->
+<div class="p-space-md rounded-lg bg-secondary-container/40 flex items-center justify-between" id="change-preview-box">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">change_circle</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-secondary-container font-semibold uppercase tracking-wider">Change Calculation</span>
+<span class="font-caption text-caption text-on-surface-variant">Tendered: <span class="font-semibold" id="disp-tendered">$14.50</span> • Total Due: <span class="font-semibold">$14.50</span></span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-secondary-container block">Change to Return</span>
+<span class="font-headline-lg text-headline-lg font-bold text-secondary" id="disp-change">$0.00</span>
+</div>
+</div>
+</div>
+<!-- Payment Method Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface">Payment Method</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" id="payment-methods">
+<!-- Cash Card -->
+<label class="payment-method-card relative flex flex-col p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all shadow-sm">
+<input checked="" class="peer sr-only" name="payment_method" type="radio" value="cash">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">point_of_sale</span>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-highest peer-checked:bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Cash Till</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Station Drawer 01</span>
+<span class="mt-space-sm font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock_open</span> Auto Drawer Kick
+                </span>
+</label>
+<!-- GCash Card -->
+<label class="payment-method-card relative flex flex-col p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<input class="peer sr-only" name="payment_method" type="radio" value="gcash">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">qr_code_scanner</span>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-highest peer-checked:bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">GCash QR</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Instant wallet transfer</span>
+<span class="mt-space-sm font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sync_alt</span> Scan at Counter
+                </span>
+</label>
+<!-- Card / Terminal Card -->
+<label class="payment-method-card relative flex flex-col p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<input class="peer sr-only" name="payment_method" type="radio" value="terminal">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">credit_card</span>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-highest peer-checked:bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Card / Ingenico</span>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5">Debit/Credit NFC Chip</span>
+<span class="mt-space-sm font-label-sm text-label-sm text-on-surface-variant font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">wifi_tethering</span> Paired Terminal
+                </span>
+</label>
+</div>
+</div>
+<!-- Reference / Official Receipt (OR) Number Input -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface" for="reference-input">
+                Reference / Official Receipt (OR) Number
+              </label>
+<span class="font-caption text-caption text-on-surface-variant">Auto-generated or manual slip</span>
+</div>
+<div class="relative">
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default outline-none focus:bg-surface-container-lowest focus:shadow-sm transition-all" id="reference-input" placeholder="e.g. GCash Ref #10928374 or Cash Till Drawer 01" type="text" value="OR-2024-001052">
+<button class="absolute right-2 top-2 h-8 px-space-xs rounded bg-surface-container-highest hover:bg-surface-dim text-on-surface font-label-sm text-label-sm" type="button">
+                Generate OR
+              </button>
+</div>
+<p class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">info</span>
+              Required for electronic wallets, card settlements, and statutory counter tax audits.
+            </p>
+</div>
+<!-- Dispatch & Receipt Print Preferences -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Customer Dispatch &amp; Slips</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest cursor-pointer">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-0" type="checkbox">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">sms</span>
+                    Send SMS Receipt
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">+63 917 555 0192 (Maria)</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest cursor-pointer">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-0" type="checkbox">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">receipt_long</span>
+                    Print Thermal Slip
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">Epson TM-T88VI (Auto-cut)</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest cursor-pointer sm:col-span-2">
+<input class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-0" type="checkbox">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">mail</span>
+                    Email Full PDF Invoice Copy
+                  </span>
+<span class="font-caption text-caption text-on-surface-variant">maria.santos@email.ph</span>
+</div>
+</label>
+</div>
+</div>
+<!-- PRIMARY ACTION BAR -->
+<div class="flex flex-col sm:flex-row items-center gap-space-sm pt-space-xs">
+<button class="w-full sm:flex-1 h-14 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-space-sm shadow-md transition-all active:scale-[0.99]" id="btn-settle-action" type="button">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<span>Record &amp; Settle Payment ($14.50)</span>
+<span class="px-space-xs py-0.5 rounded bg-on-primary/20 text-on-primary font-label-sm text-label-sm font-normal">
+                Enter ↵
+              </span>
+</button>
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<button class="h-14 px-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-1 transition-colors" title="Print Pro-Forma Bill" type="button">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span class="hidden sm:inline">Pro-Forma</span>
+</button>
+<button class="h-14 px-space-md rounded-xl bg-surface-container-low hover:bg-error-container hover:text-on-error-container text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center transition-colors" title="Cancel and return" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- RIGHT COLUMN: Order Summary, Balance Banner & Diagnostics (5 cols) -->
+<section class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- PROMINENT BALANCE DUE CALLOUT BANNER -->
+<div class="bg-gradient-to-br from-primary-fixed to-secondary-fixed/50 p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-md relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-primary/10 pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+                Unsettled Balance
+              </span>
+<span class="text-on-primary-fixed-variant font-caption text-caption font-semibold">Collect at Pickup</span>
+</div>
+<span class="material-symbols-outlined text-[28px] text-primary">point_of_sale</span>
+</div>
+<div class="flex flex-col my-1">
+<span class="font-label-lg text-label-lg text-on-primary-fixed font-semibold">Total Balance Due</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg font-bold text-on-primary-fixed text-[44px] leading-tight tracking-tight">
+                $14.50
+              </span>
+<span class="font-label-sm text-label-sm text-on-primary-fixed-variant uppercase">USD</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-between text-on-surface">
+<span class="font-caption text-caption flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+              Pre-authorized release code: #REL-1052
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-primary">Armed</span>
+</div>
+</div>
+<!-- ORDER SNAPSHOT CARD -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between pb-space-xs">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Maria Santos</span>
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">star</span> VIP Frequent
+                </span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">+63 917 555 0192 • maria.santos@email.ph</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Bag Tag</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">#WF-1052</span>
+</div>
+</div>
+<!-- Customer Order Photo Proof / Tag Thumbnail -->
+<div class="flex items-center gap-space-md p-space-sm rounded-lg bg-surface-container-low">
+<img class="w-16 h-16 rounded-lg object-cover flex-shrink-0" data-alt="Neatly folded pile of freshly laundered high quality bed sheets and blankets wrapped in clear biodegradable protective laundry film inside a modern counter workstation with crisp soft lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDweCuzXla_KyQEM3XVripjemsKRWNn06VuGa8jwYAFwKTVubFZGx7476nRSF9JxPsg5ofmespuE-CXJj2tjUAJ3CEMXqTYRbCOko8ouH1haZLDlSbbJ2MOyHGUwE0Wet90Mzoky5ctr2C5YrLChGiETEfnouk45wvdjQasKDITXNS7Olf5FG1N3laQrrp0U2K3JA_rqoIu4ixGpfm39Gm-UTaAYn3ciq2-E9Kgzb6gNGl9Um5UYYqT">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Intake Batch 09:30 AM</span>
+<span class="font-caption text-caption text-on-surface-variant">6.5 kg Wash &amp; Fold (Regular)</span>
+<span class="font-caption text-caption text-on-surface-variant">2x Heavy Blanket Comforters</span>
+</div>
+</div>
+<!-- Financial Breakdown Table -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Gross Order Value</span>
+<span class="text-on-surface font-semibold">$24.50</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">check</span>
+                Intake Deposit Paid (Cash)
+              </span>
+<span class="text-primary font-semibold">-$10.00</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Environmental &amp; Detergent Surcharge</span>
+<span class="text-on-surface font-medium">$0.00 (Waived VIP)</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-space-xs text-on-surface font-headline-sm text-headline-sm font-bold bg-surface-container-low p-space-sm rounded-lg">
+<span>Net Remaining Due</span>
+<span class="text-primary font-bold">$14.50</span>
+</div>
+</div>
+<!-- Station & Register Diagnostics -->
+<div class="flex flex-col gap-space-xs pt-space-xs text-on-surface-variant font-caption text-caption">
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">storage</span> Cash Drawer Station 01:
+              </span>
+<span class="text-on-surface font-medium">Armed &amp; Ready</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">print</span> Slip Printer TM-T88VI:
+              </span>
+<span class="text-primary font-medium flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span> Online (Feed Ready)
+              </span>
+</div>
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">badge</span> Operator Lead:
+              </span>
+<span class="text-on-surface font-medium">Elena Rostova</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- FULL-WIDTH LOWER SECTION: Payment History & Audit Ledger Table -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">history</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+              Payment History &amp; Transaction Ledger
+            </h3>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+              1 Settled • 1 Pending Tender
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span> Real-time Audit Synced
+          </span>
+</div>
+</div>
+<!-- High-Density Responsive Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-default text-body-default">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l-lg">Txn ID</th>
+<th class="py-space-sm px-space-md">Date &amp; Time</th>
+<th class="py-space-sm px-space-md">Description / Stage</th>
+<th class="py-space-sm px-space-md">Method</th>
+<th class="py-space-sm px-space-md">Recorded By</th>
+<th class="py-space-sm px-space-md">Reference / OR #</th>
+<th class="py-space-sm px-space-md text-right">Amount</th>
+<th class="py-space-sm px-space-md">Status</th>
+<th class="py-space-sm px-space-md text-right rounded-r-lg">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-default text-body-default">
+<!-- Row 1: Existing Deposit Paid -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md font-label-sm text-label-sm font-semibold text-primary">
+                TXN-8841
+              </td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-medium">Today</span>, 09:30 AM
+              </td>
+<td class="py-space-md px-space-md font-medium">
+                Intake Deposit Paid (Drop-off)
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[14px]">payments</span> Cash Till
+                </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant whitespace-nowrap">
+                Elena Rostova (St. 01)
+              </td>
+<td class="py-space-md px-space-md font-caption text-caption text-on-surface-variant font-mono">
+                TILL-01-9481
+              </td>
+<td class="py-space-md px-space-md text-right font-headline-sm text-headline-sm font-bold">
+                $10.00
+              </td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1 w-max">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Settled
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="h-8 px-space-sm rounded bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm inline-flex items-center gap-1" title="Reprint Slip" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt</span> Slip
+                </button>
+</td>
+</tr>
+<!-- Row 2: In-Progress / Draft Tender Settlement -->
+<tr class="bg-secondary-container/20 hover:bg-secondary-container/30 transition-colors">
+<td class="py-space-md px-space-md font-label-sm text-label-sm font-semibold text-secondary">
+                TXN-8842 (Draft)
+              </td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="font-medium">Today</span>, 14:30 PM (Now)
+              </td>
+<td class="py-space-md px-space-md font-medium text-secondary">
+                Final Balance Settlement (Pickup)
+              </td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold" id="table-draft-method">
+<span class="material-symbols-outlined text-[14px]">point_of_sale</span> Cash
+                </span>
+</td>
+<td class="py-space-md px-space-md text-on-surface-variant whitespace-nowrap">
+                Elena Rostova (St. 01)
+              </td>
+<td class="py-space-md px-space-md font-caption text-caption text-on-surface-variant font-mono">
+                OR-2024-001052
+              </td>
+<td class="py-space-md px-space-md text-right font-headline-sm text-headline-sm font-bold text-secondary">
+                $14.50
+              </td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 w-max">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> Pending Submit
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="h-8 px-space-sm rounded bg-primary-container text-on-primary font-label-sm text-label-sm inline-flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span> Auto-fill
+                </button>
+</td>
+</tr>
+</tbody>
+<!-- Table Summary Footer -->
+<tfoot>
+<tr class="bg-surface-container-low font-label-sm text-label-sm text-on-surface">
+<td class="py-space-md px-space-md rounded-l-lg" colspan="5">
+<span class="font-semibold text-on-surface-variant">Order Value &amp; Settlement Reconciliation</span>
+</td>
+<td class="py-space-md px-space-md text-right font-medium text-on-surface-variant">
+                Total Paid: <span class="font-bold text-on-surface">$10.00</span>
+</td>
+<td class="py-space-md px-space-md text-right font-headline-sm text-headline-sm font-bold text-primary">
+                Gross: $24.50
+              </td>
+<td class="py-space-md px-space-md text-right rounded-r-lg" colspan="2">
+<span class="px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                  Outstanding: $14.50
+                </span>
+</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</section>
+</div>
+</div>
+<script>
+  (function() {
+    const totalDue = 14.50;
+    const tenderInput = document.getElementById('tender-amount-input');
+    const dispTendered = document.getElementById('disp-tendered');
+    const dispChange = document.getElementById('disp-change');
+    const btnExact = document.getElementById('btn-exact');
+    const btn20 = document.getElementById('btn-20');
+    const btn50 = document.getElementById('btn-50');
+    const btnCustom = document.getElementById('btn-custom');
+    const btnClear = document.getElementById('btn-clear');
+    const btnReset = document.getElementById('btn-reset');
+    const btnSettle = document.getElementById('btn-settle-action');
+    const draftMethodBadge = document.getElementById('table-draft-method');
+    const methodRadios = document.querySelectorAll('input[name="payment_method"]');
+
+    function updateChange() {
+      const val = parseFloat(tenderInput.value) || 0;
+      dispTendered.textContent = '$' + val.toFixed(2);
+      const diff = val - totalDue;
+      if (diff >= 0) {
+        dispChange.textContent = '$' + diff.toFixed(2);
+        dispChange.className = 'font-headline-lg text-headline-lg font-bold text-secondary';
+      } else {
+        dispChange.textContent = 'Under by $' + Math.abs(diff).toFixed(2);
+        dispChange.className = 'font-headline-lg text-headline-lg font-bold text-error';
+      }
+      btnSettle.innerHTML = '<span class="material-symbols-outlined text-[24px]">verified</span><span>Record & Settle Payment ($' + Math.min(val, totalDue).toFixed(2) + ')</span><span class="px-space-xs py-0.5 rounded bg-on-primary/20 text-on-primary font-label-sm text-label-sm font-normal">Enter ↵</span>';
+    }
+
+    function setActivePill(activeBtn) {
+      [btnExact, btn20, btn50, btnCustom].forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-surface-container-low', 'text-on-surface');
+        activeBtn.classList.add('bg-primary-container', 'text-on-primary');
+      }
+    }
+
+    btnExact.addEventListener('click', () => {
+      tenderInput.value = '14.50';
+      setActivePill(btnExact);
+      updateChange();
+    });
+
+    btn20.addEventListener('click', () => {
+      tenderInput.value = '20.00';
+      setActivePill(btn20);
+      updateChange();
+    });
+
+    btn50.addEventListener('click', () => {
+      tenderInput.value = '50.00';
+      setActivePill(btn50);
+      updateChange();
+    });
+
+    btnCustom.addEventListener('click', () => {
+      tenderInput.focus();
+      tenderInput.select();
+      setActivePill(btnCustom);
+    });
+
+    btnClear.addEventListener('click', () => {
+      tenderInput.value = '';
+      updateChange();
+      setActivePill(null);
+      tenderInput.focus();
+    });
+
+    btnReset.addEventListener('click', () => {
+      tenderInput.value = '14.50';
+      setActivePill(btnExact);
+      updateChange();
+    });
+
+    tenderInput.addEventListener('input', () => {
+      updateChange();
+      setActivePill(null);
+    });
+
+    // Keyboard shortcut Enter / F12
+    window.addEventListener('keydown', (e) => {
+      if ((e.key === 'Enter' && e.ctrlKey) || e.key === 'F12') {
+        e.preventDefault();
+        btnSettle.click();
+      }
+    });
+
+    // Payment method switcher visual indicator
+    methodRadios.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        document.querySelectorAll('.payment-method-card').forEach(card => {
+          card.classList.remove('bg-surface-container-high', 'shadow-sm');
+        });
+        const parentCard = e.target.closest('.payment-method-card');
+        if (parentCard) {
+          parentCard.classList.add('bg-surface-container-high');
+        }
+        
+        // update draft table row icon
+        if (e.target.value === 'cash') {
+          draftMethodBadge.innerHTML = '<span class="material-symbols-outlined text-[14px]">point_of_sale</span> Cash';
+        } else if (e.target.value === 'gcash') {
+          draftMethodBadge.innerHTML = '<span class="material-symbols-outlined text-[14px]">qr_code_scanner</span> GCash';
+        } else {
+          draftMethodBadge.innerHTML = '<span class="material-symbols-outlined text-[14px]">credit_card</span> Card';
+        }
+      });
+    });
+
+    btnSettle.addEventListener('click', () => {
+      const val = parseFloat(tenderInput.value) || 0;
+      if (val < totalDue) {
+        alert('Tender amount ($' + val.toFixed(2) + ') is less than required balance ($' + totalDue.toFixed(2) + ').');
+        return;
+      }
+      btnSettle.classList.add('opacity-80');
+      btnSettle.innerHTML = '<span class="material-symbols-outlined text-[24px] animate-spin">refresh</span><span>Printing Slip & Finalizing...</span>';
+      setTimeout(() => {
+        alert('Payment settled successfully! Thermal receipt printed and SMS sent to Maria Santos.');
+        btnSettle.innerHTML = '<span class="material-symbols-outlined text-[24px]">done_all</span><span>Settled & Closed</span>';
+        btnSettle.classList.remove('bg-primary-container', 'opacity-80');
+        btnSettle.classList.add('bg-secondary');
+      }, 1000);
+    });
+
+  })();
+</script></main></div></body></html>

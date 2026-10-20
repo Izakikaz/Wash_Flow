@@ -1,0 +1,902 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#00367a", "primary": "#006c49", "surface-container-high": "#dee9fc", "on-primary-fixed": "#002113", "surface-tint": "#006c49", "on-primary-container": "#00422b", "primary-fixed": "#6ffbbe", "secondary": "#006a61", "surface-dim": "#d0dbed", "primary-container": "#10b981", "surface-container-low": "#eff4ff", "on-error": "#ffffff", "surface-container": "#e6eeff", "inverse-surface": "#27313f", "outline-variant": "#bbcabf", "on-error-container": "#93000a", "surface-container-highest": "#d9e3f6", "background": "#f8f9ff", "on-surface-variant": "#3c4a42", "secondary-container": "#86f2e4", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#005236", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed-variant": "#004395", "on-secondary-fixed-variant": "#005049", "tertiary-fixed-dim": "#adc6ff", "tertiary": "#005ac2", "error": "#ba1a1a", "surface": "#f8f9ff", "surface-variant": "#d9e3f6", "on-surface": "#121c2a", "inverse-primary": "#4edea3", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "secondary-fixed": "#89f5e7", "surface-bright": "#f8f9ff", "secondary-fixed-dim": "#6bd8cb", "on-tertiary-fixed": "#001a42", "on-primary": "#ffffff", "on-secondary-fixed": "#00201d", "on-secondary": "#ffffff", "on-secondary-container": "#006f66", "on-background": "#121c2a", "tertiary-fixed": "#d8e2ff", "tertiary-container": "#71a1ff", "outline": "#6c7a71", "primary-fixed-dim": "#4edea3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "gutter": "1rem", "margin": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "headline-sm": ["Inter"], "body-lg": ["Inter"], "display-lg": ["Inter"], "caption": ["Inter"], "headline-md": ["Inter"], "label-lg": ["Inter"], "label-sm": ["Inter"], "body-default": ["Inter"], "headline-lg": ["Inter"] }, "fontSize": { "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "500" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "caption": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-default": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-default text-body-default text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Brand logo. - Primary color: #10b981
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WuDBYBKRgBKiRSgtqiuFPXe1vInuH1K-NRtYpJNTW3FYnFXrrLsbEP_gneGVrs9LwAIasVUH2BIg2MU7LUH5p0bSKYk1EtPIRNvKuUpI25TMCSdXOVtv7ev5cHvlWtYlvNrQ4ypEopwjBFuDkWK1iso0TIpkV5P0NR1DLmSHbnPnMTI7bPPAq11Gtie-4FDI8F9sO74EFMjOS7mWdwldoEMP61m-Cb5ja6pTiBFb66hcrmeeYhuCKkwaY"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none tracking-tight">WashFlow</span><span class="font-caption text-caption text-on-surface-variant leading-none mt-1">Laundry OS</span></div></div><div class="p-space-md mx-space-md my-space-xs rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="relative flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XhxQ3PH8eZEPu-xJo4n9NSox0TgZz7RTYG3PN3M4X-3K8M5hyp2ti28LgoN8Z2xweT7CqaMONcVne5mTFP--kHrG5QmgZm0noSfCQfj_4vXsh-W6tJVUK2qwwg7frFAAjcHEnYN-cfvCU-WEwyHBxX-mnOn6vpiH01oM3mh000D0wYQhWrvfJobUadVOMANc6CbXw9z0g-0e1mxDLiAoX0qS5cUJYSPf-Az5N61BIXzbn18yI8fkujOw"><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col overflow-hidden"><span class="font-label-lg text-label-lg text-on-surface truncate">Elena Rostova</span><span class="font-caption text-caption text-primary flex items-center gap-1 font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Shift Active</span></div></div></div><nav class="flex flex-col gap-1 px-space-md mt-space-sm" data-active-classes="bg-primary text-on-primary font-semibold shadow-sm"><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-lg text-label-lg">Dashboard</span></div></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="orders" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">local_laundry_service</span><span class="font-label-lg text-label-lg">Orders</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">28</span></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="customers" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Customers</span></div></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="services" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">dry_cleaning</span><span class="font-label-lg text-label-lg">Services</span></div></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">bar_chart_4_bars</span><span class="font-label-lg text-label-lg">Reports</span></div></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="users" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Users</span></div><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-wide">Admin</span></a><a class="flex items-center justify-between px-space-md h-12 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></div></a></nav></div><div class="p-space-md"><a class="flex items-center gap-space-sm px-space-md h-12 rounded-lg text-error hover:bg-error-container hover:text-on-error-container transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-label-lg text-label-lg font-medium">Logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex-1 max-w-xl pr-space-md"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-default text-body-default focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Search order #, customer name, phone, ticket..." type="text"></div></div><div class="flex items-center gap-space-sm"><button class="h-10 px-space-sm flex items-center gap-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-on-surface-variant font-label-lg text-label-lg transition-colors" title="Scan Garment or Receipt Barcode" type="button"><span class="material-symbols-outlined text-[20px]">barcode_scanner</span><span class="hidden xl:inline">Scan</span></button><button class="relative h-10 w-10 flex items-center justify-center rounded-lg bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-on-surface-variant transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-[1px] bg-surface-container-highest mx-space-xs"></div><button class="h-10 px-space-md flex items-center gap-space-xs rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">add</span><span>New Order Intake</span></button></div></header><main class="flex-1 w-full pt-16 bg-background px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Utility Context & Metrics -->
+<div class="flex flex-col gap-space-md mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Customer Directory</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">1,420 Registered</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            48 Active This Week
+          </span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-1">Manage counter accounts, commercial contracts, bespoke garment care notes, and automated SMS intake pipelines.</p>
+</div>
+<!-- Action Group -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="h-10 px-3.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg shadow-sm transition-all flex items-center gap-1.5" id="importBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+<span>Import Contacts</span>
+</button>
+<button class="h-10 px-3.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg shadow-sm transition-all flex items-center gap-1.5" id="exportBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export CSV</span>
+</button>
+<button class="h-10 px-4 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-all flex items-center gap-1.5" id="openDrawerBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>Add New Customer</span>
+</button>
+</div>
+</div>
+<!-- Quick Search & Filter Controls -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-col md:flex-row items-center gap-space-sm">
+<div class="relative flex-1 w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full h-11 pl-11 pr-10 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-colors" id="customerSearchInput" placeholder="Search by customer name, phone (555...), email, or delivery street..." type="text" value="Sarah Jenkins">
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface p-1 rounded-full hover:bg-surface-container transition-colors" id="clearSearchBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-2 self-stretch md:self-auto">
+<button class="h-11 px-3.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-lg text-label-lg flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>More Filters</span>
+</button>
+<button class="h-11 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center transition-colors" title="Sort Column" type="button">
+<span class="material-symbols-outlined text-[20px]">swap_vert</span>
+</button>
+</div>
+</div>
+<!-- Quick Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pt-1 pb-0.5 select-none">
+<button class="filter-pill active px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm transition-all whitespace-nowrap flex items-center gap-1.5" type="button">
+<span>All Customers</span>
+<span class="px-1.5 py-0.2 rounded-full bg-on-primary/20 text-on-primary text-[10px]">1,420</span>
+</button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all whitespace-nowrap flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[14px] text-tertiary">workspace_premium</span>
+<span>VIP / Loyalty</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface text-[10px]">142</span>
+</button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all whitespace-nowrap flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[14px]">corporate_fare</span>
+<span>Commercial Accounts</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface text-[10px]">38</span>
+</button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all whitespace-nowrap flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Has Unpaid Balance</span>
+<span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container text-[10px] font-bold">14</span>
+</button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all whitespace-nowrap flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[14px] text-primary">local_laundry_service</span>
+<span>With Active Orders</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface text-[10px]">48</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Workspace: Split Grid with Active Customer Table & Integrated Edit Form -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Customer Table Column (xl:col-span-7 or 8) -->
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header Bar -->
+<div class="px-space-md py-3.5 bg-surface-container-low flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">contact_page</span>
+            Active Registry
+          </span>
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption">
+<span>Sorted by: <strong class="text-on-surface">Recent Intake</strong></span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>Batch Select: <a class="text-primary hover:underline font-label-sm text-label-sm" href="#">Select All (7)</a></span>
+</div>
+</div>
+<!-- Table Viewport -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/60 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md font-semibold">Customer</th>
+<th class="py-3 px-3 font-semibold">Contact / Phone</th>
+<th class="py-3 px-3 font-semibold">Delivery &amp; Zone</th>
+<th class="py-3 px-3 font-semibold">Orders &amp; LTV</th>
+<th class="py-3 px-3 font-semibold">Balance</th>
+<th class="py-3 px-space-md text-right font-semibold">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low" id="customerTableBody">
+<!-- Row 1: Sarah Jenkins (Active edit selection) -->
+<tr class="bg-surface-container-low/80 hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="selectCustomer('sarah')">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="relative w-9 h-9 rounded-full bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center font-bold text-sm shrink-0">
+                      SJ
+                      <span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-primary ring-2 ring-surface-container-lowest" title="Active Order in System"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Sarah Jenkins</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-container font-label-sm text-[11px] font-bold">VIP</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate">sarah.j@example.com</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-mono text-[13px]">(555) 234-8901</span>
+<div class="flex items-center gap-2 mt-0.5">
+<button class="text-primary hover:text-on-primary-container p-0.5 rounded flex items-center" title="Send SMS" type="button">
+<span class="material-symbols-outlined text-[15px]">sms</span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded flex items-center" title="Direct Call" type="button">
+<span class="material-symbols-outlined text-[15px]">call</span>
+</button>
+<span class="font-caption text-[11px] text-secondary font-medium">Opted-in SMS</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-body-default text-[13px] text-on-surface truncate max-w-[170px]" title="742 Evergreen Terrace, Apt 4B">742 Evergreen Terr, #4B</span>
+<span class="inline-block mt-0.5 px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant text-[11px] font-medium w-max">Zone A • Downtown</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">42 ord <span class="text-on-surface-variant font-normal">• $1,280.50</span></span>
+<span class="font-caption text-caption text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">cyclone</span> In Washing
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Settled
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-surface-container-high transition-colors" title="Edit Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="View Order History" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-error hover:bg-error-container transition-colors" title="Archive Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Robert Hayes -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="selectCustomer('robert')">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface font-bold text-sm flex items-center justify-center shrink-0">RH</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Robert Hayes</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate">rhayes.consult@outlook.com</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-mono text-[13px]">(555) 011-8833</span>
+<div class="flex items-center gap-2 mt-0.5">
+<button class="text-primary hover:text-on-primary-container p-0.5 rounded flex items-center" type="button"><span class="material-symbols-outlined text-[15px]">sms</span></button>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded flex items-center" type="button"><span class="material-symbols-outlined text-[15px]">call</span></button>
+<span class="font-caption text-[11px] text-on-surface-variant">Voice Primary</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-body-default text-[13px] text-on-surface truncate max-w-[170px]">104 Maple Ave</span>
+<span class="inline-block mt-0.5 px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant text-[11px] font-medium w-max">Zone B • West End</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">18 ord <span class="text-on-surface-variant font-normal">• $520.00</span></span>
+<span class="font-caption text-caption text-error font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span> Overdue Pickup (4d)
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Settled
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">history</span></button>
+<button class="p-1.5 rounded-lg text-outline hover:text-error hover:bg-error-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Linda Kowalski (Unpaid Balance) -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="selectCustomer('linda')">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface font-bold text-sm flex items-center justify-center shrink-0">LK</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Linda Kowalski</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate">l.kowalski@gmail.com</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-mono text-[13px]">(555) 349-1120</span>
+<div class="flex items-center gap-2 mt-0.5">
+<button class="text-primary hover:text-on-primary-container p-0.5 rounded flex items-center" type="button"><span class="material-symbols-outlined text-[15px]">sms</span></button>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded flex items-center" type="button"><span class="material-symbols-outlined text-[15px]">call</span></button>
+<span class="font-caption text-[11px] text-secondary font-medium">Opted-in SMS</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-body-default text-[13px] text-on-surface truncate max-w-[170px]">892 Ocean Blvd, Ste 12</span>
+<span class="inline-block mt-0.5 px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant text-[11px] font-medium w-max">Zone C • Coastal</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">29 ord <span class="text-on-surface-variant font-normal">• $890.00</span></span>
+<span class="font-caption text-caption text-on-surface-variant">Last: Oct 18</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[14px]">warning</span> $64.00 Pending
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">history</span></button>
+<button class="p-1.5 rounded-lg text-outline hover:text-error hover:bg-error-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Metro Gym Linens (Commercial) -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="selectCustomer('commercial')">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-tertiary-container font-bold text-xs flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">corporate_fare</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Metro Gym Linens</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-tertiary-container font-label-sm text-[10px] font-bold uppercase tracking-wider">B2B</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate">billing@metrogyms.com</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-mono text-[13px]">(555) 782-9900</span>
+<div class="flex items-center gap-2 mt-0.5">
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded flex items-center" type="button"><span class="material-symbols-outlined text-[15px]">call</span></button>
+<span class="font-caption text-[11px] text-on-surface-variant">Procurement Desk</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-body-default text-[13px] text-on-surface truncate max-w-[170px]">450 Industrial Pkwy, Bldg C</span>
+<span class="inline-block mt-0.5 px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant text-[11px] font-medium w-max">Zone D • Logistics Hub</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">115 ord <span class="text-on-surface-variant font-normal">• $8,450.00</span></span>
+<span class="font-caption text-caption text-primary font-medium">Weekly 200kg Recurring</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[14px]">error</span> Net-7 Overdue
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">history</span></button>
+<button class="p-1.5 rounded-lg text-outline hover:text-error hover:bg-error-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Anthony Li -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="selectCustomer('anthony')">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface font-bold text-sm flex items-center justify-center shrink-0">AL</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Anthony Li</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate">anthony.li99@icloud.com</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-mono text-[13px]">(555) 882-1922</span>
+<div class="flex items-center gap-2 mt-0.5">
+<button class="text-primary hover:text-on-primary-container p-0.5 rounded flex items-center" type="button"><span class="material-symbols-outlined text-[15px]">sms</span></button>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded flex items-center" type="button"><span class="material-symbols-outlined text-[15px]">call</span></button>
+<span class="font-caption text-[11px] text-secondary font-medium">Opted-in SMS</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-body-default text-[13px] text-on-surface truncate max-w-[170px]">312 Pine St, Apt 2A</span>
+<span class="inline-block mt-0.5 px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant text-[11px] font-medium w-max">Zone A • Downtown</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">12 ord <span class="text-on-surface-variant font-normal">• $380.00</span></span>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">inventory_2</span> Intake Sorting
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Settled
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">history</span></button>
+<button class="p-1.5 rounded-lg text-outline hover:text-error hover:bg-error-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Emma Miller -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="selectCustomer('emma')">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold text-sm flex items-center justify-center shrink-0">EM</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Emma Miller</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-container font-label-sm text-[11px] font-bold">VIP</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate">em.miller@designstudio.co</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-mono text-[13px]">(555) 431-7788</span>
+<div class="flex items-center gap-2 mt-0.5">
+<button class="text-primary hover:text-on-primary-container p-0.5 rounded flex items-center" type="button"><span class="material-symbols-outlined text-[15px]">sms</span></button>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded flex items-center" type="button"><span class="material-symbols-outlined text-[15px]">call</span></button>
+<span class="font-caption text-[11px] text-secondary font-medium">Opted-in SMS</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-body-default text-[13px] text-on-surface truncate max-w-[170px]">55 Sunset Blvd</span>
+<span class="inline-block mt-0.5 px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant text-[11px] font-medium w-max">Zone B • West End</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">31 ord <span class="text-on-surface-variant font-normal">• $940.00</span></span>
+<span class="font-caption text-caption text-tertiary flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[13px]">mode_fan</span> In Drying Cycle
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Settled
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">history</span></button>
+<button class="p-1.5 rounded-lg text-outline hover:text-error hover:bg-error-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+<!-- Row 7: David Harris (First-Time) -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="selectCustomer('david')">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface font-bold text-sm flex items-center justify-center shrink-0">DH</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate group-hover:text-primary transition-colors">David Harris</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface font-label-sm text-[10px]">1st Time</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant truncate">david.harris@me.com</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-mono text-[13px]">(555) 766-0043</span>
+<div class="flex items-center gap-2 mt-0.5">
+<button class="text-primary hover:text-on-primary-container p-0.5 rounded flex items-center" type="button"><span class="material-symbols-outlined text-[15px]">sms</span></button>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded flex items-center" type="button"><span class="material-symbols-outlined text-[15px]">call</span></button>
+<span class="font-caption text-[11px] text-secondary font-medium">Opted-in SMS</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-body-default text-[13px] text-on-surface truncate max-w-[170px]">12 Elm Court</span>
+<span class="inline-block mt-0.5 px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant text-[11px] font-medium w-max">Zone A • Downtown</span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">1 ord <span class="text-on-surface-variant font-normal">• $39.80</span></span>
+<span class="font-caption text-caption text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_box</span> Ready for Pickup
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Settled
+                  </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">edit</span></button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">history</span></button>
+<button class="p-1.5 rounded-lg text-outline hover:text-error hover:bg-error-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Page Controls Footer -->
+<div class="px-space-md py-3 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<span class="font-caption text-caption text-on-surface-variant">Showing <strong class="text-on-surface font-semibold">1–7</strong> of <strong class="text-on-surface font-semibold">1,420</strong> customers</span>
+<div class="flex items-center gap-1.5">
+<span class="font-caption text-[12px] text-outline">Rows:</span>
+<select class="h-7 px-2 rounded bg-surface-container text-on-surface font-label-sm text-label-sm focus:outline-none cursor-pointer">
+<option selected="">10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="h-8 w-8 rounded-lg bg-surface-container-lowest text-outline hover:text-on-surface flex items-center justify-center transition-colors disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="h-8 w-8 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center justify-center shadow-sm" type="button">1</button>
+<button class="h-8 w-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center font-label-sm text-label-sm transition-colors" type="button">2</button>
+<button class="h-8 w-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center font-label-sm text-label-sm transition-colors" type="button">3</button>
+<span class="px-1 text-outline font-label-sm">...</span>
+<button class="h-8 w-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center font-label-sm text-label-sm transition-colors" type="button">142</button>
+<button class="h-8 w-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Metrics Ribbon beneath table -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">repeat</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-caption text-caption text-on-surface-variant">Repeat Retention</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">82.4%</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed text-on-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-caption text-caption text-on-surface-variant">Avg. Customer LTV</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">$489.10</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">speed</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-caption text-caption text-on-surface-variant">Turnaround Time</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">18.2 hrs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Integrated Add / Edit Customer Slide-over / Modal Panel (xl:col-span-5) -->
+<div class="xl:col-span-5 rounded-2xl bg-surface-container-lowest shadow-md overflow-hidden flex flex-col relative transition-all" id="customerFormPanel">
+<!-- Drawer Header -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface" id="formTitle">Edit Customer Profile</span>
+<span class="px-2 py-0.2 rounded-full bg-primary-fixed-dim text-on-primary-fixed font-label-sm text-[11px] font-bold" id="formBadge">#CUST-0428</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Manage contact information, zone tagging, &amp; garment specifications</span>
+</div>
+</div>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" id="resetFormToNew" title="Create a blank customer" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>New Blank</span>
+</button>
+</div>
+<!-- Form Body -->
+<form class="p-space-lg flex flex-col gap-space-md" id="customerForm" onsubmit="event.preventDefault(); saveCustomerData();">
+<!-- Section: Basic Identification -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Contact Essentials</span>
+<span class="font-caption text-[11px] text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span> Validated Mobile
+            </span>
+</div>
+<!-- Full Name Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between" for="inputName">
+<span>Customer Full Name <span class="text-error">*</span></span>
+<span class="font-caption text-[11px] text-on-surface-variant font-normal">Primary account holder</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[18px]">person</span>
+<input class="w-full h-11 pl-10 pr-9 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-container-lowest transition-colors" id="inputName" required="" type="text" value="Sarah Jenkins">
+<span class="material-symbols-outlined absolute right-3 text-primary text-[18px]">check_circle</span>
+</div>
+</div>
+<!-- Phone & SMS Opt-in -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between" for="inputPhone">
+<span>Mobile Phone Number <span class="text-error">*</span></span>
+<span class="font-caption text-[11px] text-on-surface-variant font-normal">For automated dispatch SMS</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[18px]">phone_iphone</span>
+<input class="w-full h-11 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-container-lowest transition-colors" id="inputPhone" required="" type="tel" value="(555) 234-8901">
+</div>
+<!-- SMS Opt-in Toggle Banner -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">mark_chat_read</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">SMS Status Notifications</span>
+<span class="font-caption text-[11px] text-on-surface-variant">Send pickup ready &amp; receipt alerts</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="smsToggle" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<!-- Email Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between" for="inputEmail">
+<span>Email Address</span>
+<span class="font-caption text-[11px] text-on-surface-variant font-normal">Digital invoices &amp; statements</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[18px]">mail</span>
+<input class="w-full h-11 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-container-lowest transition-colors" id="inputEmail" type="email" value="sarah.j@example.com">
+</div>
+</div>
+</div>
+<!-- Section: Customer Tier / Classification -->
+<div class="flex flex-col gap-space-sm pt-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Classification &amp; Tier</span>
+<div class="grid grid-cols-3 gap-2">
+<label class="flex flex-col p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors has-[:checked]:bg-primary-fixed-dim has-[:checked]:text-on-primary-fixed">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px]">person</span>
+<input class="text-primary focus:ring-0" name="tier" type="radio" value="regular">
+</div>
+<span class="font-label-lg text-label-lg font-semibold mt-1">Regular</span>
+<span class="font-caption text-[11px] text-on-surface-variant">Walk-in standard</span>
+</label>
+<label class="flex flex-col p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors has-[:checked]:bg-tertiary-fixed has-[:checked]:text-on-tertiary-container">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px] text-tertiary">star</span>
+<input checked="" class="text-primary focus:ring-0" name="tier" type="radio" value="vip">
+</div>
+<span class="font-label-lg text-label-lg font-semibold mt-1">VIP Tier</span>
+<span class="font-caption text-[11px] text-on-surface-variant">Priority 10% Off</span>
+</label>
+<label class="flex flex-col p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors has-[:checked]:bg-surface-container-highest has-[:checked]:text-on-surface">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px]">corporate_fare</span>
+<input class="text-primary focus:ring-0" name="tier" type="radio" value="commercial">
+</div>
+<span class="font-label-lg text-label-lg font-semibold mt-1">B2B Corp</span>
+<span class="font-caption text-[11px] text-on-surface-variant">Net 30 invoice</span>
+</label>
+</div>
+</div>
+<!-- Section: Delivery & Logistics Address -->
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Delivery &amp; Route Profile</span>
+<span class="font-caption text-[11px] text-secondary font-medium">Zone A (Van 2)</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<div class="sm:col-span-2 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="inputStreet">Street Address</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-container-lowest transition-colors" id="inputStreet" type="text" value="742 Evergreen Terrace">
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="inputUnit">Apt / Suite</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-container-lowest transition-colors" id="inputUnit" type="text" value="Apt 4B">
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="inputZone">Assigned Route Zone</label>
+<select class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-lg text-label-lg focus:outline-none cursor-pointer" id="inputZone">
+<option selected="">Zone A - Downtown Core</option>
+<option>Zone B - West End Suburban</option>
+<option>Zone C - Coastal Corridor</option>
+<option>Zone D - Industrial Logistic</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="inputGate">Gate / Intercom Code</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-container-lowest transition-colors" id="inputGate" placeholder="e.g. #1234" type="text" value="#4412">
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="inputNotes">Driver Drop-off Notes</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-container-lowest transition-colors" id="inputNotes" type="text" value="Leave with concierge if after 5 PM. Double bag during rain.">
+</div>
+</div>
+<!-- Section: Garment & Fabric Preferences -->
+<div class="flex flex-col gap-space-sm pt-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Default Wash &amp; Fold Preferences</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Detergent Choice -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Detergent Formulation</label>
+<select class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-lg text-label-lg focus:outline-none cursor-pointer" id="inputDetergent">
+<option selected="">Hypoallergenic / Scent-Free</option>
+<option>Fresh Meadow Signature</option>
+<option>Lavender Essential Oil</option>
+<option>Heavy-Duty Enzyme (Commercial)</option>
+</select>
+</div>
+<!-- Water Temperature -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Water Temp</label>
+<select class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-lg text-label-lg focus:outline-none cursor-pointer" id="inputTemp">
+<option selected="">Cold Wash (Eco 20°C)</option>
+<option>Warm Wash (40°C)</option>
+<option>Sanitize Hot (60°C)</option>
+</select>
+</div>
+</div>
+<!-- Starch / Finishing Preference Chips -->
+<div class="flex flex-col gap-1.5 mt-1">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Shirt Pressing &amp; Starch Preference</label>
+<div class="flex items-center gap-2 flex-wrap">
+<button class="pref-chip px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-colors" type="button">
+                No Starch
+              </button>
+<button class="pref-chip active px-3 py-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed font-semibold font-label-sm text-label-sm shadow-sm transition-colors" type="button">
+                Light Starch
+              </button>
+<button class="pref-chip px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-colors" type="button">
+                Medium Crisp
+              </button>
+<button class="pref-chip px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-colors" type="button">
+                Heavy Starch
+              </button>
+<button class="pref-chip px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-colors" type="button">
+                Hangers Only
+              </button>
+</div>
+</div>
+</div>
+<!-- Form Footer Actions (Rule of Single Intent + Safety) -->
+<div class="pt-space-md mt-space-sm flex items-center justify-between border-t border-surface-container-low">
+<button class="h-11 px-3 rounded-lg text-error hover:bg-error-container hover:text-on-error-container font-label-lg text-label-lg font-medium transition-colors flex items-center gap-1.5" id="deleteCustomerBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span>Delete Customer</span>
+</button>
+<div class="flex items-center gap-space-sm">
+<button class="h-11 px-4 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-lg text-label-lg transition-colors" id="cancelFormBtn" type="button">
+              Cancel
+            </button>
+<button class="h-11 px-5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg font-semibold shadow-sm transition-all flex items-center gap-2" id="saveCustomerBtn" type="submit">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Save Customer Profile</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- Notification Toast Container (Dynamic UI Feedback) -->
+<div class="fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-xl flex items-center gap-3 translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">task_alt</span>
+<span class="font-label-lg text-label-lg" id="toastMessage">Customer profile updated successfully.</span>
+</div>
+</div>
+<script>
+  // Customer selection helper function
+  function selectCustomer(type) {
+    const title = document.getElementById('formTitle');
+    const badge = document.getElementById('formBadge');
+    const nameInput = document.getElementById('inputName');
+    const phoneInput = document.getElementById('inputPhone');
+    const emailInput = document.getElementById('inputEmail');
+    const streetInput = document.getElementById('inputStreet');
+    const unitInput = document.getElementById('inputUnit');
+    const notesInput = document.getElementById('inputNotes');
+    
+    if (type === 'sarah') {
+      title.innerText = 'Edit Customer Profile';
+      badge.innerText = '#CUST-0428';
+      nameInput.value = 'Sarah Jenkins';
+      phoneInput.value = '(555) 234-8901';
+      emailInput.value = 'sarah.j@example.com';
+      streetInput.value = '742 Evergreen Terrace';
+      unitInput.value = 'Apt 4B';
+      notesInput.value = 'Leave with concierge if after 5 PM. Double bag during rain.';
+      document.querySelector('input[name="tier"][value="vip"]').checked = true;
+    } else if (type === 'robert') {
+      title.innerText = 'Edit Customer Profile';
+      badge.innerText = '#CUST-0891';
+      nameInput.value = 'Robert Hayes';
+      phoneInput.value = '(555) 011-8833';
+      emailInput.value = 'rhayes.consult@outlook.com';
+      streetInput.value = '104 Maple Ave';
+      unitInput.value = '';
+      notesInput.value = 'Call on cell upon gate arrival.';
+      document.querySelector('input[name="tier"][value="regular"]').checked = true;
+    } else if (type === 'linda') {
+      title.innerText = 'Edit Customer Profile';
+      badge.innerText = '#CUST-0112';
+      nameInput.value = 'Linda Kowalski';
+      phoneInput.value = '(555) 349-1120';
+      emailInput.value = 'l.kowalski@gmail.com';
+      streetInput.value = '892 Ocean Blvd';
+      unitInput.value = 'Suite 12';
+      notesInput.value = 'Payment pending check collection.';
+      document.querySelector('input[name="tier"][value="regular"]').checked = true;
+    } else if (type === 'commercial') {
+      title.innerText = 'Edit Commercial Account';
+      badge.innerText = '#B2B-108';
+      nameInput.value = 'Metro Gym Linens';
+      phoneInput.value = '(555) 782-9900';
+      emailInput.value = 'billing@metrogyms.com';
+      streetInput.value = '450 Industrial Pkwy';
+      unitInput.value = 'Bldg C';
+      notesInput.value = 'Dock 3 delivery between 6 AM and 8 AM exclusively.';
+      document.querySelector('input[name="tier"][value="commercial"]').checked = true;
+    } else {
+      title.innerText = 'Edit Customer Profile';
+      badge.innerText = '#CUST-NEW';
+    }
+
+    // Scroll form into view on smaller displays
+    if (window.innerWidth < 1280) {
+      document.getElementById('customerFormPanel').scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  // Blank Form Trigger
+  document.getElementById('resetFormToNew')?.addEventListener('click', () => {
+    document.getElementById('formTitle').innerText = 'Add New Customer';
+    document.getElementById('formBadge').innerText = 'New Registration';
+    document.getElementById('customerForm').reset();
+    document.getElementById('inputName').focus();
+    showToast('New customer intake form primed.');
+  });
+
+  document.getElementById('openDrawerBtn')?.addEventListener('click', () => {
+    document.getElementById('resetFormToNew').click();
+  });
+
+  // Clear Search Input
+  document.getElementById('clearSearchBtn')?.addEventListener('click', () => {
+    const input = document.getElementById('customerSearchInput');
+    input.value = '';
+    input.focus();
+  });
+
+  // Starch preference chip toggle
+  document.querySelectorAll('.pref-chip').forEach(chip => {
+    chip.addEventListener('click', function() {
+      document.querySelectorAll('.pref-chip').forEach(c => {
+        c.classList.remove('active', 'bg-primary-fixed', 'text-on-primary-fixed', 'font-semibold', 'shadow-sm');
+        c.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      this.classList.add('active', 'bg-primary-fixed', 'text-on-primary-fixed', 'font-semibold', 'shadow-sm');
+      this.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+    });
+  });
+
+  // Filter pills interaction
+  document.querySelectorAll('.filter-pill').forEach(pill => {
+    pill.addEventListener('click', function() {
+      document.querySelectorAll('.filter-pill').forEach(p => {
+        p.classList.remove('active', 'bg-primary', 'text-on-primary', 'shadow-sm');
+        p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      this.classList.add('active', 'bg-primary', 'text-on-primary', 'shadow-sm');
+      this.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+    });
+  });
+
+  // Toast notifier
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const msg = document.getElementById('toastMessage');
+    if (!toast || !msg) return;
+    msg.innerText = message;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2800);
+  }
+
+  function saveCustomerData() {
+    const name = document.getElementById('inputName').value || 'Customer';
+    showToast(`Profile for ${name} saved successfully.`);
+  }
+
+  document.getElementById('deleteCustomerBtn')?.addEventListener('click', () => {
+    if (confirm('Are you sure you want to archive this customer profile? Active orders will remain referenced.')) {
+      showToast('Customer record archived.');
+    }
+  });
+
+  document.getElementById('exportBtn')?.addEventListener('click', () => {
+    showToast('Exporting 1,420 customer profiles to CSV...');
+  });
+
+  document.getElementById('importBtn')?.addEventListener('click', () => {
+    showToast('Select a .CSV or vCard file to batch import.');
+  });
+</script></main></div></body></html>
